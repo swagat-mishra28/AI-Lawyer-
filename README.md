@@ -2,6 +2,8 @@
 
 **Kuku AI Generalist Assignment, Problem 2 (Build an AI Lawyer)**
 
+**▶ Live app: https://eqfddnzmoycgqfdlvgbxfc.streamlit.app/** · Solution doc: [docs/solution_doc.pdf](docs/solution_doc.pdf) · Raw outputs: [outputs/](outputs/README.md)
+
 Nyaya Saathi helps an ordinary person with four common problems: a **landlord keeping the security deposit**, a **refund that never came or a defective product**, **unpaid salary or wages**, and **a notice they don't understand**. The person can type or speak in their own language (Hindi, Hinglish, English, Tamil, Bengali, Marathi and others). It then:
 
 1. **Builds the case**: turns a messy story into a timeline, amounts, the proof they have and the proof still missing.
