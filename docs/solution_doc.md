@@ -22,7 +22,7 @@ The person types or speaks (Groq Whisper) in Hindi, Hinglish, English, Tamil, Be
 3. **Documents**: a grievance email, legal notice, consumer complaint or labour complaint (.docx), with `[FILL]` where facts are unknown.
 4. **Practice**: the AI plays the landlord or HR so they can rehearse, then a coach gives feedback.
 5. **A notice explainer**: what the notice is, how serious it is, and the computed deadline.
-6. **"Try to fool it" and "What I know" tabs**, which show the guard and the full knowledge base and work with no API key.
+6. **A "Why trust it" tab**: paste any AI answer and watch the guard strike out invented laws, then browse every verified entry. It works with no API key.
 
 ## How it works: what AI does, what code does
 
