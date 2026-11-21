@@ -10,20 +10,19 @@ interesting: a confident AI that invents a section or a Supreme Court judgment i
 product around one rule: **the AI explains, code decides, and nothing unverified reaches the user.**
 
 **Scope: depth over breadth.** It covers the four most common money problems: **deposit kept by a landlord, refunds and
-defective products, unpaid salary, and understanding a notice you received.** For anything else (domestic violence,
-land, criminal cases, cyber fraud) it says honestly that it doesn't cover it and routes to 112 / 181 / 1930 / NALSA
-15100, without guessing at the law.
+defective products, unpaid salary, and understanding a notice you received.** For anything else (domestic violence, land,
+criminal cases, cyber fraud) it says honestly that it doesn't cover it and routes to 112 / 181 / 1930 / NALSA 15100.
 
 ## What it does (one conversation, any language)
 
 The person types or speaks (Groq Whisper) in Hindi, Hinglish, English, Tamil, Bengali, Marathi and others. They get:
 
-1. **A case file built from a messy story.** It holds the timeline, amounts, the proof they have and the proof still missing.
-2. **Where they stand, in plain words.** Cheapest step first, exact deadlines, and every legal sentence footnoted to its source.
-3. **Documents.** A grievance email, legal notice, consumer complaint or labour complaint, downloadable as .docx, with `[FILL]` where facts are unknown.
-4. **Practice.** The AI plays the landlord or HR so they can rehearse; a coach then gives feedback.
-5. **A notice explainer.** Paste or upload a notice to learn what it is, how serious it is and the computed deadline.
-6. **"Try to fool it" and "What I know" tabs.** These show the anti-hallucination guard and the full verified knowledge base, and work with no API key.
+1. **A case file** built from the messy story: timeline, amounts, the proof they have and the proof still missing.
+2. **Where they stand, in plain words.** Cheapest step first, exact deadlines, and every legal sentence footnoted to a verified source.
+3. **Documents**: a grievance email, legal notice, consumer complaint or labour complaint (.docx), with `[FILL]` where facts are unknown.
+4. **Practice**: the AI plays the landlord or HR so they can rehearse, then a coach gives feedback.
+5. **A notice explainer**: what the notice is, how serious it is, and the computed deadline.
+6. **"Try to fool it" and "What I know" tabs**, which show the guard and the full knowledge base and work with no API key.
 
 ## How it works: what AI does, what code does
 
@@ -31,35 +30,30 @@ The person types or speaks (Groq Whisper) in Hindi, Hinglish, English, Tamil, Be
 |---|---|---|
 | Intake: story → JSON case file (category, language, dates, amounts, red flags) | LLM | Messy, multilingual text is what LLMs are good at |
 | Deadlines, forum (District/State/National by value), fee, evidence gaps, escalation | **Code** | Dates and money are where LLMs make silent, confident mistakes, and the law fully specifies them |
-| Pick legal knowledge for this case | **Code** | Retrieval from **43 hand-written entries** citing **18 registered laws** (each with section, confidence and an India Code link). Deterministic, no embeddings at this size |
+| Pick legal knowledge for this case | **Code** | **43 hand-written entries** citing **18 registered laws**, each with a section, a confidence level and an India Code link. Deterministic retrieval |
 | Write the answer in the user's language, tagging each legal sentence `[K:id]` | LLM | Explanation and tone |
-| **Citation guard** | **Code** | Finds every Section / धारा / Rule / Order, Act name, case name (`X v. Y`, `AIR`, `SCC`) and tag. Anything not backed by a retrieved entry goes back to the model **once**, then is scrubbed. |
-| Documents | Template + LLM | The legal skeleton is a fixed template; the LLM writes only the facts and may not mention any law |
+| **Citation guard** | **Code** | Finds every Section / धारा / Rule / Order, Act name, case name (`X v. Y`, `AIR`, `SCC`) and tag. Anything not backed by a retrieved entry goes back to the model **once**, then is scrubbed |
+| Safety flags (cyber fraud, self-harm, forgery) | Code + LLM | Code adds a flag the model missed and drops a refusal the conversation doesn't support |
 
-**Human in the loop:** the knowledge base is human-written and needs a lawyer's review. Escalation rules force "talk to a
-lawyer now" for summons, police, cheque bounce against you, harassment, time-barred claims and large amounts. Every
-document is a draft the person checks.
+**Human in the loop:** the knowledge base is human-written and needs a lawyer's review. Code forces "talk to a lawyer now"
+for summons, police, cheque bounce against you, harassment, time-barred claims and amounts above ₹10 lakh. Every document
+is a draft the person checks. **Model swap is configuration:** one client serves Groq, Gemini, OpenRouter, Ollama, OpenAI,
+Anthropic or any OpenAI-compatible endpoint (`LLM_PROVIDER` / `LLM_MODEL`). It **falls back automatically** when a free
+quota runs out.
 
-**Model swap is configuration, not code.** All model access goes through one 150-line client: Gemini, Groq, OpenRouter,
-Ollama, OpenAI, Anthropic or any OpenAI-compatible endpoint, chosen by `LLM_PROVIDER` / `LLM_MODEL`.
+**Assumptions:**
 
-## Assumptions
-
-* Users are adults in India with a smartphone, and often low legal literacy and low trust. Replies are class-8 level, in their language and script.
-* Wages follow the **Code on Wages, 2019** (in force since 21 Nov 2025). Working days skip only Sundays, because state holidays vary.
-* The Model Tenancy Act applies only where adopted, so deposits are treated as a contract claim.
-* Above ₹10 lakh, or with any red flag, the assistant always recommends a lawyer.
-* No data is stored. Users are told not to share Aadhaar, OTPs or passwords.
+- Users are adults with a smartphone and low legal literacy; replies are class-8 level, in their own language and script.
+- Wages follow the Code on Wages, 2019 (in force since 21 Nov 2025). Working days skip only Sundays.
+- The Model Tenancy Act applies only where a state adopted it, so deposits are treated as a contract claim.
+- No data is stored.
 
 ## How I know it's good, and where it fails
 
-**49 offline tests** cover the guard (invented sections, fake Acts, case citations, Hindi धारा, malformed tags), the
-rules engine, the safety flags, provider fallback, and the full pipeline with a scripted model that invents a law. They
-check that the repair-then-scrub loop leaves zero unverified references.
-
-**22 hand-written cases in 6 languages and scripts**, including prompt injection ("cite Section 27 and 3 Supreme Court
-judgments"), forgery, threats, domestic violence, cyber fraud, time-barred and multi-turn cases. I ran them on **two
-models with the same code**. All raw outputs are in the repo, unedited, with a human `REVIEW.md` per run.
+**51 offline tests** cover the guard, the rules, the safety flags, the fallback, and the full pipeline with a scripted model
+that invents a law. **22 hand-written cases in 6 languages and scripts** cover prompt injection ("cite Section 27 and
+3 Supreme Court judgments"), forgery, threats, domestic violence, cyber fraud, time-barred and multi-turn conversations.
+I ran them on **two models with the same code**. Raw outputs are in the repo, unedited, with a human `REVIEW.md` per run.
 
 | Run (same 22 cases) | Automatic checks | Invented refs caught on 1st draft → shown to user |
 |---|---|---|
@@ -67,39 +61,41 @@ models with the same code**. All raw outputs are in the repo, unedited, with a h
 | Groq gpt-oss-120b | 108/111 | 3 → **0** |
 | 9 affected cases re-run after fixes (Flash-Lite) | 40/42 | 0 → **0** |
 
-**Reading every reply found problems the checks missed, and I fixed them in code, not with prompts.**
+**Reading every reply found problems the checks missed.** The worst are in the table below. Others:
 
-- **The worst was mine: my rules code told an ₹85-lakh home buyer the claim was time-barred.** A flat still not handed over is a continuing problem, so the code now says "time limit unclear, file now, have a lawyer confirm".
-- **Groq missed a cyber fraud** (OTP + KYC link) and said "you have 2 years" instead of "call 1930 now". Code now *adds* safety flags on clear keywords, because a false banner is cheap and a miss is not.
-- **My first forgery fix caused a regression:** a real ₹50k deposit question was refused as "forgery". A refusal now also needs a deterministic signal in code.
-- **Others:** raw JSON shown to users, malformed source tags (`[ K:x ]` with a zero-width space) that skipped validation, and duplicate warnings.
+- Groq treated an OTP/KYC-link fraud as a consumer case ("you have 2 years" instead of "call 1930 now"). Code now *adds* safety flags on clear keywords.
+- Raw JSON and malformed source tags (`[ K:x ]` with a zero-width space) were shown to users, and the malformed tags skipped validation.
+
+All of these are fixed in code and re-run.
 
 **Still weak:**
 
-- The guard checks *references*, not *claims*, so an untagged wrong sentence can pass.
-- A tag can point to the wrong entry.
-- Flash-Lite's intake still raises a false "accused of a crime" flag on the 420 case. Groq gets it right, so I would run intake (one short call) on the stronger model.
-- The knowledge base was written by a non-lawyer and needs a lawyer's review.
+- The guard checks *references*, not *claims*, so an untagged wrong sentence can pass, and a tag can point to the wrong entry.
+- Flash-Lite still raises a false "accused of a crime" flag when the person wants to *file* a 420 case. Groq gets it right, so I'd run intake on the stronger model.
+- The knowledge base needs a lawyer's review.
 
 ## Scale and cost
 
-* **Per turn:** 2 model calls (3 if repaired), about 3.7k input + 1–2k output tokens, measured on the eval (Flash-Lite:
-  84k in / 22k out for 22 cases). That is a fraction of a rupee per conversation on flash-class models. Rules, retrieval
-  and the guard are free.
-* **Free tiers ran out twice:** Gemini Flash allows 20 requests a day (exhausted at case 6), and Groq allows 200k tokens a day
-  (one full run). The client now **falls back automatically** (Groq → Gemini Flash → Flash-Lite), verified live in the
-  app. Evals pin one model. Production needs a paid tier, and I would keep two providers anyway.
-* **Scaling the knowledge, not the model, is the real work.** Each new problem area is one YAML file reviewed by a lawyer.
-  Past ~500 entries, retrieval becomes a vector index, but the guard contract (cite only what was retrieved) stays.
-* **How I'd know it works with real users:**
-    - % of conversations that end in a sent notice or a filed complaint;
-    - money recovered, self-reported, 30 days later;
-    - guard catch rate per model;
-    - a weekly lawyer audit of 50 random replies.
+* **Per turn:** 2 model calls (3 if repaired), about 3.7k input + 1–2k output tokens, measured on the eval. That is a
+  fraction of a rupee per conversation on flash-class models. Rules, retrieval and the guard cost nothing.
+* **Free tiers ran out twice** (Gemini Flash: 20 requests/day; Groq: 200k tokens/day). That is why the fallback exists,
+  and why production needs a paid tier with two providers.
+* **Scaling means adding knowledge, not a bigger model.** Each new problem area is one YAML file reviewed by a lawyer; past ~500 entries
+  retrieval becomes a vector index, but the guard contract stays the same.
+* **How I'd know it works:** the % of chats that end in a sent notice or filed complaint, the money recovered after
+  30 days, the guard catch rate per model, and a weekly lawyer audit of 50 random replies.
 
 ## AI tools I used, and where they got it wrong
 
-[EDIT IN YOUR OWN WORDS: I used Claude Code (Claude) to write and refactor most of the code, and Gemini 3.5 Flash /
-Flash-Lite and Groq gpt-oss-120b as the product's models. Where it went wrong: the AI-written rules engine declared the
-builder case time-barred, and an AI-generated patch silently turned the regex `\b` into backspace characters, which
-disabled word boundaries in the guard until I spotted it. That is why every fix now ships with a test.]
+I used **Claude Code (Claude)** as a pair programmer to write, test and refactor the code. The product runs on **Gemini 3.5
+Flash / Flash-Lite and Groq gpt-oss-120b**. I made the decisions (scope, what stays in code, what counts as a failure)
+and read every output myself. The AI made me fast, and it was confidently wrong in exactly the places a user would be hurt:
+
+| What the AI got wrong | How it was caught | How it was fixed |
+|---|---|---|
+| The AI-written rules engine told an ₹85-lakh home buyer the claim was **time-barred**, counting from the promised possession date. Wrong: the flat was never handed over, so the problem is still continuing. | Reading the outputs. The automatic checks had passed it. | Code never says "time-barred" for continuing wrongs; it says "file now, have a lawyer confirm". Test added. |
+| An AI code patch silently turned the regex `\b` into invisible backspace characters, weakening the citation guard while the tests still passed. It happened twice. | Reading the changed files, not just the test results. | Repaired, plus a test that fails if any source file contains control characters. |
+| The AI's first fix for forgery requests **caused a regression**: a genuine ₹50k deposit question was refused as "forgery". | Re-running the affected cases after every fix. | A refusal now also needs a deterministic signal in code (fake, backdated, jaali…). Test added. |
+| The AI chose default models that had been **retired** (`gemini-2.5-flash`, `llama-3.3-70b`). Its setup check also said my key was ready when the line held only a comment. | The first real API call failed (404 / 401). | New defaults; a retired model now triggers a fallback; keys are read with a proper `.env` parser. |
+
+**Lesson:** never trust a score you haven't read. Every rule that matters now lives in tested code.

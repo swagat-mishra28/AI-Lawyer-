@@ -250,3 +250,12 @@ def test_loose_and_invisible_tags_normalised():
     # a malformed tag to a non-existent entry is now caught instead of silently skipping validation
     rep = guard.check(guard.normalize_tags("Made up [ K:not-a-real-entry ]."), KB, [])
     assert [v.kind for v in rep.violations] == ["bad_tag"]
+
+
+def test_no_control_characters_in_source():
+    # An AI-generated patch once turned regex "\b" into a literal backspace (\x08) and silently weakened the guard.
+    import pathlib
+    root = pathlib.Path(__file__).resolve().parent.parent
+    for f in [*root.glob("nyaya/*.py"), root / "app.py", *root.glob("knowledge/*.yaml")]:
+        bad = [c for c in f.read_text(encoding="utf-8") if ord(c) < 32 and c not in "\n\r\t"]
+        assert not bad, f"{f.name} contains control characters {set(map(repr, bad))}"
