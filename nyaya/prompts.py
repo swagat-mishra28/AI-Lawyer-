@@ -25,7 +25,7 @@ JSON schema (all keys required, use null / [] when unknown):
   "dates": {{"incident": "when the problem arose / refund refused", "purchase": null, "complaint_to_company": null, "moved_out": null, "last_working_day": null, "wages_due_from": "first month salary was not paid (YYYY-MM-01)", "notice_received": null, "notice_deadline": null, "bank_return_memo": null}},
   "employment_ended": true/false/null,
   "timeline": [{{"date": "YYYY-MM-DD or approximate text", "event": "what happened"}}],
-  "evidence_have": ["documents / proof the person says they have, in English"],
+  "evidence_have": ["ONLY documents / proof the person EXPLICITLY says they have, in English. Do not assume a rent agreement, receipt or payment proof exists; if they did not mention it, leave it out (it becomes an open question)"],
   "steps_taken": ["what they already did, e.g. 'emailed customer care twice'"],
   "red_flags": ["zero or more of: violence_or_threat, self_harm, domestic_violence, police_or_arrest (police are acting AGAINST the person), court_summons, criminal_accusation_against_user (someone accuses THE PERSON of a crime - NOT when the person wants to file a case against someone else), sexual_harassment, minor_involved, government_party, cyber_fraud, eviction_threat, forgery_request (the person asks YOU to create or alter a false, backdated or fake document - NOT when they ask about laws, sections, judgments or filing a case)"],
   "user_goal": "what they want, in English",
