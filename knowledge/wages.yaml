@@ -76,8 +76,7 @@ entries:
     refs: [{act: ICA1872, section: "73"}]
     confidence: high
     notice_basis: >
-      Non-payment of agreed salary is a breach of the contract of employment, entitling my
-      client to recover the amount with compensation under the Indian Contract Act, 1872.
+      Non-payment of agreed salary is a breach of the contract of employment, entitling me to recover the amount with compensation under the Indian Contract Act, 1872.
 
   - id: wages-relieving
     title: Relieving letter and documents

@@ -30,7 +30,7 @@ PRESETS: dict[str, dict] = {
     "gemini": {
         "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
         "key_env": "GEMINI_API_KEY",
-        "default_model": "gemini-2.5-flash",
+        "default_model": "gemini-3.5-flash",
         "extra": {"reasoning_effort": "low"},
         "free_tier": True,
     },

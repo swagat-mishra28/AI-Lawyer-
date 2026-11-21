@@ -21,7 +21,7 @@ entries:
       court decree. Ask the District Legal Services Authority.
     refs: [{act: LSA1987, section: "19"}, {act: LSA1987, section: "21"}]
     confidence: high
-    triggers: [settle, settlement, lok adalat, compromise, समझौता]
+    always: true   # every topic ladder suggests DLSA / Lok Adalat settlement, so the entry must be available to cite
 
   - id: notice-how-to-send
     title: How to send a notice safely

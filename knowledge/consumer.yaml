@@ -103,7 +103,7 @@ entries:
     refs: [{act: CPA2019, section: "39"}]
     confidence: high
     notice_basis: >
-      My client is entitled to a refund along with compensation and costs, which the Consumer
+      I am entitled to a refund along with compensation and costs, which the Consumer
       Commission is empowered to award under the Consumer Protection Act, 2019.
 
   - id: cpa-timeline
@@ -140,7 +140,7 @@ entries:
     confidence: medium
     notice_basis: >
       Despite the obligation on e-commerce entities to redress grievances within one month under
-      the Consumer Protection (E-Commerce) Rules, 2020, my client's grievance remains unresolved.
+      the Consumer Protection (E-Commerce) Rules, 2020, my grievance remains unresolved.
 
   - id: plas-utilities
     title: Permanent Lok Adalat for public utility services
