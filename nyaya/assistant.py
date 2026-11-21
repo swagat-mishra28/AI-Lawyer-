@@ -37,13 +37,13 @@ def script_hint(lang: str) -> str:
 def grounded_generate(llm: LLM, system: str, messages: list[dict], kb: KnowledgeBase, entries: list[Entry], *,
                       purpose: str, quoted_refs=None, max_tokens: int = 3000) -> tuple[str, dict]:
     """Generate, check every legal reference, ask the model to fix once, then scrub what remains."""
-    text = llm.chat(system, messages, purpose=purpose, max_tokens=max_tokens)
+    text = guard.normalize_tags(llm.chat(system, messages, purpose=purpose, max_tokens=max_tokens))
     first = guard.check(text, kb, entries, quoted_refs)
     log = {"first_pass": first.to_dict(), "repaired": False, "scrubbed": False}
     if not first.ok:
         fix_msgs = messages + [{"role": "assistant", "content": text},
                                {"role": "user", "content": prompts.ADVISOR_FIX.format(violations=first.as_feedback())}]
-        text = llm.chat(system, fix_msgs, purpose=purpose + ":repair", max_tokens=max_tokens)
+        text = guard.normalize_tags(llm.chat(system, fix_msgs, purpose=purpose + ":repair", max_tokens=max_tokens))
         log["repaired"] = True
         second = guard.check(text, kb, entries, quoted_refs)
         log["second_pass"] = second.to_dict()
@@ -99,10 +99,13 @@ class Session:
         lang, lang_name = self.case.get("language", "en"), self.case.get("language_name", "English")
         facts = {k: computed[k] for k in ("today", "deadlines", "forum", "fee", "escalations", "evidence", "ladder")}
 
-        if category == "other" or not computed["in_scope"]:
+        if any(e["level"] == "refuse" for e in computed["escalations"]):
+            system = prompts.REFUSE.format(language_name=lang_name + script_hint(lang))
+        elif category == "other" or not computed["in_scope"]:
             system = prompts.OUT_OF_SCOPE.format(language_name=lang_name + script_hint(lang),
                                                  knowledge=self.kb.format_for_prompt(entries),
-                                                 escalations=json.dumps(computed["escalations"], ensure_ascii=False))
+                                                 escalations="\n".join(f"- {e['reason']} {e['action']}"
+                                                                         for e in computed["escalations"]) or "(none)")
         else:
             system = prompts.ADVISOR.format(language_name=lang_name, script_hint=script_hint(lang),
                                             max_words=380, knowledge=self.kb.format_for_prompt(entries),

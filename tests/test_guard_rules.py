@@ -206,3 +206,39 @@ def test_scrub_swallows_act_abbreviation():
 
 def test_case_law_does_not_flag_plain_prose():
     assert g("You vs. the company is a common situation; keep your invoice.").ok
+
+
+def test_forgery_is_refused_not_referred():
+    r = rules.compute({"category": "other", "red_flags": ["forgery_request"]}, TODAY)
+    levels = [e["level"] for e in r["escalations"]]
+    assert levels == ["refuse"]
+
+
+def test_cheque_bounce_warns_once():
+    case = {"category": "notice", "sub_type": "cheque bounce", "user_role": "notice recipient",
+            "dates": {"notice_received": "2026-11-15", "notice_deadline": "2026-11-30"}}
+    r = rules.compute(case, TODAY)
+    assert [e["flag"] for e in r["escalations"]] == ["cheque_bounce_against_user"]
+
+
+def test_builder_delay_never_declared_time_barred():
+    case = {"category": "consumer", "sub_type": "builder delay in possession", "dates": {"incident": "2023-12-01"},
+            "amounts": {"paid_value": 8_500_000}}
+    r = rules.compute(case, TODAY)
+    assert not any(e["flag"] == "time_barred" for e in r["escalations"])
+    assert any(e["flag"] == "limitation_unclear" for e in r["escalations"])
+    assert "State" in r["forum"]["forum"]
+
+
+def test_combined_tags_are_split_and_rendered():
+    text = guard.normalize_tags("Ask in writing [K:wages-relieving, K:notice-how-to-send].")
+    assert text == "Ask in writing [K:wages-relieving][K:notice-how-to-send]."
+    out, src = guard.render_citations("Do this [K:cpa-limitation, nch].", KB)
+    assert "[K:" not in out and len(src) == 2
+
+
+def test_court_summons_warns_once():
+    case = {"category": "notice", "sub_type": "court summons", "red_flags": ["court_summons"],
+            "dates": {"notice_deadline": "2026-12-05"}}
+    r = rules.compute(case, TODAY)
+    assert [e["flag"] for e in r["escalations"]] == ["court_summons"]

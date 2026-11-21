@@ -120,6 +120,15 @@ def allowed_refs(entries: list[Entry]) -> dict[str, set[str]]:
     return allowed
 
 
+_MULTI_TAG_RE = re.compile(r"\[K:\s*([a-z0-9\-]+(?:\s*[,;]\s*(?:K:)?\s*[a-z0-9\-]+)+)\s*\]")
+
+
+def normalize_tags(text: str) -> str:
+    """Models sometimes merge sources as [K:a, K:b]; split them so they are checked and rendered."""
+    return _MULTI_TAG_RE.sub(
+        lambda m: "".join(f"[K:{t}]" for t in re.split(r"\s*[,;]\s*(?:K:)?\s*", m.group(1).strip())), text)
+
+
 def check(text: str, kb: KnowledgeBase, entries: list[Entry],
           quoted_refs: list[tuple[str | None, str]] | None = None) -> GuardReport:
     """quoted_refs: (act_key or None, section) pairs that appear in the user's own document,
@@ -207,7 +216,7 @@ def render_citations(text: str, kb: KnowledgeBase) -> tuple[str, list[dict]]:
             order.append(kid)
         return f"<sup>[{order.index(kid) + 1}]</sup>"
 
-    out = TAG_RE.sub(sub, text)
+    out = TAG_RE.sub(sub, normalize_tags(text))
     sources = []
     for i, kid in enumerate(order, 1):
         e = entries[kid]

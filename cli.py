@@ -3,7 +3,7 @@
     python cli.py chat                                 # interactive conversation
     python cli.py ask "landlord not returning my deposit..."
     python cli.py notice path/to/notice.txt --lang Hindi
-    python cli.py chat --provider groq --model llama-3.3-70b-versatile
+    python cli.py chat --provider groq --model openai/gpt-oss-120b
 """
 from __future__ import annotations
 

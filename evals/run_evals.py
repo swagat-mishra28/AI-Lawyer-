@@ -2,7 +2,7 @@
 
     python -m evals.run_evals                         # all cases, default model from .env
     python -m evals.run_evals --only dep-hinglish     # one case
-    python -m evals.run_evals --provider groq --model llama-3.3-70b-versatile
+    python -m evals.run_evals --provider groq --model openai/gpt-oss-120b
 
 Writes outputs/<model>/<case>.json (full trace), <case>.md (readable), summary.md, summary.csv.
 Automatic checks are objective (category, language, escalation, deadline maths, forbidden patterns,
@@ -130,6 +130,7 @@ def main():
     ap.add_argument("--today", default="2026-11-21")
     ap.add_argument("--out", default=None)
     ap.add_argument("--pause", type=float, default=4.0, help="seconds between cases (free-tier rate limits)")
+    ap.add_argument("--resume", action="store_true", help="keep cases that already ran OK in the output folder")
     args = ap.parse_args()
 
     settings = llm_settings(args.provider, args.model)
@@ -145,6 +146,18 @@ def main():
     rows = []
     for c in cases:
         print(f"-> {c['id']}", flush=True)
+        prev = out_dir / f"{c['id']}.json"
+        if args.resume and prev.exists():
+            done = json.loads(prev.read_text(encoding="utf-8"))
+            if "error" not in done:
+                checks, g = done["checks"], done.get("guard", {})
+                rows.append({"id": c["id"], "title": c["title"], "passed": sum(checks.values()), "total": len(checks),
+                             "failed": ";".join(k for k, v in checks.items() if not v),
+                             "first_pass_violations": len(g.get("first_pass", {}).get("violations", [])) if g else "",
+                             "repaired": g.get("repaired", ""), "final_violations": g.get("final_violations", ""),
+                             "seconds": done.get("seconds", "")})
+                print("   (kept from earlier run)", flush=True)
+                continue
         n_before = len(llm.calls)
         t0 = time.time()
         try:
@@ -165,6 +178,9 @@ def main():
                      "repaired": g.get("repaired", ""), "final_violations": g.get("final_violations", ""),
                      "seconds": out["seconds"]})
         print(f"   {rows[-1]['passed']}/{rows[-1]['total']} {rows[-1]['failed']}", flush=True)
+        if "error" in out and ("per day" in out["error"].lower() or "429" in out["error"]):
+            print("   daily/rate quota exhausted - stopping; rerun later with --resume", flush=True)
+            break
         time.sleep(args.pause)
 
     with (out_dir / "summary.csv").open("w", newline="", encoding="utf-8") as f:

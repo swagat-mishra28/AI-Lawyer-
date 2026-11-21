@@ -17,6 +17,8 @@ CRORE = 10_000_000
 # Assumption (documented in README): above this value a person should at least consult a
 # lawyer before acting alone, even though self-representation is allowed.
 LAWYER_AMOUNT_THRESHOLD = 10 * LAKH
+# Ongoing wrongs where code must not compute a fixed limitation date.
+CONTINUING_WORDS = ("builder", "possession", "rera", "construction delay", "flat not handed", "project delay")
 
 RED_FLAG_RULES: dict[str, tuple[str, str, str]] = {
     # flag: (level, reason, action)
@@ -148,7 +150,14 @@ def compute(case: dict, today: dt.date | None = None) -> dict:
     # ---- deadlines
     if cat == "consumer":
         base = _d(dates.get("incident")) or _d(dates.get("complaint_to_company")) or _d(dates.get("purchase"))
-        if base:
+        about = " ".join(str(case.get(k) or "") for k in ("sub_type", "summary")).lower()
+        if any(w in about for w in CONTINUING_WORDS):
+            # Eval finding: an 85-lakh builder case was told it was time-barred. When possession is still not
+            # given, the problem is ongoing and the start of the 2 years is a question for a lawyer, not code.
+            out["escalations"].append({"flag": "limitation_unclear", "level": "lawyer_recommended",
+                                       "reason": "The problem is still continuing, so when the 2-year time limit starts is not straightforward.",
+                                       "action": "File without delay and ask a lawyer to confirm the time limit for your facts."})
+        elif base:
             out["deadlines"].append(_deadline("Last date to file a consumer complaint (2 years)", _add_years(base, 2), today,
                                               "cpa-limitation", "limitation", f"2 years from {base.isoformat()}"))
         out["forum"] = consumer_forum(paid)
@@ -205,15 +214,18 @@ def compute(case: dict, today: dt.date | None = None) -> dict:
         if d["kind"] == "limitation" and d["status"] == "passed":
             out["escalations"].append({"flag": "time_barred", "level": "lawyer_now",
                                        "reason": f"The usual time limit ({d['label'].lower()}) passed on {d['date']}.",
-                                       "action": "Only a court can excuse the delay - see a lawyer or DLSA (15100) quickly."})
-        elif d["kind"] == "response" and d["status"] in ("urgent", "passed"):
+                                       "action": "Only the court or Commission can excuse the delay, and you must show a good reason - see a lawyer or DLSA (15100) quickly."})
+        elif d["kind"] == "response" and d["status"] in ("urgent", "passed") \
+                and not any(e["flag"] == "deadline_close" for e in out["escalations"]):  # one warning is enough
             out["escalations"].append({"flag": "deadline_close", "level": "lawyer_now",
                                        "reason": f"{d['label']}: {d['date']} ({d['days_left']} days left).",
                                        "action": "Act now; get a lawyer's advice before the date."})
-    if not out["in_scope"]:
+    if not out["in_scope"] and "forgery_request" not in flags:
         out["escalations"].append({"flag": "out_of_scope", "level": "legal_aid",
                                    "reason": "This problem is outside what this assistant covers (deposits, consumer refunds, unpaid wages, notices).",
                                    "action": "Call NALSA legal aid 15100 or visit your District Legal Services Authority."})
+    if flags & {"cheque_bounce_against_user", "court_summons"}:   # already says "lawyer now" - don't repeat it
+        out["escalations"] = [e for e in out["escalations"] if e["flag"] != "deadline_close"]
     order = {"refuse": 0, "emergency": 1, "lawyer_now": 2, "lawyer_recommended": 3, "legal_aid": 4}
     out["escalations"].sort(key=lambda e: order.get(e["level"], 9))
 
