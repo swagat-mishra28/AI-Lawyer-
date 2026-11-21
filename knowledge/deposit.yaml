@@ -1,0 +1,106 @@
+topic: deposit
+title: Security deposit not returned by landlord
+covers: >
+  Residential tenants whose landlord has not returned the security deposit, or has made
+  unexplained deductions, after the tenant moved out.
+not_covered: >
+  Eviction cases, rent-increase disputes, commercial leases, property ownership disputes,
+  disputes where the tenant still owes large unpaid rent (needs a lawyer).
+
+checklist:
+  - item: Rent agreement (even unregistered / 11-month agreement)
+    keywords: [agreement, rent agreement, lease, contract, एग्रीमेंट, अनुबंध, karar]
+  - item: Proof the deposit was paid (bank transfer / UPI / receipt)
+    keywords: [upi, bank, transfer, receipt, payment, cheque, rasid, रसीद, gpay, phonepe, paytm, neft]
+  - item: Proof you moved out and handed over keys (date, message, handover note)
+    keywords: [key, handover, moved, vacate, khali, चाबी, photo, video, message]
+  - item: Messages where you asked for the deposit and the landlord's replies
+    keywords: [whatsapp, message, chat, sms, email, call recording, screenshot]
+  - item: Photos/videos of the flat's condition at move-out
+    keywords: [photo, video, picture, फोटो, condition]
+  - item: Rent receipts / proof that rent and bills were paid up to date
+    keywords: [rent receipt, electricity bill, bill, dues, paid rent, kiraya]
+
+ladder:
+  - Ask in writing (WhatsApp/email) for the deposit and an itemised list of any deductions with bills.
+  - Send a legal notice demanding refund within a deadline (usually 15 days).
+  - Try free pre-litigation settlement through the District Legal Services Authority / Lok Adalat.
+  - File a civil suit for recovery of money in the civil court with jurisdiction.
+
+entries:
+  - id: deposit-contract
+    title: The deposit is owed under the rent agreement
+    plain: >
+      A rent agreement is a contract. If it says the deposit is refundable when you vacate, the
+      landlord must return it, minus only deductions the agreement allows (such as unpaid rent,
+      unpaid bills, or damage beyond normal wear and tear). If the landlord breaks the contract,
+      you can claim the money and compensation for the loss caused.
+    refs: [{act: ICA1872, section: "73"}]
+    confidence: high
+    notice_basis: >
+      The security deposit was paid as a refundable sum under the rent agreement. Its retention
+      after my client vacated is a breach of contract, for which my client is entitled to
+      recover the amount with compensation under the Indian Contract Act, 1872.
+
+  - id: deposit-no-agreement
+    title: No written agreement?
+    plain: >
+      Even without a written agreement, proof of payment (bank transfer, UPI, receipt) and
+      messages acknowledging the deposit are strong evidence. Collect them before you act.
+    refs: []
+    confidence: high
+
+  - id: deposit-deductions
+    title: Deductions must be justified
+    plain: >
+      Ask the landlord for an itemised list of deductions with bills or photos. Vague claims
+      like "painting" or "maintenance" are weaker if the agreement does not mention them and you
+      have move-out photos showing the flat's condition.
+    refs: []
+    confidence: medium
+
+  - id: mta-deposit
+    title: Model Tenancy Act (only in states that adopted it)
+    plain: >
+      Under the Model Tenancy Act, 2021 the deposit for a home is capped at two months' rent and
+      must be refunded when the landlord takes back possession, after lawful deductions. This
+      applies only in states that have adopted the model law; most states still follow their
+      own rent control law, so check your state.
+    refs: [{act: MTA2021, section: "11"}]
+    confidence: medium
+
+  - id: deposit-civil-suit
+    title: Recovery suit in civil court
+    plain: >
+      If notice and settlement fail, you can file a civil suit for recovery of money in the
+      local civil court. For a written agreement there is a faster "summary suit" procedure.
+      Court fee and process vary by state - a lawyer or the free legal aid office can help draft it.
+    refs: [{act: CPC1908, section: null, order: "XXXVII"}]
+    confidence: medium
+
+  - id: deposit-limitation
+    title: Time limit - generally three years
+    plain: >
+      A suit to recover money is generally to be filed within three years from when the money
+      became payable (usually the date you handed back possession). Do not wait - evidence and
+      memories fade.
+    refs: [{act: LA1963, section: null}]
+    confidence: medium
+
+  - id: deposit-not-police
+    title: Is this a police matter?
+    plain: >
+      Non-return of a deposit is usually treated as a civil (money) dispute, not a crime. Police
+      generally will not recover a deposit for you. Threatening a criminal case without basis
+      can backfire; use notice, settlement and civil remedies.
+    refs: []
+    confidence: high
+
+  - id: deposit-not-consumer
+    title: Not usually a consumer case
+    plain: >
+      A tenant-landlord deposit dispute is generally not filed before a Consumer Commission;
+      the usual route is notice, Lok Adalat / mediation, then civil court. (Rentals arranged
+      through a company or platform may be different - ask a lawyer.)
+    refs: []
+    confidence: medium

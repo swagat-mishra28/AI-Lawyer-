@@ -1,0 +1,163 @@
+topic: consumer
+title: Refunds, defective products and bad service (consumer disputes)
+covers: >
+  Online/offline purchases, refunds that never came, defective goods, deficient services
+  (courier, telecom, airline, coaching, repair, insurance claim handling), e-commerce
+  sellers and platforms.
+not_covered: >
+  Disputes between two businesses, purchases made for resale/commercial purpose, medical
+  negligence claims (needs a lawyer), builder/flat-delay claims above a few lakh (covered
+  only at a high level - see RERA entry).
+
+# Evidence checklist. `keywords` are matched (case-insensitive) against the evidence the
+# person says they have, so the case file can show what is missing.
+checklist:
+  - item: Invoice / order confirmation / receipt
+    keywords: [invoice, bill, receipt, order, confirmation, रसीद, बिल]
+  - item: Proof of payment (UPI / card / bank statement)
+    keywords: [upi, payment, bank, statement, card, transaction, paytm, gpay, phonepe, भुगतान]
+  - item: Complaint to the company and their reply (emails, chats, ticket numbers)
+    keywords: [email, mail, chat, ticket, complaint, whatsapp, screenshot, reply]
+  - item: Photos / videos of the defect or problem
+    keywords: [photo, video, picture, image, फोटो]
+  - item: Warranty card / terms promised at sale
+    keywords: [warranty, guarantee, terms, वारंटी]
+
+ladder:
+  - Write to the company's customer care / grievance officer and keep the ticket number.
+  - Register a free complaint with the National Consumer Helpline (pre-litigation mediation).
+  - Send a written demand / legal notice giving a clear deadline (usually 15 days).
+  - File a complaint before the District Consumer Commission (online filing possible; no lawyer needed).
+
+entries:
+  - id: cpa-consumer-definition
+    title: Who is a "consumer"
+    plain: >
+      You are a consumer if you bought goods or hired a service for a price for your own use,
+      including online purchases. You are NOT a consumer if you bought it to resell or for a
+      commercial purpose (self-employment use is still allowed).
+    refs: [{act: CPA2019, section: "2(7)"}]
+    confidence: high
+
+  - id: cpa-deficiency
+    title: Deficiency in service and defects
+    plain: >
+      Any fault, shortcoming or inadequacy in the quality or manner of a service you paid for
+      is a "deficiency in service"; a defect in goods covers faults in quality, quantity or
+      standard. Not refunding as promised can amount to a deficiency or an unfair trade practice.
+    refs: [{act: CPA2019, section: "2(11)"}, {act: CPA2019, section: "2(10)"}, {act: CPA2019, section: "2(47)"}]
+    confidence: high
+    notice_basis: >
+      Your failure to refund / rectify constitutes a deficiency in service and an unfair trade
+      practice within the meaning of the Consumer Protection Act, 2019.
+
+  - id: cpa-where-to-file
+    title: Where to file - District Commission and place
+    plain: >
+      Complaints are filed before a Consumer Commission. You can file in the district where you
+      live or work, or where the company does business, or where the problem arose - you do not
+      have to go to the company's city.
+    refs: [{act: CPA2019, section: "34"}, {act: CPA2019, section: "35"}]
+    confidence: high
+
+  - id: cpa-pecuniary
+    title: Which level of Commission (by value paid)
+    plain: >
+      The level depends on the value of goods/services PAID as consideration (not on the
+      compensation you claim): up to Rs 50 lakh - District Commission; above Rs 50 lakh up to
+      Rs 2 crore - State Commission; above Rs 2 crore - National Commission.
+    refs: [{act: CPA_PJ2021, section: null}]
+    confidence: high
+
+  - id: cpa-fee
+    title: Filing fee
+    plain: >
+      No fee for complaints where the value paid is up to Rs 5 lakh. Small fees apply above that
+      (for example Rs 200 for Rs 5-10 lakh). Check the current fee on the filing portal.
+    refs: []
+    confidence: medium
+
+  - id: cpa-efiling
+    title: Filing online, without a lawyer
+    plain: >
+      Complaints can be filed electronically through the Department of Consumer Affairs portal
+      (e-Jagriti, which took over from e-Daakhil). You may argue your own case; a lawyer is not
+      compulsory.
+    refs: [{act: CPA2019, section: "35"}]
+    confidence: medium
+
+  - id: cpa-limitation
+    title: Time limit - two years
+    plain: >
+      A consumer complaint must be filed within 2 years from the date the problem (cause of
+      action) arose. Late complaints are accepted only if the Commission is satisfied there was
+      sufficient cause for the delay.
+    refs: [{act: CPA2019, section: "69"}]
+    confidence: high
+
+  - id: cpa-reliefs
+    title: What the Commission can order
+    plain: >
+      The Commission can order a refund, replacement or repair, removal of the defect,
+      compensation for loss or injury, and litigation costs.
+    refs: [{act: CPA2019, section: "39"}]
+    confidence: high
+    notice_basis: >
+      My client is entitled to a refund along with compensation and costs, which the Consumer
+      Commission is empowered to award under the Consumer Protection Act, 2019.
+
+  - id: cpa-timeline
+    title: How long it takes
+    plain: >
+      The law asks Commissions to try to decide within 3 months (5 months if lab testing is
+      needed). In practice many cases take much longer - often a year or more.
+    refs: [{act: CPA2019, section: "38"}]
+    confidence: medium
+
+  - id: cpa-mediation
+    title: Mediation
+    plain: >
+      The Commission can refer the dispute to mediation if both sides agree; a settlement there
+      is final and there is no appeal against it.
+    refs: [{act: CPA2019, section: "37"}]
+    confidence: high
+
+  - id: nch
+    title: National Consumer Helpline (free, pre-litigation)
+    plain: >
+      You can register a free complaint with the National Consumer Helpline: call 1915 or
+      1800-11-4000, WhatsApp 8800001915, or online at consumerhelpline.gov.in. It forwards
+      the complaint to the company; many refund disputes are resolved here without a case.
+    refs: []
+    confidence: high
+
+  - id: ecom-grievance
+    title: E-commerce grievance officer
+    plain: >
+      E-commerce platforms must have a grievance officer whose details are on the website/app.
+      The officer must acknowledge a complaint within 48 hours and resolve it within one month.
+    refs: [{act: CPA_ECOM2020, section: null, rule: "4"}]
+    confidence: medium
+    notice_basis: >
+      Despite the obligation on e-commerce entities to redress grievances within one month under
+      the Consumer Protection (E-Commerce) Rules, 2020, my client's grievance remains unresolved.
+
+  - id: plas-utilities
+    title: Permanent Lok Adalat for public utility services
+    plain: >
+      For disputes with public utility services (transport, postal/telegraph/telephone,
+      electricity, water, hospitals, insurance, banking) you can also approach the Permanent
+      Lok Adalat, a free and quick forum, before going to court.
+    refs: [{act: LSA1987, section: "22B"}, {act: LSA1987, section: "22C"}]
+    confidence: high
+    triggers: [bank, insurance, electricity, bijli, telecom, airtel, jio, hospital, water, courier, post]
+
+  - id: rera-note
+    title: Builder / flat delays (only a pointer)
+    plain: >
+      Delays in handing over a flat by a builder can be taken to the state RERA authority, and
+      sometimes to a Consumer Commission. These cases usually involve large amounts and complex
+      agreements - talk to a lawyer. This assistant only covers them at a high level.
+    refs: [{act: RERA2016, section: null}]
+    confidence: high
+    triggers: [builder, flat, apartment, possession, rera, project, developer]

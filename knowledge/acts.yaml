@@ -1,0 +1,121 @@
+# Registry of every statute the assistant is ALLOWED to name.
+# The citation guard (nyaya/guard.py) uses `aliases` to recognise an Act in model output.
+# If the model names an Act that is not here, or a section of a listed Act that no
+# retrieved knowledge entry backs, the guard treats it as unverified and removes it.
+#
+# `status` lets us handle repealed laws honestly (e.g. IPC -> BNS from 1 July 2024).
+
+CPA2019:
+  name: Consumer Protection Act, 2019
+  aliases: ["Consumer Protection Act", "CPA 2019", "CPA, 2019", "उपभोक्ता संरक्षण अधिनियम", "Consumer Protection Act 2019"]
+  url: https://www.indiacode.nic.in/handle/123456789/15256
+  status: in_force
+
+CPA_ECOM2020:
+  name: Consumer Protection (E-Commerce) Rules, 2020
+  aliases: ["E-Commerce Rules", "E-commerce Rules", "Consumer Protection (E-Commerce) Rules"]
+  url: https://consumeraffairs.nic.in/acts-and-rules/consumer-protection
+  status: in_force
+
+CPA_PJ2021:
+  name: Consumer Protection (Jurisdiction of the District Commission, the State Commission and the National Commission) Rules, 2021
+  aliases: ["Jurisdiction Rules", "pecuniary jurisdiction rules"]
+  url: https://consumeraffairs.nic.in/acts-and-rules/consumer-protection
+  status: in_force
+
+CW2019:
+  name: Code on Wages, 2019
+  aliases: ["Code on Wages", "Wage Code", "वेतन संहिता"]
+  url: https://www.indiacode.nic.in/handle/123456789/15793
+  status: in_force
+  note: The four Labour Codes were brought into force from 21 November 2025; state rules and transition arrangements vary.
+
+PWA1936:
+  name: Payment of Wages Act, 1936
+  aliases: ["Payment of Wages Act", "वेतन भुगतान अधिनियम"]
+  url: https://www.indiacode.nic.in/handle/123456789/2276
+  status: repealed
+  note: Subsumed into the Code on Wages, 2019.
+
+NIA1881:
+  name: Negotiable Instruments Act, 1881
+  aliases: ["Negotiable Instruments Act", "NI Act", "N.I. Act", "परक्राम्य लिखत अधिनियम", "एनआई एक्ट"]
+  url: https://www.indiacode.nic.in/handle/123456789/2189
+  status: in_force
+
+ICA1872:
+  name: Indian Contract Act, 1872
+  aliases: ["Indian Contract Act", "Contract Act", "भारतीय संविदा अधिनियम"]
+  url: https://www.indiacode.nic.in/handle/123456789/2187
+  status: in_force
+
+LA1963:
+  name: Limitation Act, 1963
+  aliases: ["Limitation Act", "परिसीमा अधिनियम"]
+  url: https://www.indiacode.nic.in/handle/123456789/1565
+  status: in_force
+
+CPC1908:
+  name: Code of Civil Procedure, 1908
+  aliases: ["Code of Civil Procedure", "CPC", "सिविल प्रक्रिया संहिता"]
+  url: https://www.indiacode.nic.in/handle/123456789/2191
+  status: in_force
+
+LSA1987:
+  name: Legal Services Authorities Act, 1987
+  aliases: ["Legal Services Authorities Act", "विधिक सेवा प्राधिकरण अधिनियम"]
+  url: https://www.indiacode.nic.in/handle/123456789/1925
+  status: in_force
+
+MTA2021:
+  name: Model Tenancy Act, 2021
+  aliases: ["Model Tenancy Act", "आदर्श किरायेदारी अधिनियम"]
+  url: https://mohua.gov.in/upload/whatsnew/60c0a5ee2b2ccMTA.pdf
+  status: model_law
+  note: A model law. It binds only in states that have adopted it in some form; most states still apply their own rent control law.
+
+RERA2016:
+  name: Real Estate (Regulation and Development) Act, 2016
+  aliases: ["RERA", "Real Estate (Regulation and Development) Act", "Real Estate Act"]
+  url: https://www.indiacode.nic.in/handle/123456789/2158
+  status: in_force
+
+BNS2023:
+  name: Bharatiya Nyaya Sanhita, 2023
+  aliases: ["Bharatiya Nyaya Sanhita", "BNS", "भारतीय न्याय संहिता", "बीएनएस"]
+  url: https://www.indiacode.nic.in/handle/123456789/20062
+  status: in_force
+  note: Replaced the Indian Penal Code from 1 July 2024.
+
+BNSS2023:
+  name: Bharatiya Nagarik Suraksha Sanhita, 2023
+  aliases: ["Bharatiya Nagarik Suraksha Sanhita", "BNSS", "भारतीय नागरिक सुरक्षा संहिता"]
+  url: https://www.indiacode.nic.in/handle/123456789/20099
+  status: in_force
+  note: Replaced the Code of Criminal Procedure, 1973 from 1 July 2024.
+
+IPC1860:
+  name: Indian Penal Code, 1860
+  aliases: ["Indian Penal Code", "IPC", "भारतीय दंड संहिता", "आईपीसी"]
+  url: https://www.indiacode.nic.in/handle/123456789/2263
+  status: repealed
+  note: Replaced by the Bharatiya Nyaya Sanhita, 2023 from 1 July 2024. Offences committed before that date may still be tried under the IPC.
+
+CRPC1973:
+  name: Code of Criminal Procedure, 1973
+  aliases: ["Code of Criminal Procedure", "CrPC", "Cr.P.C."]
+  url: https://www.indiacode.nic.in/handle/123456789/1611
+  status: repealed
+  note: Replaced by the BNSS from 1 July 2024.
+
+POSH2013:
+  name: Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013
+  aliases: ["POSH Act", "Sexual Harassment of Women at Workplace"]
+  url: https://www.indiacode.nic.in/handle/123456789/2104
+  status: in_force
+
+PWDVA2005:
+  name: Protection of Women from Domestic Violence Act, 2005
+  aliases: ["Domestic Violence Act", "PWDVA", "घरेलू हिंसा"]
+  url: https://www.indiacode.nic.in/handle/123456789/2021
+  status: in_force

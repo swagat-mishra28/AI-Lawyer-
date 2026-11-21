@@ -1,0 +1,93 @@
+topic: notice
+title: Understanding a notice you received
+covers: >
+  Legal (demand) notices from a lawyer, cheque-bounce notices, eviction / vacate notices,
+  and recognising court summons and police notices (which are always escalated to a lawyer).
+not_covered: >
+  Drafting a reply to a court or police document, tax notices, government show-cause notices
+  (pointers only - lawyer needed).
+
+checklist:
+  - item: The full notice (all pages) and the envelope / proof of the date you received it
+    keywords: [notice, envelope, received, page, नोटिस, copy]
+  - item: Any agreement, cheque, invoice or document the notice refers to
+    keywords: [agreement, cheque, invoice, loan, contract, bill]
+  - item: Your own record of payments or messages relating to the dispute
+    keywords: [payment, upi, bank, message, whatsapp, email, receipt]
+
+ladder:
+  - Do not panic and do not ignore it. Note the date you received it and any deadline.
+  - Understand who sent it, what they demand and by when.
+  - Collect your documents; if the claim is wrong, a calm written reply (often via a lawyer) helps.
+  - If it is a court summons, police notice or cheque-bounce notice against you, contact a lawyer or legal aid (15100) now.
+
+entries:
+  - id: notice-legal-what
+    title: What a legal notice is (and is not)
+    plain: >
+      A legal notice is a formal letter, usually from a lawyer, stating a claim and demanding
+      something by a deadline. It is NOT a court order and does not by itself make you liable.
+      You are not legally forced to reply to most notices, but a short, factual reply keeps a
+      record of your side and is often wise. Never admit things you dispute.
+    refs: []
+    confidence: high
+
+  - id: notice-self-send
+    title: You can send a notice yourself
+    plain: >
+      There is no rule that only a lawyer can send a legal notice. Send it by Speed Post or
+      Registered Post with acknowledgement and keep the receipt and tracking proof; also send a
+      copy by email/WhatsApp if you have one.
+    refs: []
+    confidence: high
+
+  - id: nia-138
+    title: Cheque bounce notice
+    plain: >
+      If a cheque you gave bounced for insufficient funds, the person you paid can send you a
+      demand notice within 30 days of learning about the bounce. You then have 15 days from
+      receiving the notice to pay the cheque amount. If you do not pay, they can file a criminal
+      complaint within one month after those 15 days. Punishment can be up to two years in
+      prison, a fine up to twice the cheque amount, or both. Paying within 15 days generally
+      ends the matter. This is serious - speak to a lawyer quickly.
+    refs: [{act: NIA1881, section: "138"}, {act: NIA1881, section: "142"}]
+    confidence: high
+    triggers: [cheque, check bounce, bounce, dishonour, dishonor, 138, चेक]
+
+  - id: nia-compound
+    title: Cheque bounce cases can be settled
+    plain: >
+      Cheque bounce offences can be settled (compounded) between the parties, even after a
+      case is filed, usually by paying the amount.
+    refs: [{act: NIA1881, section: "147"}]
+    confidence: high
+    triggers: [cheque, bounce, 138, चेक]
+
+  - id: court-summons
+    title: Court summons - never ignore
+    plain: >
+      A summons is issued by a court and tells you to appear (or file a reply) on a date. If you
+      ignore it, the court can decide against you without hearing you, and in criminal cases can
+      issue a warrant. Contact a lawyer or free legal aid (15100) before the date.
+    refs: []
+    confidence: high
+
+  - id: police-notice
+    title: Police notice to appear
+    plain: >
+      Police can issue a notice asking you to appear for questioning. Comply with it, and talk
+      to a lawyer before you go. You can get free legal aid by calling 15100.
+    refs: [{act: BNSS2023, section: "35"}]
+    confidence: medium
+    triggers: [police, fir, thana, 41a, 41-a, पुलिस, summon]
+
+  - id: eviction-due-process
+    title: Eviction needs due process
+    plain: >
+      A landlord generally cannot throw you out by force, lock you out, or cut water/electricity
+      to make you leave; eviction has to follow the procedure in your state's rent law (through
+      the rent authority or court). A vacate notice is the start of that process, not an order
+      you must obey that day. Speak to a lawyer if eviction is threatened.
+    refs: []
+    confidence: medium
+    triggers: [evict, vacate, khali, lock, बेदखल, खाली]

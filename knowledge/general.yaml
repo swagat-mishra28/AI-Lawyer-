@@ -1,0 +1,77 @@
+topic: general
+title: Help that applies to every problem
+entries:
+  - id: legal-aid
+    title: Free legal aid
+    plain: >
+      Many people are entitled to a free lawyer from the Legal Services Authority: women and
+      children, members of Scheduled Castes/Tribes, persons with disabilities, industrial
+      workmen, victims of disaster or trafficking, people in custody, and people whose annual
+      income is below the limit set by their state. Call the NALSA helpline 15100 or visit the
+      District Legal Services Authority (DLSA) at your district court.
+    refs: [{act: LSA1987, section: "12"}]
+    confidence: high
+    always: true
+
+  - id: lok-adalat
+    title: Lok Adalat (settlement, free)
+    plain: >
+      Lok Adalats settle disputes by agreement, including before any case is filed
+      (pre-litigation). There is no fee, and a settlement there is final and binding like a
+      court decree. Ask the District Legal Services Authority.
+    refs: [{act: LSA1987, section: "19"}, {act: LSA1987, section: "21"}]
+    confidence: high
+    triggers: [settle, settlement, lok adalat, compromise, समझौता]
+
+  - id: notice-how-to-send
+    title: How to send a notice safely
+    plain: >
+      Send any notice or complaint by Speed Post / Registered Post with acknowledgement, keep the
+      postal receipt and tracking, and also email or WhatsApp a copy. Keep copies of everything
+      you send and receive.
+    refs: []
+    confidence: high
+    always: true
+
+  - id: ipc-bns
+    title: IPC has been replaced by BNS
+    plain: >
+      Since 1 July 2024 the Indian Penal Code has been replaced by the Bharatiya Nyaya Sanhita
+      (BNS). For example, cheating (old IPC Section 420) is now BNS Section 318, and criminal
+      breach of trust (old IPC Section 406) is now BNS Section 316. Whether a criminal case is
+      appropriate is a decision for a lawyer; most money disputes are civil.
+    refs:
+      - {act: BNS2023, section: "318"}
+      - {act: BNS2023, section: "316"}
+      - {act: IPC1860, section: "420"}
+      - {act: IPC1860, section: "406"}
+    confidence: high
+    triggers: [420, 406, ipc, cheat, fraud, dhokha, धोखा, criminal, fir, police, bns, breach of trust]
+
+  - id: emergency
+    title: Emergency and specialist helplines
+    plain: >
+      If you are in danger call 112. Women's helpline: 181. Child helpline: 1098. Online
+      financial fraud: call 1930 immediately and report at cybercrime.gov.in.
+    refs: []
+    confidence: high
+    triggers: [danger, threat, beat, hit, violence, maar, मार, धमकी, fraud, scam, otp, cyber, child, suicide]
+
+  - id: dv-pointer
+    title: Domestic violence
+    plain: >
+      Women facing domestic violence can seek protection orders, residence and maintenance
+      through a Protection Officer or the magistrate. Call 181 or 112 if in danger; free legal
+      aid via 15100. This assistant does not handle these cases - please get human help.
+    refs: [{act: PWDVA2005, section: null}]
+    confidence: high
+    triggers: [husband, in-laws, sasural, dowry, dahej, domestic, ससुराल, दहेज, पति]
+
+  - id: no-case-law
+    title: Why no court judgments are quoted
+    plain: >
+      This assistant does not quote court judgments or case names, because AI models often
+      invent them. A lawyer can find judgments relevant to your exact facts.
+    refs: []
+    confidence: high
+    triggers: [judgment, judgement, case law, precedent, supreme court, high court, citation, फैसला]

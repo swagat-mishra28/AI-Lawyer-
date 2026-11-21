@@ -1,0 +1,99 @@
+topic: wages
+title: Salary or wages not paid
+covers: >
+  Employees and workers whose salary/wages stopped, were delayed, were not paid after
+  resignation or termination (full & final settlement), or had unexplained deductions.
+not_covered: >
+  Wrongful termination / reinstatement claims, PF/ESI/gratuity disputes (only pointers),
+  government employees' service matters, sexual harassment at work (routed to POSH Internal
+  Committee and a lawyer).
+
+checklist:
+  - item: Offer / appointment letter or any proof of employment (ID card, emails)
+    keywords: [offer, appointment, letter, id card, joining, contract, नियुक्ति]
+  - item: Salary slips or bank statements showing past salary credits
+    keywords: [salary slip, payslip, bank, statement, credit, slip, वेतन पर्ची]
+  - item: Attendance records / timesheets / work messages for the unpaid period
+    keywords: [attendance, timesheet, register, biometric, hajiri, हाजिरी, work message]
+  - item: Resignation / termination letter and relieving / experience letter
+    keywords: [resignation, termination, relieving, experience, इस्तीफा]
+  - item: Messages or emails where you asked for salary and their replies
+    keywords: [email, mail, whatsapp, message, chat, hr, screenshot]
+
+ladder:
+  - Ask HR / employer in writing for the unpaid salary with dates and amount.
+  - Send a legal notice demanding payment within a deadline (usually 15 days).
+  - File a claim / complaint with the state Labour Department (Labour Commissioner / Inspector-cum-Facilitator office).
+  - For senior/managerial staff, or very large amounts, a civil suit or other remedies with a lawyer.
+
+entries:
+  - id: cw-in-force
+    title: Which law applies now
+    plain: >
+      The Code on Wages, 2019 came into force on 21 November 2025 and replaced older laws such
+      as the Payment of Wages Act, 1936. State rules and transition arrangements differ, so the
+      local Labour Department office can confirm the exact procedure in your state.
+    refs: [{act: CW2019, section: null}, {act: PWA1936, section: null}]
+    confidence: medium
+
+  - id: cw-timely-payment
+    title: Deadlines for paying wages
+    plain: >
+      Monthly wages must be paid before the 7th day of the next month. If you resigned, were
+      dismissed, removed or retrenched, the wages due must be paid within two working days.
+    refs: [{act: CW2019, section: "17"}]
+    confidence: medium
+    notice_basis: >
+      Wages due to an employee who has resigned or been removed are payable within two working
+      days, and monthly wages before the seventh day of the following month, under the Code on
+      Wages, 2019. These deadlines have long passed.
+
+  - id: cw-deductions
+    title: Only authorised deductions
+    plain: >
+      Your employer can deduct only the kinds of amounts the law allows (such as taxes, fines
+      imposed with due process, recovery of advances, or for absence). Unexplained deductions
+      can be challenged.
+    refs: [{act: CW2019, section: "18"}]
+    confidence: medium
+
+  - id: cw-claims
+    title: Filing a claim with the labour authority
+    plain: >
+      Claims for unpaid or delayed wages can be filed before the authority appointed under the
+      Code on Wages (through the state Labour Department). The claim should generally be filed
+      within three years of the date it arose. The authority can order payment of the wages
+      and compensation.
+    refs: [{act: CW2019, section: "45"}]
+    confidence: medium
+
+  - id: wages-contract
+    title: Salary is also a contractual debt
+    plain: >
+      Your appointment letter is a contract. Unpaid salary is a debt the employer owes you, and
+      you can recover it through a civil suit with compensation for breach - this matters
+      especially for managerial staff who may fall outside some labour protections.
+    refs: [{act: ICA1872, section: "73"}]
+    confidence: high
+    notice_basis: >
+      Non-payment of agreed salary is a breach of the contract of employment, entitling my
+      client to recover the amount with compensation under the Indian Contract Act, 1872.
+
+  - id: wages-relieving
+    title: Relieving letter and documents
+    plain: >
+      Ask for the relieving and experience letters and full & final settlement in writing. Keep
+      every message - a written trail is the strongest evidence in a wage claim.
+    refs: []
+    confidence: high
+
+  - id: posh-pointer
+    title: Sexual harassment at work
+    plain: >
+      Sexual harassment at the workplace should be reported to the employer's Internal
+      Committee (or the Local Committee of the district if the employer has fewer than 10
+      workers). Please speak to a lawyer or the free legal aid helpline 15100; this assistant
+      does not handle these cases.
+    refs: [{act: POSH2013, section: null}]
+    confidence: high
+    triggers: [harass, sexual, posh, touch, molest, उत्पीड़न]
