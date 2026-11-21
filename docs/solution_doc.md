@@ -1,6 +1,6 @@
 # Nyaya Saathi: an honest AI legal helper for everyday problems in India
 
-<p class="sub">Kuku AI Generalist Assignment · Problem 2 (AI Lawyer) · Prototype: [GITHUB_URL] · Live app: [APP_URL] · Video: [VIDEO_URL]</p>
+<p class="sub">Kuku AI Generalist Assignment · Problem 2 (AI Lawyer) · Code: [github.com/swagat-mishra28/AI-Lawyer-](https://github.com/swagat-mishra28/AI-Lawyer-) · Live app: [APP_URL] · Video: [VIDEO_URL]</p>
 
 ## The problem I picked, and why
 
