@@ -112,3 +112,12 @@ def test_llm_falls_back_on_daily_quota(monkeypatch):
     monkeypatch.setattr(LLM, "_openai_compat", fake)
     assert llm.chat("s", [{"role": "user", "content": "hi"}]) == "ok"
     assert seen == ["big", "lite"] and llm.label == "gemini:lite" and len(llm.switches) == 1
+
+
+def test_provider_inferred_from_model_name(monkeypatch):
+    from nyaya.config import llm_settings
+    monkeypatch.delenv("LLM_PROVIDER", raising=False)
+    monkeypatch.delenv("LLM_MODEL", raising=False)
+    monkeypatch.setenv("GROQ_API_KEY", "x")
+    assert llm_settings(model="gemini-3.5-flash-lite").provider == "gemini"
+    assert llm_settings(model="openai/gpt-oss-20b").provider == "groq"

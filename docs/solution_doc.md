@@ -65,7 +65,7 @@ models with the same code**. All raw outputs are in the repo, unedited, with a h
 |---|---|---|
 | Gemini 3.5 Flash-Lite | 110/111 | 3 → **0** |
 | Groq gpt-oss-120b | 108/111 | 3 → **0** |
-| Affected cases re-run after fixes (Flash-Lite) | 35/37 | 0 → **0** |
+| 9 affected cases re-run after fixes (Flash-Lite) | 40/42 | 0 → **0** |
 
 **Reading every reply found problems the checks missed, and I fixed them in code, not with prompts.**
 

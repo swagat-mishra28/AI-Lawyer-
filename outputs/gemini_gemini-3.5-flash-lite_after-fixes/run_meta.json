@@ -3,11 +3,12 @@
  "today": "2026-11-21",
  "usage": {
   "model": "gemini:gemini-3.5-flash-lite",
+  "provider_switches": [],
   "calls": 4,
   "failed_attempts": 0,
-  "input_tokens": 4893,
-  "output_tokens": 1531,
-  "seconds": 22.5
+  "input_tokens": 3349,
+  "output_tokens": 1245,
+  "seconds": 10.7
  },
- "run_at": "2026-11-21T20:19:26"
+ "run_at": "2026-11-21T20:43:43"
 }

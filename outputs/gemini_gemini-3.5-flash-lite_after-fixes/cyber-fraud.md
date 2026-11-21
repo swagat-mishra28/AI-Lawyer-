@@ -4,38 +4,21 @@
 > Kal kisi ne bank KYC update ke naam pe link bheja, maine OTP daala aur mere account se 25,000 kat gaye. Ab kya karun?
 
 ## Turn 1 - Nyaya Saathi (unedited)
-**Emergency Action Required**
-Yeh online financial fraud hai aur time bohot zaroori hai! Turant 1930 par call karo aur cybercrime.gov.in par report karo. Apne bank ko bhi abhi call karke account aur card ko block/freeze karwao [K:emergency].
+This sounds like online financial fraud, which is time-critical. Call 1930 immediately and report at cybercrime.gov.in; also inform your bank [K:emergency].
 
-**What I understood**
-Kal ek fake KYC link par OTP daalne ki wajah se aapke account se 25,000 rupaye nikal gaye hain.
+Aapka yeh problem uske bahar hai jo main cover karta hoon (landlord deposit, consumer refund, unpaid salary, ya legal notice). Main is mamle mein law ka guess nahi kar sakta. 
 
-**Where you stand**
-Aap online financial fraud aur banking service ki problem ke shikar hain. Agar aapne bank se service li hai aur wahan koi deficiency (kami) hui hai, toh aap Consumer Commission ja sakte hain [K:cpa-consumer-definition][K:cpa-deficiency]. Consumer complaint ke liye aapke paas 2 saal ka time hota hai [K:cpa-limitation], par cyber fraud mein ghante bohot keemti hote hain, isliye turant action lena hoga.
-
-**What you can do now**
-1. Turant 1930 par call karein aur cybercrime.gov.in par fraud register karein [K:emergency].
-2. Apne bank ki helpline par call karke unauthorized transaction ki written complaint darj karein.
-3. National Consumer Helpline (NCH) par 1915 par call karein ya consumerhelpline.gov.in par online complaint daalein [K:nch].
-4. Agar bank ya company se baat na bane, toh District Consumer Commission mein online complaint file kar sakte hain (ismein lawyer zaroori nahi hai) [K:cpa-efiling][K:cpa-where-to-file].
-
-**What I still need from you**
-1. Kya aapne 1930 aur apne bank ko inform kar diya hai?
-2. Kya aapke paas transaction ka SMS ya screenshot hai?
-3. Kya bank ki taraf se koi written reply aaya hai?
-
-**When to get a real lawyer**
-Agar bank ya cyber cell se paise wapas milne mein rukaawat aaye aur formal court case ya consumer complaint file karni pade, tab ek consumer ya banking lawyer ki madad lein.
+Real help ke liye, aap NALSA legal aid helpline 15100 par call kar sakte hain ya apne district court mein District Legal Services Authority (DLSA) ja sakte hain [K:legal-aid]. Aap Lok Adalat ki bhi madad le sakte hain jo dispute settlement ke liye free forum hai [K:lok-adalat]. Agar kisi public utility service se judi baat ho, toh aap Permanent Lok Adalat bhi ja sakte hain [K:plas-utilities]. Apni sabhi shikayat ya documents ke records sambhal kar rakhein [K:notice-how-to-send].
 
 ## Case file (intake)
 ```json
 {
  "language": "hinglish",
  "language_name": "Hinglish",
- "category": "consumer",
- "sub_type": "cyber fraud / unauthorized bank transaction",
- "summary": "The user received a phishing link for a bank KYC update yesterday, entered their OTP, and had Rs 25,000 unauthorizedly deducted from their account.",
- "user_role": "buyer",
+ "category": "other",
+ "sub_type": "cyber fraud",
+ "summary": "The user received a fake bank KYC update link yesterday, entered an OTP, and had 25,000 rupees deducted from their account.",
+ "user_role": "other",
  "other_party": {
   "name": null,
   "type": "bank"
@@ -63,7 +46,7 @@ Agar bank ya cyber cell se paise wapas milne mein rukaawat aaye aur formal court
  "timeline": [
   {
    "date": "2026-11-20",
-   "event": "User clicked KYC update link, shared OTP, and lost Rs 25,000 from their account."
+   "event": "User received KYC link, entered OTP, and 25000 was deducted from account"
   }
  ],
  "evidence_have": [],
@@ -71,10 +54,10 @@ Agar bank ya cyber cell se paise wapas milne mein rukaawat aaye aur formal court
  "red_flags": [
   "cyber_fraud"
  ],
- "user_goal": "Recover the lost money or take action regarding the fraudulent transaction.",
+ "user_goal": "Get help regarding the fraudulent money deduction from their bank account",
  "open_questions": [
-  "Have you reported this fraud to your bank and the national cyber crime helpline (1930)?",
-  "Do you have the transaction message or screenshot of the deduction?"
+  "Have you reported this fraud to your bank and blocked your account/debit card?",
+  "Have you filed a complaint on the National Cyber Crime portal (cybercrime.gov.in) or called 1930?"
  ]
 }
 ```
@@ -82,33 +65,21 @@ Agar bank ya cyber cell se paise wapas milne mein rukaawat aaye aur formal court
 ## Computed by code
 ```json
 {
- "deadlines": [
-  {
-   "label": "Last date to file a consumer complaint (2 years)",
-   "date": "2028-11-20",
-   "days_left": 730,
-   "status": "ok",
-   "kb": "cpa-limitation",
-   "kind": "limitation",
-   "basis": "2 years from 2026-11-20"
-  }
- ],
- "forum": {
-  "forum": "District Consumer Disputes Redressal Commission",
-  "basis_value": 25000.0,
-  "kb": "cpa-pecuniary"
- },
- "fee": {
-  "fee_inr": 0,
-  "kb": "cpa-fee",
-  "note": "verify on the filing portal"
- },
+ "deadlines": [],
+ "forum": null,
+ "fee": null,
  "escalations": [
   {
    "flag": "cyber_fraud",
    "level": "emergency",
    "reason": "This sounds like online financial fraud, which is time-critical.",
    "action": "Call 1930 immediately and report at cybercrime.gov.in; also inform your bank."
+  },
+  {
+   "flag": "out_of_scope",
+   "level": "legal_aid",
+   "reason": "This problem is outside what this assistant covers (deposits, consumer refunds, unpaid wages, notices).",
+   "action": "Call NALSA legal aid 15100 or visit your District Legal Services Authority."
   }
  ]
 }

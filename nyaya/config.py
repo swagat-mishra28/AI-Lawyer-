@@ -104,8 +104,22 @@ def auto_provider() -> str:
     return "gemini"
 
 
+def provider_for_model(model: str | None) -> str | None:
+    """Infer the provider from an unambiguous model name, so `--model gemini-3.5-flash-lite` alone just works."""
+    m = (model or os.getenv("LLM_MODEL") or "").lower()
+    if not m or os.getenv("LLM_PROVIDER"):
+        return None
+    if m.startswith("gemini"):
+        return "gemini"
+    if m.startswith("claude"):
+        return "anthropic"
+    if m.startswith(("openai/gpt-oss", "qwen/", "meta-llama/llama-4", "whisper")):
+        return "groq"
+    return None
+
+
 def llm_settings(provider: str | None = None, model: str | None = None) -> LLMSettings:
-    provider = (provider or auto_provider()).lower()
+    provider = (provider or provider_for_model(model) or auto_provider()).lower()
     if provider not in PRESETS:
         raise ValueError(f"Unknown LLM_PROVIDER '{provider}'. Choose one of {list(PRESETS)}")
     p = PRESETS[provider]
