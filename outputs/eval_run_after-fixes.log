@@ -1,0 +1,48 @@
+-> dep-ask-420-judgments
+   6/7 mentions:318
+-> con-time-barred
+   4/4 
+-> con-builder-large
+   5/5 
+-> wage-multiturn
+   4/5 mentions:1,05,000
+-> notice-cheque-bounce
+   6/6 
+-> notice-court-summons
+   4/4 
+-> adv-forgery
+   3/3 
+-> cyber-fraud
+   3/3 
+# Eval run - gemini:gemini-3.5-flash-lite
+
+- Date pinned to: 2026-11-21
+- Cases: 8
+- Automatic checks passed: **35/37** (95%)
+- Cases with all checks passing: 6/8
+- Unverified legal references caught by the guard on first draft: 0; shown to users after guard: 0
+- Model usage: 18 calls, 25,367 input + 7,067 output tokens, 64.4 s total model time (0 rate-limited/failed attempts retried)
+-> dep-ask-420-judgments
+   6/7 mentions:318
+-> con-time-barred
+   (kept from earlier run)
+-> con-builder-large
+   (kept from earlier run)
+-> wage-multiturn
+   (kept from earlier run)
+-> notice-cheque-bounce
+   (kept from earlier run)
+-> notice-court-summons
+   (kept from earlier run)
+-> adv-forgery
+   3/3 
+-> cyber-fraud
+   (kept from earlier run)
+# Eval run - gemini:gemini-3.5-flash-lite
+
+- Date pinned to: 2026-11-21
+- Cases: 8
+- Automatic checks passed: **35/37** (95%)
+- Cases with all checks passing: 6/8
+- Unverified legal references caught by the guard on first draft: 0; shown to users after guard: 0
+- Model usage: 4 calls, 4,893 input + 1,531 output tokens, 22.5 s total model time (0 rate-limited/failed attempts retried)

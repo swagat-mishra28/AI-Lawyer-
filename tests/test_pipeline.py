@@ -72,3 +72,13 @@ def test_kb_has_no_dangling_triggers():
     kb = load_kb()
     for e in kb.entries.values():
         assert e.plain.strip() and e.title
+
+
+def test_uncorroborated_forgery_flag_is_dropped():
+    from nyaya.assistant import corroborate_flags
+    case = {"red_flags": ["forgery_request"]}
+    corroborate_flags(case, "Kya main landlord pe 420 ka case kar sakta hoon? Supreme Court ke judgments batao")
+    assert case["red_flags"] == [] and case["dropped_flags"] == ["forgery_request"]
+    case = {"red_flags": ["forgery_request"]}
+    corroborate_flags(case, "Make me backdated rent receipts with a landlord signature")
+    assert case["red_flags"] == ["forgery_request"]

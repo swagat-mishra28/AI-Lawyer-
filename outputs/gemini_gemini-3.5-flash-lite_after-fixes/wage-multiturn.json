@@ -1,0 +1,508 @@
+{
+ "id": "wage-multiturn",
+ "title": "Vague first message, details in second turn",
+ "input": {
+  "id": "wage-multiturn",
+  "title": "Vague first message, details in second turn",
+  "turns": [
+   "my company is not paying me",
+   "I work in a small IT company in Chennai, salary 35,000 per month. They have not paid for August, September and October 2026. I am still working there. I have offer letter and old payslips."
+  ]
+ },
+ "kind": "chat",
+ "turns": [
+  {
+   "user": "my company is not paying me",
+   "reply": "*I am not a lawyer. I am Nyaya Saathi, here to help you understand your options.*\n\n**What I understood**\nYour company has not paid your salary, and you want to get your money.\n\n**Where you stand**\nGenerally, monthly wages must be paid before the 7th day of the next month [K:cw-timely-payment]. If you resigned or left, your due wages must generally be paid within two working days [K:cw-timely-payment]. Unpaid salary is also treated as a debt under your employment contract, which you can recover [K:wages-contract]. You generally have up to three years to file a claim for unpaid wages [K:cw-claims].\n\n**What you can do now**\n1. Ask your employer or HR in writing (via email or message) for your unpaid salary, stating the exact amount and dates [K:wages-relieving][K:notice-how-to-send]. Keep a written trail of all your messages [K:wages-relieving].\n2. Send a formal written demand notice to the company for the payment.\n3. File a claim with the authority appointed under the state Labour Department [K:cw-claims].\n4. If you qualify (such as for industrial workmen or low annual income), you can contact the District Legal Services Authority (DLSA) at your district court or call the NALSA helpline 15100 for free legal aid [K:legal-aid].\n\n**What I still need from you**\n1. How many months of salary are pending?\n2. Are you still working there or has your employment ended?\n3. Do you have your appointment letter or any emails/messages showing your salary?\n\n**When to get a real lawyer**\nConsult a lawyer if the company refuses to pay after your written requests, or if you are in a senior managerial role where civil court recovery is needed.",
+   "case": {
+    "language": "en",
+    "language_name": "English",
+    "category": "wages",
+    "sub_type": "unpaid salary",
+    "summary": "The user states that their company is not paying them their salary.",
+    "user_role": "employee",
+    "other_party": {
+     "name": null,
+     "type": "employer"
+    },
+    "state": null,
+    "city": null,
+    "amounts": {
+     "disputed": null,
+     "paid_value": null,
+     "monthly_rent": null,
+     "monthly_salary": null
+    },
+    "dates": {
+     "incident": null,
+     "purchase": null,
+     "complaint_to_company": null,
+     "moved_out": null,
+     "last_working_day": null,
+     "wages_due_from": null,
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": null,
+    "timeline": [
+     {
+      "date": "2026-11-21",
+      "event": "User stated that their company is not paying them."
+     }
+    ],
+    "evidence_have": [],
+    "steps_taken": [],
+    "red_flags": [],
+    "user_goal": "Get their unpaid salary from the company",
+    "open_questions": [
+     "How many months of salary are pending?",
+     "What is the name of your employer or company?",
+     "Are you still working there or has your employment ended?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "wages",
+    "deadlines": [],
+    "escalations": [],
+    "forum": null,
+    "fee": null,
+    "evidence": {
+     "have": [],
+     "missing": [
+      "Offer / appointment letter or any proof of employment (ID card, emails)",
+      "Salary slips or bank statements showing past salary credits",
+      "Attendance records / timesheets / work messages for the unpaid period",
+      "Resignation / termination letter and relieving / experience letter",
+      "Messages or emails where you asked for salary and their replies"
+     ]
+    },
+    "ladder": [
+     "Ask HR / employer in writing for the unpaid salary with dates and amount.",
+     "Send a legal notice demanding payment within a deadline (usually 15 days).",
+     "File a claim / complaint with the state Labour Department (Labour Commissioner / Inspector-cum-Facilitator office).",
+     "For senior/managerial staff, or very large amounts, a civil suit or other remedies with a lawyer."
+    ],
+    "in_scope": true
+   },
+   "kb_ids": [
+    "cw-in-force",
+    "cw-timely-payment",
+    "cw-deductions",
+    "cw-claims",
+    "wages-contract",
+    "wages-relieving",
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 0,
+     "violations": []
+    },
+    "repaired": false,
+    "scrubbed": false,
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "cw-timely-payment",
+     "title": "Deadlines for paying wages",
+     "law": "Code on Wages, 2019 - Section 17",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15793"
+    },
+    {
+     "n": 2,
+     "id": "wages-contract",
+     "title": "Salary is also a contractual debt",
+     "law": "Indian Contract Act, 1872 - Section 73",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/2187"
+    },
+    {
+     "n": 3,
+     "id": "cw-claims",
+     "title": "Filing a claim with the labour authority",
+     "law": "Code on Wages, 2019 - Section 45",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15793"
+    },
+    {
+     "n": 4,
+     "id": "wages-relieving",
+     "title": "Relieving letter and documents",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 5,
+     "id": "notice-how-to-send",
+     "title": "How to send a notice safely",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 6,
+     "id": "legal-aid",
+     "title": "Free legal aid",
+     "law": "Legal Services Authorities Act, 1987 - Section 12",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    }
+   ]
+  },
+  {
+   "user": "I work in a small IT company in Chennai, salary 35,000 per month. They have not paid for August, September and October 2026. I am still working there. I have offer letter and old payslips.",
+   "reply": "*I am not a lawyer. I am Nyaya Saathi, here to help you understand your options.*\n\n**What I understood**\nYou work at an IT company in Chennai with a monthly salary of ₹35,000. Your salary for August, September, and October 2026 has not been paid, and you are still working there.\n\n**Where you stand**\n* Monthly wages must generally be paid before the 7th day of the next month [K:cw-timely-payment]. For example, your August salary was due by 7 September 2026 [K:cw-timely-payment].\n* Your appointment letter is a contract, and unpaid salary is a debt your employer owes you [K:wages-contract]. \n* You generally have up to three years from the date the wage was due to file a claim [K:cw-claims].\n* The rules come under the Code on Wages, 2019 [K:cw-in-force], but your local state Labour Department office can confirm the exact procedure in Tamil Nadu [K:cw-in-force].\n\n**What you can do now**\n1. Ask HR or your employer in writing (via email or message) for your unpaid salary, and keep a written trail of all your messages [K:wages-relieving][K:notice-how-to-send].\n2. File a claim for unpaid wages before the authority appointed under the state Labour Department [K:cw-claims].\n3. Visit the District Legal Services Authority (DLSA) at your district court or call the NALSA helpline 15100 if you want to check if you qualify for a free lawyer [K:legal-aid].\n4. You can also ask about settling the matter without a court case through a Lok Adalat at the DLSA, which is free [K:lok-adalat].\n\n**What I still need from you**\n1. Have you raised a written complaint or sent an email to HR or management regarding the pending salary?\n2. Do you have attendance records, timesheets, or work emails/messages for August, September, and October?\n\n**When to get a real lawyer**\nConsult a lawyer or consider a civil suit if the company refuses to pay, or if you hold a senior managerial role that requires formal legal recovery [K:wages-contract].",
+   "case": {
+    "language": "en",
+    "language_name": "English",
+    "category": "wages",
+    "sub_type": "unpaid salary",
+    "summary": "The user works at a small IT company in Chennai with a monthly salary of 35,000 rupees and states that their salary has not been paid for August, September, and October 2026. The user is still employed there and possesses an offer letter and old payslips.",
+    "user_role": "employee",
+    "other_party": {
+     "name": null,
+     "type": "company"
+    },
+    "state": "Tamil Nadu",
+    "city": "Chennai",
+    "amounts": {
+     "disputed": 105000,
+     "paid_value": null,
+     "monthly_rent": null,
+     "monthly_salary": 35000
+    },
+    "dates": {
+     "incident": null,
+     "purchase": null,
+     "complaint_to_company": null,
+     "moved_out": null,
+     "last_working_day": null,
+     "wages_due_from": "2026-08-01",
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": false,
+    "timeline": [
+     {
+      "date": "2026-11-21",
+      "event": "User stated that their company is not paying them."
+     },
+     {
+      "date": "2026-11-21",
+      "event": "User provided details: works in Chennai IT company, monthly salary 35000, unpaid for August, September, and October 2026, still working."
+     }
+    ],
+    "evidence_have": [
+     "offer letter",
+     "old payslips"
+    ],
+    "steps_taken": [],
+    "red_flags": [],
+    "user_goal": "Get their unpaid salary from the company",
+    "open_questions": [
+     "Have you raised a written complaint or sent an email to HR or management regarding the pending salary?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "wages",
+    "deadlines": [
+     {
+      "label": "Salary for the first unpaid month was due",
+      "date": "2026-09-07",
+      "days_left": -75,
+      "status": "passed",
+      "kb": "cw-timely-payment",
+      "kind": "statutory_due",
+      "basis": "before the 7th of the month after August 2026"
+     },
+     {
+      "label": "Last date to file a wage claim (generally 3 years)",
+      "date": "2029-09-07",
+      "days_left": 1021,
+      "status": "ok",
+      "kb": "cw-claims",
+      "kind": "limitation",
+      "basis": "3 years from 2026-09-07"
+     }
+    ],
+    "escalations": [],
+    "forum": null,
+    "fee": null,
+    "evidence": {
+     "have": [
+      "Offer / appointment letter or any proof of employment (ID card, emails)",
+      "Salary slips or bank statements showing past salary credits"
+     ],
+     "missing": [
+      "Attendance records / timesheets / work messages for the unpaid period",
+      "Resignation / termination letter and relieving / experience letter",
+      "Messages or emails where you asked for salary and their replies"
+     ]
+    },
+    "ladder": [
+     "Ask HR / employer in writing for the unpaid salary with dates and amount.",
+     "Send a legal notice demanding payment within a deadline (usually 15 days).",
+     "File a claim / complaint with the state Labour Department (Labour Commissioner / Inspector-cum-Facilitator office).",
+     "For senior/managerial staff, or very large amounts, a civil suit or other remedies with a lawyer."
+    ],
+    "in_scope": true
+   },
+   "kb_ids": [
+    "cw-in-force",
+    "cw-timely-payment",
+    "cw-deductions",
+    "cw-claims",
+    "wages-contract",
+    "wages-relieving",
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 0,
+     "violations": []
+    },
+    "repaired": false,
+    "scrubbed": false,
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "cw-timely-payment",
+     "title": "Deadlines for paying wages",
+     "law": "Code on Wages, 2019 - Section 17",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15793"
+    },
+    {
+     "n": 2,
+     "id": "wages-contract",
+     "title": "Salary is also a contractual debt",
+     "law": "Indian Contract Act, 1872 - Section 73",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/2187"
+    },
+    {
+     "n": 3,
+     "id": "cw-claims",
+     "title": "Filing a claim with the labour authority",
+     "law": "Code on Wages, 2019 - Section 45",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15793"
+    },
+    {
+     "n": 4,
+     "id": "cw-in-force",
+     "title": "Which law applies now",
+     "law": "Code on Wages, 2019; Payment of Wages Act, 1936",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15793"
+    },
+    {
+     "n": 5,
+     "id": "wages-relieving",
+     "title": "Relieving letter and documents",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 6,
+     "id": "notice-how-to-send",
+     "title": "How to send a notice safely",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 7,
+     "id": "legal-aid",
+     "title": "Free legal aid",
+     "law": "Legal Services Authorities Act, 1987 - Section 12",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    },
+    {
+     "n": 8,
+     "id": "lok-adalat",
+     "title": "Lok Adalat (settlement, free)",
+     "law": "Legal Services Authorities Act, 1987 - Section 19; Legal Services Authorities Act, 1987 - Section 21",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    }
+   ]
+  }
+ ],
+ "reply": "*I am not a lawyer. I am Nyaya Saathi, here to help you understand your options.*\n\n**What I understood**\nYou work at an IT company in Chennai with a monthly salary of ₹35,000. Your salary for August, September, and October 2026 has not been paid, and you are still working there.\n\n**Where you stand**\n* Monthly wages must generally be paid before the 7th day of the next month [K:cw-timely-payment]. For example, your August salary was due by 7 September 2026 [K:cw-timely-payment].\n* Your appointment letter is a contract, and unpaid salary is a debt your employer owes you [K:wages-contract]. \n* You generally have up to three years from the date the wage was due to file a claim [K:cw-claims].\n* The rules come under the Code on Wages, 2019 [K:cw-in-force], but your local state Labour Department office can confirm the exact procedure in Tamil Nadu [K:cw-in-force].\n\n**What you can do now**\n1. Ask HR or your employer in writing (via email or message) for your unpaid salary, and keep a written trail of all your messages [K:wages-relieving][K:notice-how-to-send].\n2. File a claim for unpaid wages before the authority appointed under the state Labour Department [K:cw-claims].\n3. Visit the District Legal Services Authority (DLSA) at your district court or call the NALSA helpline 15100 if you want to check if you qualify for a free lawyer [K:legal-aid].\n4. You can also ask about settling the matter without a court case through a Lok Adalat at the DLSA, which is free [K:lok-adalat].\n\n**What I still need from you**\n1. Have you raised a written complaint or sent an email to HR or management regarding the pending salary?\n2. Do you have attendance records, timesheets, or work emails/messages for August, September, and October?\n\n**When to get a real lawyer**\nConsult a lawyer or consider a civil suit if the company refuses to pay, or if you hold a senior managerial role that requires formal legal recovery [K:wages-contract].",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "wages",
+  "deadlines": [
+   {
+    "label": "Salary for the first unpaid month was due",
+    "date": "2026-09-07",
+    "days_left": -75,
+    "status": "passed",
+    "kb": "cw-timely-payment",
+    "kind": "statutory_due",
+    "basis": "before the 7th of the month after August 2026"
+   },
+   {
+    "label": "Last date to file a wage claim (generally 3 years)",
+    "date": "2029-09-07",
+    "days_left": 1021,
+    "status": "ok",
+    "kb": "cw-claims",
+    "kind": "limitation",
+    "basis": "3 years from 2026-09-07"
+   }
+  ],
+  "escalations": [],
+  "forum": null,
+  "fee": null,
+  "evidence": {
+   "have": [
+    "Offer / appointment letter or any proof of employment (ID card, emails)",
+    "Salary slips or bank statements showing past salary credits"
+   ],
+   "missing": [
+    "Attendance records / timesheets / work messages for the unpaid period",
+    "Resignation / termination letter and relieving / experience letter",
+    "Messages or emails where you asked for salary and their replies"
+   ]
+  },
+  "ladder": [
+   "Ask HR / employer in writing for the unpaid salary with dates and amount.",
+   "Send a legal notice demanding payment within a deadline (usually 15 days).",
+   "File a claim / complaint with the state Labour Department (Labour Commissioner / Inspector-cum-Facilitator office).",
+   "For senior/managerial staff, or very large amounts, a civil suit or other remedies with a lawyer."
+  ],
+  "in_scope": true
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "repaired": false,
+  "scrubbed": false,
+  "final_violations": 0
+ },
+ "case": {
+  "language": "en",
+  "language_name": "English",
+  "category": "wages",
+  "sub_type": "unpaid salary",
+  "summary": "The user works at a small IT company in Chennai with a monthly salary of 35,000 rupees and states that their salary has not been paid for August, September, and October 2026. The user is still employed there and possesses an offer letter and old payslips.",
+  "user_role": "employee",
+  "other_party": {
+   "name": null,
+   "type": "company"
+  },
+  "state": "Tamil Nadu",
+  "city": "Chennai",
+  "amounts": {
+   "disputed": 105000,
+   "paid_value": null,
+   "monthly_rent": null,
+   "monthly_salary": 35000
+  },
+  "dates": {
+   "incident": null,
+   "purchase": null,
+   "complaint_to_company": null,
+   "moved_out": null,
+   "last_working_day": null,
+   "wages_due_from": "2026-08-01",
+   "notice_received": null,
+   "notice_deadline": null,
+   "bank_return_memo": null
+  },
+  "employment_ended": false,
+  "timeline": [
+   {
+    "date": "2026-11-21",
+    "event": "User stated that their company is not paying them."
+   },
+   {
+    "date": "2026-11-21",
+    "event": "User provided details: works in Chennai IT company, monthly salary 35000, unpaid for August, September, and October 2026, still working."
+   }
+  ],
+  "evidence_have": [
+   "offer letter",
+   "old payslips"
+  ],
+  "steps_taken": [],
+  "red_flags": [],
+  "user_goal": "Get their unpaid salary from the company",
+  "open_questions": [
+   "Have you raised a written complaint or sent an email to HR or management regarding the pending salary?"
+  ]
+ },
+ "kb_ids": [
+  "cw-in-force",
+  "cw-timely-payment",
+  "cw-deductions",
+  "cw-claims",
+  "wages-contract",
+  "wages-relieving",
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send"
+ ],
+ "checks": {
+  "category": true,
+  "deadline_computed": true,
+  "deadline_date": true,
+  "mentions:1,05,000": false,
+  "guard_clean": true
+ },
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 3.87,
+   "input_tokens": 883,
+   "output_tokens": 395,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 2.37,
+   "input_tokens": 1973,
+   "output_tokens": 411,
+   "error": null
+  },
+  {
+   "purpose": "intake",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 4.01,
+   "input_tokens": 1575,
+   "output_tokens": 532,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 8.37,
+   "input_tokens": 2716,
+   "output_tokens": 509,
+   "error": null
+  }
+ ],
+ "seconds": 18.6
+}

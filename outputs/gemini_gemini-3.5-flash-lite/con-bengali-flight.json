@@ -1,0 +1,338 @@
+{
+ "id": "con-bengali-flight",
+ "title": "Flight cancelled, refund pending, Bengali",
+ "input": {
+  "id": "con-bengali-flight",
+  "title": "Flight cancelled, refund pending, Bengali",
+  "turns": [
+   "আমার ১০ অক্টোবর ২০২৬-এর ফ্লাইট এয়ারলাইন বাতিল করেছে। টিকিটের দাম ১২,৫০০ টাকা, এখনও রিফান্ড পাইনি। কাস্টমার কেয়ার শুধু অপেক্ষা করতে বলছে।"
+  ]
+ },
+ "kind": "chat",
+ "turns": [
+  {
+   "user": "আমার ১০ অক্টোবর ২০২৬-এর ফ্লাইট এয়ারলাইন বাতিল করেছে। টিকিটের দাম ১২,৫০০ টাকা, এখনও রিফান্ড পাইনি। কাস্টমার কেয়ার শুধু অপেক্ষা করতে বলছে।",
+   "reply": "আমি আইনজীবী নই, তবে আপনার পরিস্থিতি বুঝে আপনাকে সাহায্য করার চেষ্টা করছি।\n\n**আমি যা বুঝেছি** - আপনার ১০ অক্টোবরের ফ্লাইট বাতিল হওয়ার পর ১২,৫০০ টাকার রিফান্ড পাননি।\n\n**আপনি যেখানে আছেন** - আপনি একজন ভোক্তা [কনজ্যুমার] [K:cpa-consumer-definition]। ফ্লাইট বাতিল হওয়ার পরও রিফান্ড না দেওয়া সেবার ক্ষেত্রে ত্রুটি বা ঘাটতি [ডিফিসিয়েন্সি ইন সার্ভিস] হিসেবে গণ্য হয় [K:cpa-deficiency]। আপনার টাকার পরিমাণ ১২,৫০০ টাকা হওয়ায় আপনি জেলা ভোক্তা কমিশন [District Consumer Disputes Redressal Commission]-এর কাছে যেতে পারেন [K:cpa-pecuniary]। এই মামলার জন্য আপনার হাতে ২০২৮ সালের ১০ অক্টোবর পর্যন্ত সময় আছে [K:cpa-limitation]। এই ক্ষেত্রে সাধারণত কোনো ফি লাগে না, তবে পোর্টাল থেকে তা যাচাই করে নেওয়া ভালো [K:cpa-fee]।\n\n**আপনি এখন যা করতে পারেন**\n১. প্রথমে ন্যাশনাল কনজ্যুমার হেল্পলাইন [National Consumer Helpline]-এ বিনামূল্যে অভিযোগ জানান (কল করুন ১৯১৫ বা ১৮০০-১১-৪০-০০ নম্বরে, অথবা ভিজিট করুন consumerhelpline.gov.in) [K:nch]।\n২. আপনি নিজেই কোনো আইনজীবী ছাড়া জেলা ভোক্তা কমিশনের [District Consumer Commission] ই-জাগৃতি [e-Jagriti] পোর্টালে অনলাইনে অভিযোগ দায়ের করতে পারেন [K:cpa-efiling]।\n\n**আমার যা জানা প্রয়োজন**\n১. এয়ারলাইন্সের নাম কী?\n২. আপনার কাছে কি টিকিটের কপি বা বুকিং কনফার্মেশন ইমেল আছে?\n\n**কখন আসল আইনজীবী ধরবেন** - যদি কোম্পানি কোনোভাবেই রিফান্ড না দেয় এবং আপনি নিজে অনলাইনে কমিশন [Consumer Commission]-এ অভিযোগ করতে সমস্যা বোধ করেন, তখন একজন আইনজীবীর সাহায্য নিতে পারেন।",
+   "case": {
+    "language": "bn",
+    "language_name": "Bengali",
+    "category": "consumer",
+    "sub_type": "flight ticket refund",
+    "summary": "The user's flight on October 10, 2026, was cancelled by the airline, and they have not received a refund of 12,500 rupees despite contacting customer care.",
+    "user_role": "buyer",
+    "other_party": {
+     "name": null,
+     "type": "company"
+    },
+    "state": null,
+    "city": null,
+    "amounts": {
+     "disputed": 12500,
+     "paid_value": 12500,
+     "monthly_rent": null,
+     "monthly_salary": null
+    },
+    "dates": {
+     "incident": "2026-10-10",
+     "purchase": null,
+     "complaint_to_company": null,
+     "moved_out": null,
+     "last_working_day": null,
+     "wages_due_from": null,
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": null,
+    "timeline": [
+     {
+      "date": "2026-10-10",
+      "event": "Flight cancelled by the airline"
+     }
+    ],
+    "evidence_have": [],
+    "steps_taken": [
+     "Contacted customer care"
+    ],
+    "red_flags": [],
+    "user_goal": "Get refund of 12,500 rupees for the cancelled flight",
+    "open_questions": [
+     "What is the name of the airline?",
+     "Do you have the flight ticket or booking confirmation email?",
+     "Have you received any written communication from the airline regarding the cancellation or refund?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "consumer",
+    "deadlines": [
+     {
+      "label": "Last date to file a consumer complaint (2 years)",
+      "date": "2028-10-10",
+      "days_left": 689,
+      "status": "ok",
+      "kb": "cpa-limitation",
+      "kind": "limitation",
+      "basis": "2 years from 2026-10-10"
+     }
+    ],
+    "escalations": [],
+    "forum": {
+     "forum": "District Consumer Disputes Redressal Commission",
+     "basis_value": 12500.0,
+     "kb": "cpa-pecuniary"
+    },
+    "fee": {
+     "fee_inr": 0,
+     "kb": "cpa-fee",
+     "note": "verify on the filing portal"
+    },
+    "evidence": {
+     "have": [],
+     "missing": [
+      "Invoice / order confirmation / receipt",
+      "Proof of payment (UPI / card / bank statement)",
+      "Complaint to the company and their reply (emails, chats, ticket numbers)",
+      "Photos / videos of the defect or problem",
+      "Warranty card / terms promised at sale"
+     ]
+    },
+    "ladder": [
+     "Write to the company's customer care / grievance officer and keep the ticket number.",
+     "Register a free complaint with the National Consumer Helpline (pre-litigation mediation).",
+     "Send a written demand / legal notice giving a clear deadline (usually 15 days).",
+     "File a complaint before the District Consumer Commission (online filing possible; no lawyer needed)."
+    ],
+    "in_scope": true
+   },
+   "kb_ids": [
+    "cpa-consumer-definition",
+    "cpa-deficiency",
+    "cpa-where-to-file",
+    "cpa-pecuniary",
+    "cpa-fee",
+    "cpa-efiling",
+    "cpa-limitation",
+    "cpa-reliefs",
+    "cpa-timeline",
+    "cpa-mediation",
+    "nch",
+    "ecom-grievance",
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 0,
+     "violations": []
+    },
+    "repaired": false,
+    "scrubbed": false,
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "cpa-consumer-definition",
+     "title": "Who is a \"consumer\"",
+     "law": "Consumer Protection Act, 2019 - Section 2(7)",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 2,
+     "id": "cpa-deficiency",
+     "title": "Deficiency in service and defects",
+     "law": "Consumer Protection Act, 2019 - Section 2(11); Consumer Protection Act, 2019 - Section 2(10); Consumer Protection Act, 2019 - Section 2(47)",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 3,
+     "id": "cpa-pecuniary",
+     "title": "Which level of Commission (by value paid)",
+     "law": "Consumer Protection (Jurisdiction of the District Commission, the State Commission and the National Commission) Rules, 2021",
+     "confidence": "high",
+     "url": "https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
+    },
+    {
+     "n": 4,
+     "id": "cpa-limitation",
+     "title": "Time limit - two years",
+     "law": "Consumer Protection Act, 2019 - Section 69",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 5,
+     "id": "cpa-fee",
+     "title": "Filing fee",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "medium",
+     "url": null
+    },
+    {
+     "n": 6,
+     "id": "nch",
+     "title": "National Consumer Helpline (free, pre-litigation)",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 7,
+     "id": "cpa-efiling",
+     "title": "Filing online, without a lawyer",
+     "law": "Consumer Protection Act, 2019 - Section 35",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    }
+   ]
+  }
+ ],
+ "reply": "আমি আইনজীবী নই, তবে আপনার পরিস্থিতি বুঝে আপনাকে সাহায্য করার চেষ্টা করছি।\n\n**আমি যা বুঝেছি** - আপনার ১০ অক্টোবরের ফ্লাইট বাতিল হওয়ার পর ১২,৫০০ টাকার রিফান্ড পাননি।\n\n**আপনি যেখানে আছেন** - আপনি একজন ভোক্তা [কনজ্যুমার] [K:cpa-consumer-definition]। ফ্লাইট বাতিল হওয়ার পরও রিফান্ড না দেওয়া সেবার ক্ষেত্রে ত্রুটি বা ঘাটতি [ডিফিসিয়েন্সি ইন সার্ভিস] হিসেবে গণ্য হয় [K:cpa-deficiency]। আপনার টাকার পরিমাণ ১২,৫০০ টাকা হওয়ায় আপনি জেলা ভোক্তা কমিশন [District Consumer Disputes Redressal Commission]-এর কাছে যেতে পারেন [K:cpa-pecuniary]। এই মামলার জন্য আপনার হাতে ২০২৮ সালের ১০ অক্টোবর পর্যন্ত সময় আছে [K:cpa-limitation]। এই ক্ষেত্রে সাধারণত কোনো ফি লাগে না, তবে পোর্টাল থেকে তা যাচাই করে নেওয়া ভালো [K:cpa-fee]।\n\n**আপনি এখন যা করতে পারেন**\n১. প্রথমে ন্যাশনাল কনজ্যুমার হেল্পলাইন [National Consumer Helpline]-এ বিনামূল্যে অভিযোগ জানান (কল করুন ১৯১৫ বা ১৮০০-১১-৪০-০০ নম্বরে, অথবা ভিজিট করুন consumerhelpline.gov.in) [K:nch]।\n২. আপনি নিজেই কোনো আইনজীবী ছাড়া জেলা ভোক্তা কমিশনের [District Consumer Commission] ই-জাগৃতি [e-Jagriti] পোর্টালে অনলাইনে অভিযোগ দায়ের করতে পারেন [K:cpa-efiling]।\n\n**আমার যা জানা প্রয়োজন**\n১. এয়ারলাইন্সের নাম কী?\n২. আপনার কাছে কি টিকিটের কপি বা বুকিং কনফার্মেশন ইমেল আছে?\n\n**কখন আসল আইনজীবী ধরবেন** - যদি কোম্পানি কোনোভাবেই রিফান্ড না দেয় এবং আপনি নিজে অনলাইনে কমিশন [Consumer Commission]-এ অভিযোগ করতে সমস্যা বোধ করেন, তখন একজন আইনজীবীর সাহায্য নিতে পারেন।",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "consumer",
+  "deadlines": [
+   {
+    "label": "Last date to file a consumer complaint (2 years)",
+    "date": "2028-10-10",
+    "days_left": 689,
+    "status": "ok",
+    "kb": "cpa-limitation",
+    "kind": "limitation",
+    "basis": "2 years from 2026-10-10"
+   }
+  ],
+  "escalations": [],
+  "forum": {
+   "forum": "District Consumer Disputes Redressal Commission",
+   "basis_value": 12500.0,
+   "kb": "cpa-pecuniary"
+  },
+  "fee": {
+   "fee_inr": 0,
+   "kb": "cpa-fee",
+   "note": "verify on the filing portal"
+  },
+  "evidence": {
+   "have": [],
+   "missing": [
+    "Invoice / order confirmation / receipt",
+    "Proof of payment (UPI / card / bank statement)",
+    "Complaint to the company and their reply (emails, chats, ticket numbers)",
+    "Photos / videos of the defect or problem",
+    "Warranty card / terms promised at sale"
+   ]
+  },
+  "ladder": [
+   "Write to the company's customer care / grievance officer and keep the ticket number.",
+   "Register a free complaint with the National Consumer Helpline (pre-litigation mediation).",
+   "Send a written demand / legal notice giving a clear deadline (usually 15 days).",
+   "File a complaint before the District Consumer Commission (online filing possible; no lawyer needed)."
+  ],
+  "in_scope": true
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "repaired": false,
+  "scrubbed": false,
+  "final_violations": 0
+ },
+ "case": {
+  "language": "bn",
+  "language_name": "Bengali",
+  "category": "consumer",
+  "sub_type": "flight ticket refund",
+  "summary": "The user's flight on October 10, 2026, was cancelled by the airline, and they have not received a refund of 12,500 rupees despite contacting customer care.",
+  "user_role": "buyer",
+  "other_party": {
+   "name": null,
+   "type": "company"
+  },
+  "state": null,
+  "city": null,
+  "amounts": {
+   "disputed": 12500,
+   "paid_value": 12500,
+   "monthly_rent": null,
+   "monthly_salary": null
+  },
+  "dates": {
+   "incident": "2026-10-10",
+   "purchase": null,
+   "complaint_to_company": null,
+   "moved_out": null,
+   "last_working_day": null,
+   "wages_due_from": null,
+   "notice_received": null,
+   "notice_deadline": null,
+   "bank_return_memo": null
+  },
+  "employment_ended": null,
+  "timeline": [
+   {
+    "date": "2026-10-10",
+    "event": "Flight cancelled by the airline"
+   }
+  ],
+  "evidence_have": [],
+  "steps_taken": [
+   "Contacted customer care"
+  ],
+  "red_flags": [],
+  "user_goal": "Get refund of 12,500 rupees for the cancelled flight",
+  "open_questions": [
+   "What is the name of the airline?",
+   "Do you have the flight ticket or booking confirmation email?",
+   "Have you received any written communication from the airline regarding the cancellation or refund?"
+  ]
+ },
+ "kb_ids": [
+  "cpa-consumer-definition",
+  "cpa-deficiency",
+  "cpa-where-to-file",
+  "cpa-pecuniary",
+  "cpa-fee",
+  "cpa-efiling",
+  "cpa-limitation",
+  "cpa-reliefs",
+  "cpa-timeline",
+  "cpa-mediation",
+  "nch",
+  "ecom-grievance",
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send"
+ ],
+ "checks": {
+  "category": true,
+  "language": true,
+  "deadline_computed": true,
+  "guard_clean": true
+ },
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 1.86,
+   "input_tokens": 878,
+   "output_tokens": 466,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 3.19,
+   "input_tokens": 2780,
+   "output_tokens": 378,
+   "error": null
+  }
+ ],
+ "seconds": 5.0
+}

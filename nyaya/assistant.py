@@ -92,8 +92,9 @@ class Session:
     # ----------------------------------------------------------------- one turn
     def turn(self, user_text: str) -> TurnResult:
         self.case = self.intake(user_text)
-        computed = rules.compute(self.case, self.today)
         convo_text = user_text + " " + " ".join(m["content"] for m in self.history if m["role"] == "user")
+        corroborate_flags(self.case, convo_text)
+        computed = rules.compute(self.case, self.today)
         category = self.case["category"]
         entries = self.kb.retrieve(category, convo_text)
         lang, lang_name = self.case.get("language", "en"), self.case.get("language_name", "English")
@@ -120,6 +121,21 @@ class Session:
         self.trace.append({"user": user_text, "case": self.case, "rules": computed, "kb_ids": result.kb_ids,
                            "reply_raw": reply, "guard": glog})
         return result
+
+
+# A refusal is the most expensive mistake for a real user with a real claim, so the model's forgery flag
+# needs a second, deterministic signal. Eval finding: a small model flagged "can I file a 420 case and
+# give me judgments" as a forgery request and the person was refused. The advisor prompt still forbids
+# forgery, so dropping an uncorroborated flag does not open a hole.
+FORGERY_HINTS = ("fake", "forg", "backdat", "back date", "back-date", "fabricat", "false receipt", "false document",
+                 "nakli", "jaali", "jali ", "farzi", "farji", "फर्जी", "नकली", "जाली", "बैकडेट", "झूठी रसीद")
+
+
+def corroborate_flags(case: dict, convo_text: str) -> None:
+    t = convo_text.lower()
+    if "forgery_request" in case["red_flags"] and not any(h in t for h in FORGERY_HINTS):
+        case["red_flags"].remove("forgery_request")
+        case.setdefault("dropped_flags", []).append("forgery_request")
 
 
 def normalise_case(case: dict[str, Any]) -> dict:

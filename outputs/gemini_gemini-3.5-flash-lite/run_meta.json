@@ -1,0 +1,13 @@
+{
+ "model": "gemini:gemini-3.5-flash-lite",
+ "today": "2026-11-21",
+ "usage": {
+  "model": "gemini:gemini-3.5-flash-lite",
+  "calls": 55,
+  "failed_attempts": 0,
+  "input_tokens": 83813,
+  "output_tokens": 22486,
+  "seconds": 327.5
+ },
+ "run_at": "2026-11-21T20:14:29"
+}

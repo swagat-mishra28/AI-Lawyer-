@@ -1,0 +1,346 @@
+{
+ "id": "con-marathi-courier",
+ "title": "Courier lost parcel, Marathi",
+ "input": {
+  "id": "con-marathi-courier",
+  "title": "Courier lost parcel, Marathi",
+  "turns": [
+   "मी 3 ऑक्टोबर 2026 रोजी कुरिअरने 8,000 रुपयांचे पार्सल पाठवले, ते हरवले. कंपनी भरपाई द्यायला नकार देते. माझ्याकडे पावती आहे."
+  ]
+ },
+ "kind": "chat",
+ "turns": [
+  {
+   "user": "मी 3 ऑक्टोबर 2026 रोजी कुरिअरने 8,000 रुपयांचे पार्सल पाठवले, ते हरवले. कंपनी भरपाई द्यायला नकार देते. माझ्याकडे पावती आहे.",
+   "reply": "**मी काय समजलो**\nतुम्ही ३ ऑक्टोबर २०२६ रोजी ८,००० रुपयांचे पार्सल कुरिअरने पाठवले होते, पण ते हरवले. कुरिअर कंपनी आता भरपाई द्यायला नकार देत आहे आणि तुमच्याकडे कुरिअरची पावती आहे.\n\n**तुम्ही कुठे आहात**\nतुम्ही एक ग्राहक (Consumer) आहात कारण तुम्ही पैसे देऊन सेवा घेतली आहे [K:cpa-consumer-definition]. कुरिअर सेवा नीट न देणे ही सेवेतील त्रुटी (Deficiency in service) आहे [K:cpa-deficiency]. \nया समस्येसाठी तुम्ही जिल्हा ग्राहक विवाद निवारण आयोग (District Consumer Disputes Redressal Commission) मध्ये तक्रार दाखल करू शकता [K:cpa-where-to-file]. \nतक्रार दाखल करण्याची अंतिम मुदत २ वर्षे आहे (३ ऑक्टोबर २०२८ पर्यंत) [K:cpa-limitation]. भरपाईची रक्कम ८,००० रुपये असल्यामुळे, यासाठी साधारणपणे कोणतेही शुल्क (Fee) नाही, तरीही पोर्टलवर पडताळणी करा [K:cpa-fee].\n\n**तुम्ही आता काय करू शकता**\n१. राष्ट्रीय ग्राहक हेल्पलाइन (National Consumer Helpline) वर 1915 किंवा 1800-11-4000 वर कॉल करून किंवा consumerhelpline.gov.in वर मोफत तक्रार नोंदवा [K:nch].\n२. कुरिअर कंपनीला लेखी तक्रार किंवा ई-मेल पाठवून भरपाईची मागणी करा.\n३. तुम्ही जिल्हा ग्राहक आयोगाकडे (District Consumer Commission) स्वतः ऑनलाईन (e-Jagriti पोर्टलवर) तक्रार दाखल करू शकता, त्यासाठी वकिलाची सक्ती नाही [K:cpa-efiling].\n\n**मला तुमच्याकडून अजून काय हवे आहे**\n- कुरिअर कंपनीचे नाव काय आहे?\n- तुम्ही कंपनीकडे कोणतीही लेखी तक्रार केली आहे का?\n\n**खरं वकील कधी गाठावे**\nजर कुरिअर कंपनीने समजूत काढण्यास स्पष्ट नकार दिला आणि तुम्हाला कायदेशीर कागदपत्रे समजून घेण्यात अडचण येत असेल, तर तुम्ही जिल्हा कायदेशीर सेवा प्राधिकरणाशी (DLSA) संपर्क साधून मोफत कायदेशीर मदत (Free legal aid) घेऊ शकता [K:legal-aid].",
+   "case": {
+    "language": "mr",
+    "language_name": "Marathi",
+    "category": "consumer",
+    "sub_type": "courier service loss",
+    "summary": "The user sent a parcel worth 8,000 rupees via courier on October 3, 2026, which got lost. The courier company is refusing to pay compensation, and the user has the receipt.",
+    "user_role": "buyer",
+    "other_party": {
+     "name": null,
+     "type": "company"
+    },
+    "state": null,
+    "city": null,
+    "amounts": {
+     "disputed": 8000,
+     "paid_value": null,
+     "monthly_rent": null,
+     "monthly_salary": null
+    },
+    "dates": {
+     "incident": "2026-10-03",
+     "purchase": null,
+     "complaint_to_company": null,
+     "moved_out": null,
+     "last_working_day": null,
+     "wages_due_from": null,
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": null,
+    "timeline": [
+     {
+      "date": "2026-10-03",
+      "event": "Sent parcel worth 8,000 rupees via courier, which got lost."
+     }
+    ],
+    "evidence_have": [
+     "Courier receipt"
+    ],
+    "steps_taken": [],
+    "red_flags": [],
+    "user_goal": "Get compensation of 8,000 rupees from the courier company for the lost parcel.",
+    "open_questions": [
+     "What is the name of the courier company?",
+     "Have you filed a formal written complaint or legal notice to the courier company?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "consumer",
+    "deadlines": [
+     {
+      "label": "Last date to file a consumer complaint (2 years)",
+      "date": "2028-10-03",
+      "days_left": 682,
+      "status": "ok",
+      "kb": "cpa-limitation",
+      "kind": "limitation",
+      "basis": "2 years from 2026-10-03"
+     }
+    ],
+    "escalations": [],
+    "forum": {
+     "forum": "District Consumer Disputes Redressal Commission",
+     "basis_value": 8000.0,
+     "kb": "cpa-pecuniary"
+    },
+    "fee": {
+     "fee_inr": 0,
+     "kb": "cpa-fee",
+     "note": "verify on the filing portal"
+    },
+    "evidence": {
+     "have": [
+      "Invoice / order confirmation / receipt"
+     ],
+     "missing": [
+      "Proof of payment (UPI / card / bank statement)",
+      "Complaint to the company and their reply (emails, chats, ticket numbers)",
+      "Photos / videos of the defect or problem",
+      "Warranty card / terms promised at sale"
+     ]
+    },
+    "ladder": [
+     "Write to the company's customer care / grievance officer and keep the ticket number.",
+     "Register a free complaint with the National Consumer Helpline (pre-litigation mediation).",
+     "Send a written demand / legal notice giving a clear deadline (usually 15 days).",
+     "File a complaint before the District Consumer Commission (online filing possible; no lawyer needed)."
+    ],
+    "in_scope": true
+   },
+   "kb_ids": [
+    "cpa-consumer-definition",
+    "cpa-deficiency",
+    "cpa-where-to-file",
+    "cpa-pecuniary",
+    "cpa-fee",
+    "cpa-efiling",
+    "cpa-limitation",
+    "cpa-reliefs",
+    "cpa-timeline",
+    "cpa-mediation",
+    "nch",
+    "ecom-grievance",
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 0,
+     "violations": []
+    },
+    "repaired": false,
+    "scrubbed": false,
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "cpa-consumer-definition",
+     "title": "Who is a \"consumer\"",
+     "law": "Consumer Protection Act, 2019 - Section 2(7)",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 2,
+     "id": "cpa-deficiency",
+     "title": "Deficiency in service and defects",
+     "law": "Consumer Protection Act, 2019 - Section 2(11); Consumer Protection Act, 2019 - Section 2(10); Consumer Protection Act, 2019 - Section 2(47)",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 3,
+     "id": "cpa-where-to-file",
+     "title": "Where to file - District Commission and place",
+     "law": "Consumer Protection Act, 2019 - Section 34; Consumer Protection Act, 2019 - Section 35",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 4,
+     "id": "cpa-limitation",
+     "title": "Time limit - two years",
+     "law": "Consumer Protection Act, 2019 - Section 69",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 5,
+     "id": "cpa-fee",
+     "title": "Filing fee",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "medium",
+     "url": null
+    },
+    {
+     "n": 6,
+     "id": "nch",
+     "title": "National Consumer Helpline (free, pre-litigation)",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 7,
+     "id": "cpa-efiling",
+     "title": "Filing online, without a lawyer",
+     "law": "Consumer Protection Act, 2019 - Section 35",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 8,
+     "id": "legal-aid",
+     "title": "Free legal aid",
+     "law": "Legal Services Authorities Act, 1987 - Section 12",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    }
+   ]
+  }
+ ],
+ "reply": "**मी काय समजलो**\nतुम्ही ३ ऑक्टोबर २०२६ रोजी ८,००० रुपयांचे पार्सल कुरिअरने पाठवले होते, पण ते हरवले. कुरिअर कंपनी आता भरपाई द्यायला नकार देत आहे आणि तुमच्याकडे कुरिअरची पावती आहे.\n\n**तुम्ही कुठे आहात**\nतुम्ही एक ग्राहक (Consumer) आहात कारण तुम्ही पैसे देऊन सेवा घेतली आहे [K:cpa-consumer-definition]. कुरिअर सेवा नीट न देणे ही सेवेतील त्रुटी (Deficiency in service) आहे [K:cpa-deficiency]. \nया समस्येसाठी तुम्ही जिल्हा ग्राहक विवाद निवारण आयोग (District Consumer Disputes Redressal Commission) मध्ये तक्रार दाखल करू शकता [K:cpa-where-to-file]. \nतक्रार दाखल करण्याची अंतिम मुदत २ वर्षे आहे (३ ऑक्टोबर २०२८ पर्यंत) [K:cpa-limitation]. भरपाईची रक्कम ८,००० रुपये असल्यामुळे, यासाठी साधारणपणे कोणतेही शुल्क (Fee) नाही, तरीही पोर्टलवर पडताळणी करा [K:cpa-fee].\n\n**तुम्ही आता काय करू शकता**\n१. राष्ट्रीय ग्राहक हेल्पलाइन (National Consumer Helpline) वर 1915 किंवा 1800-11-4000 वर कॉल करून किंवा consumerhelpline.gov.in वर मोफत तक्रार नोंदवा [K:nch].\n२. कुरिअर कंपनीला लेखी तक्रार किंवा ई-मेल पाठवून भरपाईची मागणी करा.\n३. तुम्ही जिल्हा ग्राहक आयोगाकडे (District Consumer Commission) स्वतः ऑनलाईन (e-Jagriti पोर्टलवर) तक्रार दाखल करू शकता, त्यासाठी वकिलाची सक्ती नाही [K:cpa-efiling].\n\n**मला तुमच्याकडून अजून काय हवे आहे**\n- कुरिअर कंपनीचे नाव काय आहे?\n- तुम्ही कंपनीकडे कोणतीही लेखी तक्रार केली आहे का?\n\n**खरं वकील कधी गाठावे**\nजर कुरिअर कंपनीने समजूत काढण्यास स्पष्ट नकार दिला आणि तुम्हाला कायदेशीर कागदपत्रे समजून घेण्यात अडचण येत असेल, तर तुम्ही जिल्हा कायदेशीर सेवा प्राधिकरणाशी (DLSA) संपर्क साधून मोफत कायदेशीर मदत (Free legal aid) घेऊ शकता [K:legal-aid].",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "consumer",
+  "deadlines": [
+   {
+    "label": "Last date to file a consumer complaint (2 years)",
+    "date": "2028-10-03",
+    "days_left": 682,
+    "status": "ok",
+    "kb": "cpa-limitation",
+    "kind": "limitation",
+    "basis": "2 years from 2026-10-03"
+   }
+  ],
+  "escalations": [],
+  "forum": {
+   "forum": "District Consumer Disputes Redressal Commission",
+   "basis_value": 8000.0,
+   "kb": "cpa-pecuniary"
+  },
+  "fee": {
+   "fee_inr": 0,
+   "kb": "cpa-fee",
+   "note": "verify on the filing portal"
+  },
+  "evidence": {
+   "have": [
+    "Invoice / order confirmation / receipt"
+   ],
+   "missing": [
+    "Proof of payment (UPI / card / bank statement)",
+    "Complaint to the company and their reply (emails, chats, ticket numbers)",
+    "Photos / videos of the defect or problem",
+    "Warranty card / terms promised at sale"
+   ]
+  },
+  "ladder": [
+   "Write to the company's customer care / grievance officer and keep the ticket number.",
+   "Register a free complaint with the National Consumer Helpline (pre-litigation mediation).",
+   "Send a written demand / legal notice giving a clear deadline (usually 15 days).",
+   "File a complaint before the District Consumer Commission (online filing possible; no lawyer needed)."
+  ],
+  "in_scope": true
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "repaired": false,
+  "scrubbed": false,
+  "final_violations": 0
+ },
+ "case": {
+  "language": "mr",
+  "language_name": "Marathi",
+  "category": "consumer",
+  "sub_type": "courier service loss",
+  "summary": "The user sent a parcel worth 8,000 rupees via courier on October 3, 2026, which got lost. The courier company is refusing to pay compensation, and the user has the receipt.",
+  "user_role": "buyer",
+  "other_party": {
+   "name": null,
+   "type": "company"
+  },
+  "state": null,
+  "city": null,
+  "amounts": {
+   "disputed": 8000,
+   "paid_value": null,
+   "monthly_rent": null,
+   "monthly_salary": null
+  },
+  "dates": {
+   "incident": "2026-10-03",
+   "purchase": null,
+   "complaint_to_company": null,
+   "moved_out": null,
+   "last_working_day": null,
+   "wages_due_from": null,
+   "notice_received": null,
+   "notice_deadline": null,
+   "bank_return_memo": null
+  },
+  "employment_ended": null,
+  "timeline": [
+   {
+    "date": "2026-10-03",
+    "event": "Sent parcel worth 8,000 rupees via courier, which got lost."
+   }
+  ],
+  "evidence_have": [
+   "Courier receipt"
+  ],
+  "steps_taken": [],
+  "red_flags": [],
+  "user_goal": "Get compensation of 8,000 rupees from the courier company for the lost parcel.",
+  "open_questions": [
+   "What is the name of the courier company?",
+   "Have you filed a formal written complaint or legal notice to the courier company?"
+  ]
+ },
+ "kb_ids": [
+  "cpa-consumer-definition",
+  "cpa-deficiency",
+  "cpa-where-to-file",
+  "cpa-pecuniary",
+  "cpa-fee",
+  "cpa-efiling",
+  "cpa-limitation",
+  "cpa-reliefs",
+  "cpa-timeline",
+  "cpa-mediation",
+  "nch",
+  "ecom-grievance",
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send"
+ ],
+ "checks": {
+  "category": true,
+  "language": true,
+  "deadline_computed": true,
+  "guard_clean": true
+ },
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 2.13,
+   "input_tokens": 885,
+   "output_tokens": 461,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 3.71,
+   "input_tokens": 2784,
+   "output_tokens": 487,
+   "error": null
+  }
+ ],
+ "seconds": 5.9
+}

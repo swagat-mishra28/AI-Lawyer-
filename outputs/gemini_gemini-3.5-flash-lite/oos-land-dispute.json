@@ -1,0 +1,209 @@
+{
+ "id": "oos-land-dispute",
+ "title": "Out of scope - ancestral land dispute",
+ "input": {
+  "id": "oos-land-dispute",
+  "title": "Out of scope - ancestral land dispute",
+  "turns": [
+   "My brother has illegally occupied our ancestral agricultural land in Uttar Pradesh and is not giving me my share. Which section should I file under?"
+  ]
+ },
+ "kind": "chat",
+ "turns": [
+  {
+   "user": "My brother has illegally occupied our ancestral agricultural land in Uttar Pradesh and is not giving me my share. Which section should I file under?",
+   "reply": "I am sorry, but property and land disputes are outside what I cover, and I cannot guess about the law or suggest sections. \n\nFor real help, you can approach Free legal aid [K:legal-aid]. Under the Legal Services Authorities Act, many people are entitled to a free lawyer from the Legal Services Authority: women and children, members of Scheduled Castes/Tribes, persons with disabilities, industrial workmen, victims of disaster or trafficking, people in custody, and people whose annual income is below the limit set by their state [K:legal-aid]. Call the NALSA helpline 15100 or visit the District Legal Services Authority (DLSA) at your district court [K:legal-aid]. \n\nYou may also explore Lok Adalat (settlement, free), which settles disputes by agreement, including before any case is filed [K:lok-adalat]. There is no fee, and a settlement there is final and binding like a court decree; ask the District Legal Services Authority about this [K:lok-adalat].\n\n[{\"flag\": \"out_of_scope\", \"level\": \"legal_aid\", \"reason\": \"This problem is outside what this assistant covers (deposits, consumer refunds, unpaid wages, notices).\", \"action\": \"Call NALSA legal aid 15100 or visit your District Legal Services Authority.\"}]",
+   "case": {
+    "language": "en",
+    "language_name": "English",
+    "category": "other",
+    "sub_type": "ancestral land dispute",
+    "summary": "The user states that their brother has illegally occupied their ancestral agricultural land in Uttar Pradesh and is denying them their rightful share. The user is asking for legal advice on which section to file under.",
+    "user_role": "other",
+    "other_party": {
+     "name": "Brother",
+     "type": "individual"
+    },
+    "state": "Uttar Pradesh",
+    "city": null,
+    "amounts": {
+     "disputed": null,
+     "paid_value": null,
+     "monthly_rent": null,
+     "monthly_salary": null
+    },
+    "dates": {
+     "incident": null,
+     "purchase": null,
+     "complaint_to_company": null,
+     "moved_out": null,
+     "last_working_day": null,
+     "wages_due_from": null,
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": null,
+    "timeline": [],
+    "evidence_have": [],
+    "steps_taken": [],
+    "red_flags": [],
+    "user_goal": "Find out which section to file under to get their share of ancestral agricultural land",
+    "open_questions": [
+     "Is there a formal partition or will regarding the ancestral land?",
+     "Have you approached the local revenue authorities or police regarding the occupation?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "other",
+    "deadlines": [],
+    "escalations": [
+     {
+      "flag": "out_of_scope",
+      "level": "legal_aid",
+      "reason": "This problem is outside what this assistant covers (deposits, consumer refunds, unpaid wages, notices).",
+      "action": "Call NALSA legal aid 15100 or visit your District Legal Services Authority."
+     }
+    ],
+    "forum": null,
+    "fee": null,
+    "evidence": null,
+    "ladder": [],
+    "in_scope": false
+   },
+   "kb_ids": [
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 0,
+     "violations": []
+    },
+    "repaired": false,
+    "scrubbed": false,
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "legal-aid",
+     "title": "Free legal aid",
+     "law": "Legal Services Authorities Act, 1987 - Section 12",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    },
+    {
+     "n": 2,
+     "id": "lok-adalat",
+     "title": "Lok Adalat (settlement, free)",
+     "law": "Legal Services Authorities Act, 1987 - Section 19; Legal Services Authorities Act, 1987 - Section 21",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    }
+   ]
+  }
+ ],
+ "reply": "I am sorry, but property and land disputes are outside what I cover, and I cannot guess about the law or suggest sections. \n\nFor real help, you can approach Free legal aid [K:legal-aid]. Under the Legal Services Authorities Act, many people are entitled to a free lawyer from the Legal Services Authority: women and children, members of Scheduled Castes/Tribes, persons with disabilities, industrial workmen, victims of disaster or trafficking, people in custody, and people whose annual income is below the limit set by their state [K:legal-aid]. Call the NALSA helpline 15100 or visit the District Legal Services Authority (DLSA) at your district court [K:legal-aid]. \n\nYou may also explore Lok Adalat (settlement, free), which settles disputes by agreement, including before any case is filed [K:lok-adalat]. There is no fee, and a settlement there is final and binding like a court decree; ask the District Legal Services Authority about this [K:lok-adalat].\n\n[{\"flag\": \"out_of_scope\", \"level\": \"legal_aid\", \"reason\": \"This problem is outside what this assistant covers (deposits, consumer refunds, unpaid wages, notices).\", \"action\": \"Call NALSA legal aid 15100 or visit your District Legal Services Authority.\"}]",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "other",
+  "deadlines": [],
+  "escalations": [
+   {
+    "flag": "out_of_scope",
+    "level": "legal_aid",
+    "reason": "This problem is outside what this assistant covers (deposits, consumer refunds, unpaid wages, notices).",
+    "action": "Call NALSA legal aid 15100 or visit your District Legal Services Authority."
+   }
+  ],
+  "forum": null,
+  "fee": null,
+  "evidence": null,
+  "ladder": [],
+  "in_scope": false
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "repaired": false,
+  "scrubbed": false,
+  "final_violations": 0
+ },
+ "case": {
+  "language": "en",
+  "language_name": "English",
+  "category": "other",
+  "sub_type": "ancestral land dispute",
+  "summary": "The user states that their brother has illegally occupied their ancestral agricultural land in Uttar Pradesh and is denying them their rightful share. The user is asking for legal advice on which section to file under.",
+  "user_role": "other",
+  "other_party": {
+   "name": "Brother",
+   "type": "individual"
+  },
+  "state": "Uttar Pradesh",
+  "city": null,
+  "amounts": {
+   "disputed": null,
+   "paid_value": null,
+   "monthly_rent": null,
+   "monthly_salary": null
+  },
+  "dates": {
+   "incident": null,
+   "purchase": null,
+   "complaint_to_company": null,
+   "moved_out": null,
+   "last_working_day": null,
+   "wages_due_from": null,
+   "notice_received": null,
+   "notice_deadline": null,
+   "bank_return_memo": null
+  },
+  "employment_ended": null,
+  "timeline": [],
+  "evidence_have": [],
+  "steps_taken": [],
+  "red_flags": [],
+  "user_goal": "Find out which section to file under to get their share of ancestral agricultural land",
+  "open_questions": [
+   "Is there a formal partition or will regarding the ancestral land?",
+   "Have you approached the local revenue authorities or police regarding the occupation?"
+  ]
+ },
+ "kb_ids": [
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send"
+ ],
+ "checks": {
+  "category": true,
+  "escalates:legal_aid": true,
+  "mentions:15100": true,
+  "absent:[Ss]ection\\s+\\d+": true,
+  "guard_clean": true
+ },
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 3.94,
+   "input_tokens": 865,
+   "output_tokens": 382,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 7.7,
+   "input_tokens": 541,
+   "output_tokens": 289,
+   "error": null
+  }
+ ],
+ "seconds": 11.7
+}

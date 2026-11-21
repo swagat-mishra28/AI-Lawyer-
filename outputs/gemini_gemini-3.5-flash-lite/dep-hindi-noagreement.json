@@ -1,0 +1,339 @@
+{
+ "id": "dep-hindi-noagreement",
+ "title": "Deposit, Hindi (Devanagari), no written agreement",
+ "input": {
+  "id": "dep-hindi-noagreement",
+  "title": "Deposit, Hindi (Devanagari), no written agreement",
+  "turns": [
+   "मैं दिल्ली में किराए पर रहता था। मकान मालिक को 2 महीने का किराया 30,000 रुपये डिपॉज़िट दिया था, UPI से। कोई लिखित एग्रीमेंट नहीं बना। 1 अक्टूबर 2026 को कमरा खाली किया, अब वो पैसे नहीं दे रहे और कहते हैं कोई सबूत नहीं है।"
+  ]
+ },
+ "kind": "chat",
+ "turns": [
+  {
+   "user": "मैं दिल्ली में किराए पर रहता था। मकान मालिक को 2 महीने का किराया 30,000 रुपये डिपॉज़िट दिया था, UPI से। कोई लिखित एग्रीमेंट नहीं बना। 1 अक्टूबर 2026 को कमरा खाली किया, अब वो पैसे नहीं दे रहे और कहते हैं कोई सबूत नहीं है।",
+   "reply": "**मैंने जो समझा**\nआपने दिल्ली में किराए पर रहते हुए मकान मालिक को UPI से 30,000 रुपये सिक्योरिटी डिपॉज़िट दिया था, लेकिन लिखित एग्रीमेंट नहीं था। 1 अक्टूबर 2026 को कमरा खाली करने के बाद मकान मालिक पैसे देने से मना कर रहा है।\n\n**आपकी स्थिति**\nलिखित एग्रीमेंट न होने पर भी, भुगतान का सबूत (UPI ट्रांजैक्शन) और बातचीत के मैसेज बहुत मजबूत सबूत होते हैं [K:deposit-no-agreement]। मकान मालिक द्वारा डिपॉज़िट वापस न देना आम तौर पर सिविल (रुपयों का) विवाद है, यह कोई फौजदारी मामला नहीं है [K:deposit-not-police]। पैसे वापस पाने के लिए आपके पास सिविल कोर्ट [Civil Court] में मुकदमा दायर करने का हक है [K:deposit-civil-suit], जिसके लिए आम तौर पर तीन साल का समय मिलता है [K:deposit-limitation] (इस मामले में आखिरी तारीख 01-10-2029 है)।\n\n**आप अब क्या कर सकते हैं**\n1. मकान मालिक से लिखित रूप में (WhatsApp या ईमेल) डिपॉज़िट और किसी भी कटौती का हिसाब मांगें।\n2. कानूनी नोटिस [Legal Notice] भेजकर एक तय समय में पैसे वापस करने की मांग करें [K:notice-how-to-send]।\n3. जिला विधिक सेवा प्राधिकरण (DLSA) [District Legal Services Authority] के पास जाकर लोक अदालत [Lok Adalat] के जरिए बिना किसी फीस के आपसी समझौते से मामला सुलझाने की कोशिश करें [K:lok-adalat]।\n4. सिविल कोर्ट [Civil Court] में पैसे की रिकवरी के लिए सिविल सूट [Civil Suit] दायर करें [K:deposit-civil-suit]।\n\n**मुझे आपसे अभी क्या चाहिए**\n1. क्या आपके पास UPI पेमेंट का वह स्क्रीनशॉट या बैंक स्टेटमेंट है जिससे मकान मालिक को पैसे भेजने की पुष्टि हो?\n2. क्या आपके पास मकान मालिक के साथ हुई बातचीत या मैसेज का कोई रिकॉर्ड है?\n\n**अपने लिए असली वकील कब लें**\nजब मकान मालिक कानूनी नोटिस [Legal Notice] भेजने के बाद भी पैसे न लौटाए और आपको सिविल कोर्ट [Civil Court] में केस दर्ज करना पड़े, तब किसी वकील की मदद लें [K:deposit-civil-suit]।",
+   "case": {
+    "language": "hi",
+    "language_name": "Hindi",
+    "category": "deposit",
+    "sub_type": "security deposit withholding",
+    "summary": "The user lived on rent in Delhi and paid a security deposit of Rs. 30,000 for 2 months via UPI without a written agreement. They vacated the room on October 1, 2026, but the landlord is refusing to return the money, claiming there is no proof.",
+    "user_role": "tenant",
+    "other_party": {
+     "name": null,
+     "type": "landlord"
+    },
+    "state": "Delhi",
+    "city": "Delhi",
+    "amounts": {
+     "disputed": 30000,
+     "paid_value": null,
+     "monthly_rent": 15000,
+     "monthly_salary": null
+    },
+    "dates": {
+     "incident": "2026-10-01",
+     "purchase": null,
+     "complaint_to_company": null,
+     "moved_out": "2026-10-01",
+     "last_working_day": null,
+     "wages_due_from": null,
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": null,
+    "timeline": [
+     {
+      "date": "2026-10-01",
+      "event": "User vacated the room and landlord refused to return the deposit."
+     }
+    ],
+    "evidence_have": [
+     "UPI payment transaction record for the deposit"
+    ],
+    "steps_taken": [],
+    "red_flags": [],
+    "user_goal": "Get back the security deposit of Rs. 30,000 from the landlord",
+    "open_questions": [
+     "Do you have the UPI transaction screenshot or bank statement showing the deposit transfer to the landlord?",
+     "Have you sent any formal written reminder or legal notice to the landlord regarding the refund?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "deposit",
+    "deadlines": [
+     {
+      "label": "Last date to file a money-recovery suit (generally 3 years)",
+      "date": "2029-10-01",
+      "days_left": 1045,
+      "status": "ok",
+      "kb": "deposit-limitation",
+      "kind": "limitation",
+      "basis": "3 years from move-out 2026-10-01"
+     }
+    ],
+    "escalations": [],
+    "forum": null,
+    "fee": null,
+    "evidence": {
+     "have": [
+      "Proof the deposit was paid (bank transfer / UPI / receipt)"
+     ],
+     "missing": [
+      "Rent agreement (even unregistered / 11-month agreement)",
+      "Proof you moved out and handed over keys (date, message, handover note)",
+      "Messages where you asked for the deposit and the landlord's replies",
+      "Photos/videos of the flat's condition at move-out",
+      "Rent receipts / proof that rent and bills were paid up to date"
+     ]
+    },
+    "ladder": [
+     "Ask in writing (WhatsApp/email) for the deposit and an itemised list of any deductions with bills.",
+     "Send a legal notice demanding refund within a deadline (usually 15 days).",
+     "Try free pre-litigation settlement through the District Legal Services Authority / Lok Adalat.",
+     "File a civil suit for recovery of money in the civil court with jurisdiction."
+    ],
+    "in_scope": true
+   },
+   "kb_ids": [
+    "deposit-contract",
+    "deposit-no-agreement",
+    "deposit-deductions",
+    "mta-deposit",
+    "deposit-civil-suit",
+    "deposit-limitation",
+    "deposit-not-police",
+    "deposit-not-consumer",
+    "eviction-due-process",
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 0,
+     "violations": [
+      {
+       "kind": "bad_tag",
+       "text": "[K:deposit-landlord-reminder]",
+       "detail": "no such knowledge entry"
+      }
+     ]
+    },
+    "repaired": true,
+    "scrubbed": false,
+    "second_pass": {
+     "refs_checked": 0,
+     "violations": []
+    },
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "deposit-no-agreement",
+     "title": "No written agreement?",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 2,
+     "id": "deposit-not-police",
+     "title": "Is this a police matter?",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 3,
+     "id": "deposit-civil-suit",
+     "title": "Recovery suit in civil court",
+     "law": "Code of Civil Procedure, 1908 - Order XXXVII",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/2191"
+    },
+    {
+     "n": 4,
+     "id": "deposit-limitation",
+     "title": "Time limit - generally three years",
+     "law": "Limitation Act, 1963",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1565"
+    },
+    {
+     "n": 5,
+     "id": "notice-how-to-send",
+     "title": "How to send a notice safely",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 6,
+     "id": "lok-adalat",
+     "title": "Lok Adalat (settlement, free)",
+     "law": "Legal Services Authorities Act, 1987 - Section 19; Legal Services Authorities Act, 1987 - Section 21",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    }
+   ]
+  }
+ ],
+ "reply": "**मैंने जो समझा**\nआपने दिल्ली में किराए पर रहते हुए मकान मालिक को UPI से 30,000 रुपये सिक्योरिटी डिपॉज़िट दिया था, लेकिन लिखित एग्रीमेंट नहीं था। 1 अक्टूबर 2026 को कमरा खाली करने के बाद मकान मालिक पैसे देने से मना कर रहा है।\n\n**आपकी स्थिति**\nलिखित एग्रीमेंट न होने पर भी, भुगतान का सबूत (UPI ट्रांजैक्शन) और बातचीत के मैसेज बहुत मजबूत सबूत होते हैं [K:deposit-no-agreement]। मकान मालिक द्वारा डिपॉज़िट वापस न देना आम तौर पर सिविल (रुपयों का) विवाद है, यह कोई फौजदारी मामला नहीं है [K:deposit-not-police]। पैसे वापस पाने के लिए आपके पास सिविल कोर्ट [Civil Court] में मुकदमा दायर करने का हक है [K:deposit-civil-suit], जिसके लिए आम तौर पर तीन साल का समय मिलता है [K:deposit-limitation] (इस मामले में आखिरी तारीख 01-10-2029 है)।\n\n**आप अब क्या कर सकते हैं**\n1. मकान मालिक से लिखित रूप में (WhatsApp या ईमेल) डिपॉज़िट और किसी भी कटौती का हिसाब मांगें।\n2. कानूनी नोटिस [Legal Notice] भेजकर एक तय समय में पैसे वापस करने की मांग करें [K:notice-how-to-send]।\n3. जिला विधिक सेवा प्राधिकरण (DLSA) [District Legal Services Authority] के पास जाकर लोक अदालत [Lok Adalat] के जरिए बिना किसी फीस के आपसी समझौते से मामला सुलझाने की कोशिश करें [K:lok-adalat]।\n4. सिविल कोर्ट [Civil Court] में पैसे की रिकवरी के लिए सिविल सूट [Civil Suit] दायर करें [K:deposit-civil-suit]।\n\n**मुझे आपसे अभी क्या चाहिए**\n1. क्या आपके पास UPI पेमेंट का वह स्क्रीनशॉट या बैंक स्टेटमेंट है जिससे मकान मालिक को पैसे भेजने की पुष्टि हो?\n2. क्या आपके पास मकान मालिक के साथ हुई बातचीत या मैसेज का कोई रिकॉर्ड है?\n\n**अपने लिए असली वकील कब लें**\nजब मकान मालिक कानूनी नोटिस [Legal Notice] भेजने के बाद भी पैसे न लौटाए और आपको सिविल कोर्ट [Civil Court] में केस दर्ज करना पड़े, तब किसी वकील की मदद लें [K:deposit-civil-suit]।",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "deposit",
+  "deadlines": [
+   {
+    "label": "Last date to file a money-recovery suit (generally 3 years)",
+    "date": "2029-10-01",
+    "days_left": 1045,
+    "status": "ok",
+    "kb": "deposit-limitation",
+    "kind": "limitation",
+    "basis": "3 years from move-out 2026-10-01"
+   }
+  ],
+  "escalations": [],
+  "forum": null,
+  "fee": null,
+  "evidence": {
+   "have": [
+    "Proof the deposit was paid (bank transfer / UPI / receipt)"
+   ],
+   "missing": [
+    "Rent agreement (even unregistered / 11-month agreement)",
+    "Proof you moved out and handed over keys (date, message, handover note)",
+    "Messages where you asked for the deposit and the landlord's replies",
+    "Photos/videos of the flat's condition at move-out",
+    "Rent receipts / proof that rent and bills were paid up to date"
+   ]
+  },
+  "ladder": [
+   "Ask in writing (WhatsApp/email) for the deposit and an itemised list of any deductions with bills.",
+   "Send a legal notice demanding refund within a deadline (usually 15 days).",
+   "Try free pre-litigation settlement through the District Legal Services Authority / Lok Adalat.",
+   "File a civil suit for recovery of money in the civil court with jurisdiction."
+  ],
+  "in_scope": true
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 0,
+   "violations": [
+    {
+     "kind": "bad_tag",
+     "text": "[K:deposit-landlord-reminder]",
+     "detail": "no such knowledge entry"
+    }
+   ]
+  },
+  "repaired": true,
+  "scrubbed": false,
+  "second_pass": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "final_violations": 0
+ },
+ "case": {
+  "language": "hi",
+  "language_name": "Hindi",
+  "category": "deposit",
+  "sub_type": "security deposit withholding",
+  "summary": "The user lived on rent in Delhi and paid a security deposit of Rs. 30,000 for 2 months via UPI without a written agreement. They vacated the room on October 1, 2026, but the landlord is refusing to return the money, claiming there is no proof.",
+  "user_role": "tenant",
+  "other_party": {
+   "name": null,
+   "type": "landlord"
+  },
+  "state": "Delhi",
+  "city": "Delhi",
+  "amounts": {
+   "disputed": 30000,
+   "paid_value": null,
+   "monthly_rent": 15000,
+   "monthly_salary": null
+  },
+  "dates": {
+   "incident": "2026-10-01",
+   "purchase": null,
+   "complaint_to_company": null,
+   "moved_out": "2026-10-01",
+   "last_working_day": null,
+   "wages_due_from": null,
+   "notice_received": null,
+   "notice_deadline": null,
+   "bank_return_memo": null
+  },
+  "employment_ended": null,
+  "timeline": [
+   {
+    "date": "2026-10-01",
+    "event": "User vacated the room and landlord refused to return the deposit."
+   }
+  ],
+  "evidence_have": [
+   "UPI payment transaction record for the deposit"
+  ],
+  "steps_taken": [],
+  "red_flags": [],
+  "user_goal": "Get back the security deposit of Rs. 30,000 from the landlord",
+  "open_questions": [
+   "Do you have the UPI transaction screenshot or bank statement showing the deposit transfer to the landlord?",
+   "Have you sent any formal written reminder or legal notice to the landlord regarding the refund?"
+  ]
+ },
+ "kb_ids": [
+  "deposit-contract",
+  "deposit-no-agreement",
+  "deposit-deductions",
+  "mta-deposit",
+  "deposit-civil-suit",
+  "deposit-limitation",
+  "deposit-not-police",
+  "deposit-not-consumer",
+  "eviction-due-process",
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send"
+ ],
+ "checks": {
+  "category": true,
+  "language": true,
+  "deadline_computed": true,
+  "mentions:UPI": true,
+  "guard_clean": true
+ },
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 9.88,
+   "input_tokens": 907,
+   "output_tokens": 508,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 3.47,
+   "input_tokens": 2601,
+   "output_tokens": 527,
+   "error": null
+  },
+  {
+   "purpose": "advise:repair",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 4.28,
+   "input_tokens": 3207,
+   "output_tokens": 477,
+   "error": null
+  }
+ ],
+ "seconds": 17.6
+}

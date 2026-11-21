@@ -1,0 +1,412 @@
+{
+ "id": "con-ecommerce-refund",
+ "title": "E-commerce refund pending, English",
+ "input": {
+  "id": "con-ecommerce-refund",
+  "title": "E-commerce refund pending, English",
+  "turns": [
+   "I bought a laptop on an e-commerce site for Rs 52,000 on 5 August 2026. It was defective, I returned it on 12 August and the pickup was done, but the refund never came. Customer care just says 'in process'. I have the invoice, the return pickup receipt and chat screenshots."
+  ],
+  "draft": "consumer_complaint"
+ },
+ "kind": "chat",
+ "turns": [
+  {
+   "user": "I bought a laptop on an e-commerce site for Rs 52,000 on 5 August 2026. It was defective, I returned it on 12 August and the pickup was done, but the refund never came. Customer care just says 'in process'. I have the invoice, the return pickup receipt and chat screenshots.",
+   "reply": "**What I understood**  \nYou bought a defective laptop for Rs 52,000 on 5 August 2026, returned it on 12 August 2026, but have not received your refund despite contacting customer support.\n\n**Where you stand**  \n*   I am \"Nyaya Saathi\", a legal-help assistant, not a lawyer.\n*   You bought this item for personal use, so you are a consumer under the law [K:cpa-consumer-definition]. \n*   Taking the item back and withholding your refund is a deficiency in service [K:cpa-deficiency]. \n*   Your case falls under the District Consumer Disputes Redressal Commission [K:cpa-pecuniary]. You can file it in the district where you live [K:cpa-where-to-file].\n*   Generally, there is no court fee for claims where the paid amount is up to Rs 5 lakh [K:cpa-fee].\n*   Your deadline to file a consumer complaint is 12 August 2028 [K:cpa-limitation].\n\n**What you can do now**  \n1. **Contact Grievance Officer**: Send an email to the platform’s Grievance Officer with your invoice and pickup receipt; generally, they must respond within 48 hours and resolve it within one month [K:ecom-grievance].\n2. **Call National Consumer Helpline**: File a free complaint by calling 1915 or online at consumerhelpline.gov.in [K:nch].\n3. **Send Written Notice**: Send a final demand notice by Speed Post and email giving them 15 days to return your money, and keep the tracking receipt [K:notice-how-to-send].\n4. **File Consumer Complaint**: File a complaint online through the e-Jagriti portal; generally, you can argue your own case without hiring a lawyer [K:cpa-efiling].\n\n**What I still need from you**  \n1. What is the name of the e-commerce website?  \n2. Which city and state do you live in?  \n3. Do you have a bank statement or UPI receipt showing the Rs 52,000 payment?\n\n**When to get a real lawyer**  \nGet a real lawyer if the e-commerce site ignores your written notice and you need help preparing your papers for the Consumer Commission.",
+   "case": {
+    "language": "en",
+    "language_name": "English",
+    "category": "consumer",
+    "sub_type": "e-commerce refund",
+    "summary": "The user purchased a defective laptop for Rs 52,000 from an e-commerce site on August 5, 2026. The product was picked up for return on August 12, 2026, but the refund has not been processed yet despite contacting customer care.",
+    "user_role": "buyer",
+    "other_party": {
+     "name": null,
+     "type": "e-commerce platform"
+    },
+    "state": null,
+    "city": null,
+    "amounts": {
+     "disputed": 52000,
+     "paid_value": 52000,
+     "monthly_rent": null,
+     "monthly_salary": null
+    },
+    "dates": {
+     "incident": "2026-08-12",
+     "purchase": "2026-08-05",
+     "complaint_to_company": null,
+     "moved_out": null,
+     "last_working_day": null,
+     "wages_due_from": null,
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": null,
+    "timeline": [
+     {
+      "date": "2026-08-05",
+      "event": "Laptop purchased for Rs 52,000"
+     },
+     {
+      "date": "2026-08-12",
+      "event": "Defective laptop returned and picked up"
+     }
+    ],
+    "evidence_have": [
+     "Invoice",
+     "Return pickup receipt",
+     "Chat screenshots"
+    ],
+    "steps_taken": [
+     "Contacted customer care"
+    ],
+    "red_flags": [],
+    "user_goal": "Get a full refund of Rs 52,000 for the returned laptop.",
+    "open_questions": [
+     "What is the name of the e-commerce platform?",
+     "Which state and city do you reside in?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "consumer",
+    "deadlines": [
+     {
+      "label": "Last date to file a consumer complaint (2 years)",
+      "date": "2028-08-12",
+      "days_left": 630,
+      "status": "ok",
+      "kb": "cpa-limitation",
+      "kind": "limitation",
+      "basis": "2 years from 2026-08-12"
+     }
+    ],
+    "escalations": [],
+    "forum": {
+     "forum": "District Consumer Disputes Redressal Commission",
+     "basis_value": 52000.0,
+     "kb": "cpa-pecuniary"
+    },
+    "fee": {
+     "fee_inr": 0,
+     "kb": "cpa-fee",
+     "note": "verify on the filing portal"
+    },
+    "evidence": {
+     "have": [
+      "Invoice / order confirmation / receipt",
+      "Complaint to the company and their reply (emails, chats, ticket numbers)"
+     ],
+     "missing": [
+      "Proof of payment (UPI / card / bank statement)",
+      "Photos / videos of the defect or problem",
+      "Warranty card / terms promised at sale"
+     ]
+    },
+    "ladder": [
+     "Write to the company's customer care / grievance officer and keep the ticket number.",
+     "Register a free complaint with the National Consumer Helpline (pre-litigation mediation).",
+     "Send a written demand / legal notice giving a clear deadline (usually 15 days).",
+     "File a complaint before the District Consumer Commission (online filing possible; no lawyer needed)."
+    ],
+    "in_scope": true
+   },
+   "kb_ids": [
+    "cpa-consumer-definition",
+    "cpa-deficiency",
+    "cpa-where-to-file",
+    "cpa-pecuniary",
+    "cpa-fee",
+    "cpa-efiling",
+    "cpa-limitation",
+    "cpa-reliefs",
+    "cpa-timeline",
+    "cpa-mediation",
+    "nch",
+    "ecom-grievance",
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 0,
+     "violations": []
+    },
+    "repaired": false,
+    "scrubbed": false,
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "cpa-consumer-definition",
+     "title": "Who is a \"consumer\"",
+     "law": "Consumer Protection Act, 2019 - Section 2(7)",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 2,
+     "id": "cpa-deficiency",
+     "title": "Deficiency in service and defects",
+     "law": "Consumer Protection Act, 2019 - Section 2(11); Consumer Protection Act, 2019 - Section 2(10); Consumer Protection Act, 2019 - Section 2(47)",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 3,
+     "id": "cpa-pecuniary",
+     "title": "Which level of Commission (by value paid)",
+     "law": "Consumer Protection (Jurisdiction of the District Commission, the State Commission and the National Commission) Rules, 2021",
+     "confidence": "high",
+     "url": "https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
+    },
+    {
+     "n": 4,
+     "id": "cpa-where-to-file",
+     "title": "Where to file - District Commission and place",
+     "law": "Consumer Protection Act, 2019 - Section 34; Consumer Protection Act, 2019 - Section 35",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 5,
+     "id": "cpa-fee",
+     "title": "Filing fee",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "medium",
+     "url": null
+    },
+    {
+     "n": 6,
+     "id": "cpa-limitation",
+     "title": "Time limit - two years",
+     "law": "Consumer Protection Act, 2019 - Section 69",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 7,
+     "id": "ecom-grievance",
+     "title": "E-commerce grievance officer",
+     "law": "Consumer Protection (E-Commerce) Rules, 2020 - Rule 4",
+     "confidence": "medium",
+     "url": "https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
+    },
+    {
+     "n": 8,
+     "id": "nch",
+     "title": "National Consumer Helpline (free, pre-litigation)",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 9,
+     "id": "notice-how-to-send",
+     "title": "How to send a notice safely",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 10,
+     "id": "cpa-efiling",
+     "title": "Filing online, without a lawyer",
+     "law": "Consumer Protection Act, 2019 - Section 35",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    }
+   ]
+  }
+ ],
+ "reply": "**What I understood**  \nYou bought a defective laptop for Rs 52,000 on 5 August 2026, returned it on 12 August 2026, but have not received your refund despite contacting customer support.\n\n**Where you stand**  \n*   I am \"Nyaya Saathi\", a legal-help assistant, not a lawyer.\n*   You bought this item for personal use, so you are a consumer under the law [K:cpa-consumer-definition]. \n*   Taking the item back and withholding your refund is a deficiency in service [K:cpa-deficiency]. \n*   Your case falls under the District Consumer Disputes Redressal Commission [K:cpa-pecuniary]. You can file it in the district where you live [K:cpa-where-to-file].\n*   Generally, there is no court fee for claims where the paid amount is up to Rs 5 lakh [K:cpa-fee].\n*   Your deadline to file a consumer complaint is 12 August 2028 [K:cpa-limitation].\n\n**What you can do now**  \n1. **Contact Grievance Officer**: Send an email to the platform’s Grievance Officer with your invoice and pickup receipt; generally, they must respond within 48 hours and resolve it within one month [K:ecom-grievance].\n2. **Call National Consumer Helpline**: File a free complaint by calling 1915 or online at consumerhelpline.gov.in [K:nch].\n3. **Send Written Notice**: Send a final demand notice by Speed Post and email giving them 15 days to return your money, and keep the tracking receipt [K:notice-how-to-send].\n4. **File Consumer Complaint**: File a complaint online through the e-Jagriti portal; generally, you can argue your own case without hiring a lawyer [K:cpa-efiling].\n\n**What I still need from you**  \n1. What is the name of the e-commerce website?  \n2. Which city and state do you live in?  \n3. Do you have a bank statement or UPI receipt showing the Rs 52,000 payment?\n\n**When to get a real lawyer**  \nGet a real lawyer if the e-commerce site ignores your written notice and you need help preparing your papers for the Consumer Commission.",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "consumer",
+  "deadlines": [
+   {
+    "label": "Last date to file a consumer complaint (2 years)",
+    "date": "2028-08-12",
+    "days_left": 630,
+    "status": "ok",
+    "kb": "cpa-limitation",
+    "kind": "limitation",
+    "basis": "2 years from 2026-08-12"
+   }
+  ],
+  "escalations": [],
+  "forum": {
+   "forum": "District Consumer Disputes Redressal Commission",
+   "basis_value": 52000.0,
+   "kb": "cpa-pecuniary"
+  },
+  "fee": {
+   "fee_inr": 0,
+   "kb": "cpa-fee",
+   "note": "verify on the filing portal"
+  },
+  "evidence": {
+   "have": [
+    "Invoice / order confirmation / receipt",
+    "Complaint to the company and their reply (emails, chats, ticket numbers)"
+   ],
+   "missing": [
+    "Proof of payment (UPI / card / bank statement)",
+    "Photos / videos of the defect or problem",
+    "Warranty card / terms promised at sale"
+   ]
+  },
+  "ladder": [
+   "Write to the company's customer care / grievance officer and keep the ticket number.",
+   "Register a free complaint with the National Consumer Helpline (pre-litigation mediation).",
+   "Send a written demand / legal notice giving a clear deadline (usually 15 days).",
+   "File a complaint before the District Consumer Commission (online filing possible; no lawyer needed)."
+  ],
+  "in_scope": true
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "repaired": false,
+  "scrubbed": false,
+  "final_violations": 0
+ },
+ "case": {
+  "language": "en",
+  "language_name": "English",
+  "category": "consumer",
+  "sub_type": "e-commerce refund",
+  "summary": "The user purchased a defective laptop for Rs 52,000 from an e-commerce site on August 5, 2026. The product was picked up for return on August 12, 2026, but the refund has not been processed yet despite contacting customer care.",
+  "user_role": "buyer",
+  "other_party": {
+   "name": null,
+   "type": "e-commerce platform"
+  },
+  "state": null,
+  "city": null,
+  "amounts": {
+   "disputed": 52000,
+   "paid_value": 52000,
+   "monthly_rent": null,
+   "monthly_salary": null
+  },
+  "dates": {
+   "incident": "2026-08-12",
+   "purchase": "2026-08-05",
+   "complaint_to_company": null,
+   "moved_out": null,
+   "last_working_day": null,
+   "wages_due_from": null,
+   "notice_received": null,
+   "notice_deadline": null,
+   "bank_return_memo": null
+  },
+  "employment_ended": null,
+  "timeline": [
+   {
+    "date": "2026-08-05",
+    "event": "Laptop purchased for Rs 52,000"
+   },
+   {
+    "date": "2026-08-12",
+    "event": "Defective laptop returned and picked up"
+   }
+  ],
+  "evidence_have": [
+   "Invoice",
+   "Return pickup receipt",
+   "Chat screenshots"
+  ],
+  "steps_taken": [
+   "Contacted customer care"
+  ],
+  "red_flags": [],
+  "user_goal": "Get a full refund of Rs 52,000 for the returned laptop.",
+  "open_questions": [
+   "What is the name of the e-commerce platform?",
+   "Which state and city do you reside in?"
+  ]
+ },
+ "kb_ids": [
+  "cpa-consumer-definition",
+  "cpa-deficiency",
+  "cpa-where-to-file",
+  "cpa-pecuniary",
+  "cpa-fee",
+  "cpa-efiling",
+  "cpa-limitation",
+  "cpa-reliefs",
+  "cpa-timeline",
+  "cpa-mediation",
+  "nch",
+  "ecom-grievance",
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send"
+ ],
+ "draft": {
+  "doc_type": "consumer_complaint",
+  "title": "Consumer complaint (District Commission) - draft",
+  "markdown": "**BEFORE THE DISTRICT CONSUMER DISPUTES REDRESSAL COMMISSION, [FILL: district], [FILL: state]**\n\n**Consumer Complaint No. ____ of 2026**\n\n**IN THE MATTER OF:**\n[FILL: your full name], [FILL: address] ... **Complainant**\n\nAND\n\n[FILL: name of the e-commerce platform], [FILL: address] ... **Opposite Party**\n\n**COMPLAINT UNDER THE CONSUMER PROTECTION ACT, 2019**\n\n**1. Facts of the case**\n\n1. On August 5, 2026, I purchased a laptop for an amount of Rs 52,000 from the e-commerce platform [FILL: Name of e-commerce platform] while residing in [FILL: City, State].\n\n2. Upon receiving the laptop, I found the product to be defective and initiated a return request with the e-commerce platform.\n\n3. Pursuant to my return request, the defective laptop was successfully picked up by the e-commerce platform on August 12, 2026.\n\n4. Following the pickup, I contacted customer care to request my refund, but the amount of Rs 52,000 has not been refunded to me to date.\n\n5. I have retained all relevant records of this transaction, including the invoice, return pickup receipt, and chat screenshots with customer care.\n\n**2. Deficiency / unfair trade practice:** Your failure to refund / rectify constitutes a deficiency in service and an unfair trade practice within the meaning of the Consumer Protection Act, 2019.\n\n**3. Cause of action** arose on 2026-08-12 and is continuing as the amount remains unpaid.\n\n**4. Limitation:** The complaint is filed within two years of the cause of action (last date as computed: 2028-08-12).\n\n**5. Jurisdiction:** The Complainant resides / works for gain within the jurisdiction of this Commission, and the value of goods/services paid (Rs 52,000) is within its pecuniary limits.\n\n**6. Prayer:** The Complainant prays that this Commission direct the Opposite Party to:\n a. refund Rs 52,000;\n b. pay compensation of Rs [FILL: amount] for mental agony and harassment;\n c. pay litigation costs of Rs [FILL: amount];\n d. pass any other order it deems fit.\n\n**7. Documents annexed:**\n1. Invoice\n2. Return pickup receipt\n3. Chat screenshots\n\n**Verification:** I, [FILL: your full name], verify that the contents of this complaint are true to my knowledge and belief.\n\nPlace: [FILL] Date: 21 November 2026  Signature: ________\n\n> Note: file online through the consumer commission e-filing portal. An affidavit and an index of documents are usually required - check the portal's checklist.",
+  "placeholders": [
+   "[FILL: City, State]",
+   "[FILL: Name of e-commerce platform]",
+   "[FILL: address]",
+   "[FILL: amount]",
+   "[FILL: district]",
+   "[FILL: name of the e-commerce platform]",
+   "[FILL: state]",
+   "[FILL: your full name]"
+  ],
+  "facts_guard": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "disclaimer": "Draft prepared by an AI assistant from your answers. Check every fact, fill every [FILL] and, if the amount is large or the other side has a lawyer, have it reviewed."
+ },
+ "checks": {
+  "category": true,
+  "language": true,
+  "no_false_alarm": true,
+  "deadline_computed": true,
+  "forum": true,
+  "mentions:1915": true,
+  "mentions:grievance": true,
+  "guard_clean": true,
+  "draft_no_legal_refs_in_facts": true
+ },
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "gemini:gemini-3.5-flash",
+   "seconds": 50.48,
+   "input_tokens": 912,
+   "output_tokens": 548,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "gemini:gemini-3.5-flash",
+   "seconds": 12.75,
+   "input_tokens": 2898,
+   "output_tokens": 530,
+   "error": null
+  },
+  {
+   "purpose": "draft_facts",
+   "model": "gemini:gemini-3.5-flash",
+   "seconds": 71.99,
+   "input_tokens": 680,
+   "output_tokens": 181,
+   "error": null
+  }
+ ],
+ "seconds": 135.2
+}

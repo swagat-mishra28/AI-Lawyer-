@@ -1,0 +1,361 @@
+{
+ "id": "con-builder-large",
+ "title": "Builder delay, Rs 85 lakh (state commission, large amount)",
+ "input": {
+  "id": "con-builder-large",
+  "title": "Builder delay, Rs 85 lakh (state commission, large amount)",
+  "turns": [
+   "I paid 85 lakh rupees to a builder in Noida for a flat in 2021. Possession was promised in December 2023 but the project is still incomplete. What can I do?"
+  ]
+ },
+ "kind": "chat",
+ "turns": [
+  {
+   "user": "I paid 85 lakh rupees to a builder in Noida for a flat in 2021. Possession was promised in December 2023 but the project is still incomplete. What can I do?",
+   "reply": "**Urgent Note:** The usual 2-year time limit to file a consumer complaint passed on 2025-12-01 [K:cpa-limitation]. Only a Commission can excuse this delay. Because the amount (Rs 8,500,000) is large, you should talk to a lawyer or the District Legal Services Authority (DLSA) by calling 15100 right away [K:legal-aid]. \n\n**What I understood**\nYou paid Rs 85 lakh to a builder in Noida in 2021 for a flat, but the project is still incomplete after the promised December 2023 possession date.\n\n**Where you stand**\nNot handing over possession on time is a deficiency in service [K:cpa-deficiency]. Since the amount paid is above Rs 50 lakh and up to Rs 2 crore, your case falls under the State Consumer Disputes Redressal Commission [K:cpa-pecuniary]. The filing fee is generally around Rs 2,000 (please verify on the portal) [K:cpa-fee]. Builder delay cases can also be taken to the state RERA authority, but these cases are complex and usually require a lawyer [K:rera-note].\n\n**What you can do now**\n1. Contact a lawyer or your local District Legal Services Authority (DLSA) at 15100 immediately to see how to handle the expired time limit [K:cpa-limitation, K:legal-aid].\n2. Collect your builder-buyer agreement, payment receipts, bank statements, and any written communication with the builder.\n3. Consult a lawyer or RERA expert before filing any formal case due to the large amount involved [K:rera-note].\n\n**What I still need from you**\n1. Do you have a builder-buyer agreement with a penalty clause for delayed possession?\n2. Have you sent any formal written complaints or legal notices to the builder regarding this delay?\n\n**When to get a real lawyer**\nRight now, because your normal time limit has passed and the amount involved is large, you need a lawyer or free legal aid immediately [K:cpa-limitation, K:legal-aid].",
+   "case": {
+    "language": "en",
+    "language_name": "English",
+    "category": "consumer",
+    "sub_type": "builder delayed possession",
+    "summary": "The user paid 85 lakh rupees to a builder in Noida in 2021 for a flat. Although possession was promised by December 2023, the project remains incomplete.",
+    "user_role": "buyer",
+    "other_party": {
+     "name": null,
+     "type": "company"
+    },
+    "state": "Uttar Pradesh",
+    "city": "Noida",
+    "amounts": {
+     "disputed": 8500000,
+     "paid_value": 8500000,
+     "monthly_rent": null,
+     "monthly_salary": null
+    },
+    "dates": {
+     "incident": "2023-12-01",
+     "purchase": "2021-01-01",
+     "complaint_to_company": null,
+     "moved_out": null,
+     "last_working_day": null,
+     "wages_due_from": null,
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": null,
+    "timeline": [
+     {
+      "date": "2021",
+      "event": "Paid 85 lakh rupees to a builder in Noida for a flat."
+     },
+     {
+      "date": "2023-12",
+      "event": "Promised date of possession."
+     }
+    ],
+    "evidence_have": [],
+    "steps_taken": [],
+    "red_flags": [],
+    "user_goal": "Get resolution or refund for the delayed flat possession from the builder.",
+    "open_questions": [
+     "Do you have a builder-buyer agreement with a specified penalty clause for delayed possession?",
+     "Have you sent any formal written complaints or legal notices to the builder regarding the delay?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "consumer",
+    "deadlines": [
+     {
+      "label": "Last date to file a consumer complaint (2 years)",
+      "date": "2025-12-01",
+      "days_left": -355,
+      "status": "passed",
+      "kb": "cpa-limitation",
+      "kind": "limitation",
+      "basis": "2 years from 2023-12-01"
+     }
+    ],
+    "escalations": [
+     {
+      "flag": "time_barred",
+      "level": "lawyer_now",
+      "reason": "The usual time limit (last date to file a consumer complaint (2 years)) passed on 2025-12-01.",
+      "action": "Only a court can excuse the delay - see a lawyer or DLSA (15100) quickly."
+     },
+     {
+      "flag": "large_amount",
+      "level": "lawyer_recommended",
+      "reason": "The amount (Rs 8,500,000) is large.",
+      "action": "Consult a lawyer before filing; you can still use this plan to prepare."
+     }
+    ],
+    "forum": {
+     "forum": "State Consumer Disputes Redressal Commission",
+     "basis_value": 8500000.0,
+     "kb": "cpa-pecuniary"
+    },
+    "fee": {
+     "fee_inr": 2000,
+     "kb": "cpa-fee",
+     "note": "verify on the filing portal"
+    },
+    "evidence": {
+     "have": [],
+     "missing": [
+      "Invoice / order confirmation / receipt",
+      "Proof of payment (UPI / card / bank statement)",
+      "Complaint to the company and their reply (emails, chats, ticket numbers)",
+      "Photos / videos of the defect or problem",
+      "Warranty card / terms promised at sale"
+     ]
+    },
+    "ladder": [
+     "Write to the company's customer care / grievance officer and keep the ticket number.",
+     "Register a free complaint with the National Consumer Helpline (pre-litigation mediation).",
+     "Send a written demand / legal notice giving a clear deadline (usually 15 days).",
+     "File a complaint before the District Consumer Commission (online filing possible; no lawyer needed)."
+    ],
+    "in_scope": true
+   },
+   "kb_ids": [
+    "cpa-consumer-definition",
+    "cpa-deficiency",
+    "cpa-where-to-file",
+    "cpa-pecuniary",
+    "cpa-fee",
+    "cpa-efiling",
+    "cpa-limitation",
+    "cpa-reliefs",
+    "cpa-timeline",
+    "cpa-mediation",
+    "nch",
+    "ecom-grievance",
+    "rera-note",
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 0,
+     "violations": []
+    },
+    "repaired": false,
+    "scrubbed": false,
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "cpa-limitation",
+     "title": "Time limit - two years",
+     "law": "Consumer Protection Act, 2019 - Section 69",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 2,
+     "id": "legal-aid",
+     "title": "Free legal aid",
+     "law": "Legal Services Authorities Act, 1987 - Section 12",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    },
+    {
+     "n": 3,
+     "id": "cpa-deficiency",
+     "title": "Deficiency in service and defects",
+     "law": "Consumer Protection Act, 2019 - Section 2(11); Consumer Protection Act, 2019 - Section 2(10); Consumer Protection Act, 2019 - Section 2(47)",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 4,
+     "id": "cpa-pecuniary",
+     "title": "Which level of Commission (by value paid)",
+     "law": "Consumer Protection (Jurisdiction of the District Commission, the State Commission and the National Commission) Rules, 2021",
+     "confidence": "high",
+     "url": "https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
+    },
+    {
+     "n": 5,
+     "id": "cpa-fee",
+     "title": "Filing fee",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "medium",
+     "url": null
+    },
+    {
+     "n": 6,
+     "id": "rera-note",
+     "title": "Builder / flat delays (only a pointer)",
+     "law": "Real Estate (Regulation and Development) Act, 2016",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/2158"
+    }
+   ]
+  }
+ ],
+ "reply": "**Urgent Note:** The usual 2-year time limit to file a consumer complaint passed on 2025-12-01 [K:cpa-limitation]. Only a Commission can excuse this delay. Because the amount (Rs 8,500,000) is large, you should talk to a lawyer or the District Legal Services Authority (DLSA) by calling 15100 right away [K:legal-aid]. \n\n**What I understood**\nYou paid Rs 85 lakh to a builder in Noida in 2021 for a flat, but the project is still incomplete after the promised December 2023 possession date.\n\n**Where you stand**\nNot handing over possession on time is a deficiency in service [K:cpa-deficiency]. Since the amount paid is above Rs 50 lakh and up to Rs 2 crore, your case falls under the State Consumer Disputes Redressal Commission [K:cpa-pecuniary]. The filing fee is generally around Rs 2,000 (please verify on the portal) [K:cpa-fee]. Builder delay cases can also be taken to the state RERA authority, but these cases are complex and usually require a lawyer [K:rera-note].\n\n**What you can do now**\n1. Contact a lawyer or your local District Legal Services Authority (DLSA) at 15100 immediately to see how to handle the expired time limit [K:cpa-limitation, K:legal-aid].\n2. Collect your builder-buyer agreement, payment receipts, bank statements, and any written communication with the builder.\n3. Consult a lawyer or RERA expert before filing any formal case due to the large amount involved [K:rera-note].\n\n**What I still need from you**\n1. Do you have a builder-buyer agreement with a penalty clause for delayed possession?\n2. Have you sent any formal written complaints or legal notices to the builder regarding this delay?\n\n**When to get a real lawyer**\nRight now, because your normal time limit has passed and the amount involved is large, you need a lawyer or free legal aid immediately [K:cpa-limitation, K:legal-aid].",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "consumer",
+  "deadlines": [
+   {
+    "label": "Last date to file a consumer complaint (2 years)",
+    "date": "2025-12-01",
+    "days_left": -355,
+    "status": "passed",
+    "kb": "cpa-limitation",
+    "kind": "limitation",
+    "basis": "2 years from 2023-12-01"
+   }
+  ],
+  "escalations": [
+   {
+    "flag": "time_barred",
+    "level": "lawyer_now",
+    "reason": "The usual time limit (last date to file a consumer complaint (2 years)) passed on 2025-12-01.",
+    "action": "Only a court can excuse the delay - see a lawyer or DLSA (15100) quickly."
+   },
+   {
+    "flag": "large_amount",
+    "level": "lawyer_recommended",
+    "reason": "The amount (Rs 8,500,000) is large.",
+    "action": "Consult a lawyer before filing; you can still use this plan to prepare."
+   }
+  ],
+  "forum": {
+   "forum": "State Consumer Disputes Redressal Commission",
+   "basis_value": 8500000.0,
+   "kb": "cpa-pecuniary"
+  },
+  "fee": {
+   "fee_inr": 2000,
+   "kb": "cpa-fee",
+   "note": "verify on the filing portal"
+  },
+  "evidence": {
+   "have": [],
+   "missing": [
+    "Invoice / order confirmation / receipt",
+    "Proof of payment (UPI / card / bank statement)",
+    "Complaint to the company and their reply (emails, chats, ticket numbers)",
+    "Photos / videos of the defect or problem",
+    "Warranty card / terms promised at sale"
+   ]
+  },
+  "ladder": [
+   "Write to the company's customer care / grievance officer and keep the ticket number.",
+   "Register a free complaint with the National Consumer Helpline (pre-litigation mediation).",
+   "Send a written demand / legal notice giving a clear deadline (usually 15 days).",
+   "File a complaint before the District Consumer Commission (online filing possible; no lawyer needed)."
+  ],
+  "in_scope": true
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "repaired": false,
+  "scrubbed": false,
+  "final_violations": 0
+ },
+ "case": {
+  "language": "en",
+  "language_name": "English",
+  "category": "consumer",
+  "sub_type": "builder delayed possession",
+  "summary": "The user paid 85 lakh rupees to a builder in Noida in 2021 for a flat. Although possession was promised by December 2023, the project remains incomplete.",
+  "user_role": "buyer",
+  "other_party": {
+   "name": null,
+   "type": "company"
+  },
+  "state": "Uttar Pradesh",
+  "city": "Noida",
+  "amounts": {
+   "disputed": 8500000,
+   "paid_value": 8500000,
+   "monthly_rent": null,
+   "monthly_salary": null
+  },
+  "dates": {
+   "incident": "2023-12-01",
+   "purchase": "2021-01-01",
+   "complaint_to_company": null,
+   "moved_out": null,
+   "last_working_day": null,
+   "wages_due_from": null,
+   "notice_received": null,
+   "notice_deadline": null,
+   "bank_return_memo": null
+  },
+  "employment_ended": null,
+  "timeline": [
+   {
+    "date": "2021",
+    "event": "Paid 85 lakh rupees to a builder in Noida for a flat."
+   },
+   {
+    "date": "2023-12",
+    "event": "Promised date of possession."
+   }
+  ],
+  "evidence_have": [],
+  "steps_taken": [],
+  "red_flags": [],
+  "user_goal": "Get resolution or refund for the delayed flat possession from the builder.",
+  "open_questions": [
+   "Do you have a builder-buyer agreement with a specified penalty clause for delayed possession?",
+   "Have you sent any formal written complaints or legal notices to the builder regarding the delay?"
+  ]
+ },
+ "kb_ids": [
+  "cpa-consumer-definition",
+  "cpa-deficiency",
+  "cpa-where-to-file",
+  "cpa-pecuniary",
+  "cpa-fee",
+  "cpa-efiling",
+  "cpa-limitation",
+  "cpa-reliefs",
+  "cpa-timeline",
+  "cpa-mediation",
+  "nch",
+  "ecom-grievance",
+  "rera-note",
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send"
+ ],
+ "checks": {
+  "category": true,
+  "escalates:lawyer_recommended": true,
+  "forum": true,
+  "mentions:RERA": true,
+  "guard_clean": true
+ },
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 17.36,
+   "input_tokens": 882,
+   "output_tokens": 497,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 4.71,
+   "input_tokens": 3076,
+   "output_tokens": 482,
+   "error": null
+  }
+ ],
+ "seconds": 22.1
+}

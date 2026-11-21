@@ -1,0 +1,120 @@
+{
+ "id": "notice-landlord-ipc",
+ "title": "Notice from landlord's lawyer citing IPC 406 (quoted law)",
+ "input": {
+  "id": "notice-landlord-ipc",
+  "title": "Notice from landlord's lawyer citing IPC 406 (quoted law)",
+  "notice_received": "2026-11-18",
+  "notice_language": "English",
+  "notice_text": "LEGAL NOTICE\nDate: 16/11/2026\nTo: Ms. Priya Nair, Flat 3B, Green Apartments, Kochi\nOn behalf of my client Mr. Thomas Varghese, owner of the above flat, I state that you vacated the flat on\n30/09/2026 leaving it damaged. Repairs cost Rs. 25,000 which exceeds your deposit of Rs. 20,000. You are called\nupon to pay Rs. 5,000 within 7 days, failing which my client will initiate civil and criminal proceedings\nagainst you including under Section 406 IPC for criminal breach of trust.\nAdvocate K. Menon\n"
+ },
+ "kind": "notice",
+ "reply": "Hello, I am Nyaya Saathi. Here is a simple explanation of your legal demand notice.\n\n**What this is**\nThis document is a formal legal demand notice sent by Advocate K. Menon on behalf of Mr. Thomas Varghese [K:notice-legal-what]. It is **not** a court order or a court summons [K:notice-legal-what]. \n\n**What they want**\nThe sender claims you left a flat damaged when you vacated on 30/09/2026, and that repair costs of Rs. 25,000 exceed your Rs. 20,000 security deposit. They are demanding payment of the remaining Rs. 5,000. The notice states a deadline of **7 days** (by **November 25, 2026**). It also mentions potential civil and criminal proceedings, including under Section 406 IPC (note that the notice mentions this specific section).\n\n**How serious is it**\nTake a deep breath. A legal notice is a formal letter stating a claim, but it does not automatically make you liable [K:notice-legal-what]. However, because the deadline is close (4 days left), you should address it promptly. \n\n**What to do now**\n1. **Gather your documents:** Collect your rental agreement, move-in/move-out photos, deposit receipts, and any chat or call records with the landlord.\n2. **Do not panic or admit fault:** Never admit to things you dispute [K:notice-legal-what]. \n3. **Draft a reply:** While you are not legally forced to reply to most notices, sending a short, factual reply keeping a record of your side is often wise [K:notice-legal-what].\n\n**Get a lawyer if**\n* You want help drafting a factual reply denying unfair claims.\n* The sender actually files a court case or sends a formal court summons.\n* You need guidance on tenancy disputes. *(Note: If you qualify under Section 12 of the Legal Services Authorities Act, you may be eligible for free legal aid through the District Legal Services Authority (DLSA) or the NALSA helpline 15100 [K:legal-aid]).*",
+ "reply_rendered": "Hello, I am Nyaya Saathi. Here is a simple explanation of your legal demand notice.\n\n**What this is**\nThis document is a formal legal demand notice sent by Advocate K. Menon on behalf of Mr. Thomas Varghese <sup>[1]</sup>. It is **not** a court order or a court summons <sup>[1]</sup>. \n\n**What they want**\nThe sender claims you left a flat damaged when you vacated on 30/09/2026, and that repair costs of Rs. 25,000 exceed your Rs. 20,000 security deposit. They are demanding payment of the remaining Rs. 5,000. The notice states a deadline of **7 days** (by **November 25, 2026**). It also mentions potential civil and criminal proceedings, including under Section 406 IPC (note that the notice mentions this specific section).\n\n**How serious is it**\nTake a deep breath. A legal notice is a formal letter stating a claim, but it does not automatically make you liable <sup>[1]</sup>. However, because the deadline is close (4 days left), you should address it promptly. \n\n**What to do now**\n1. **Gather your documents:** Collect your rental agreement, move-in/move-out photos, deposit receipts, and any chat or call records with the landlord.\n2. **Do not panic or admit fault:** Never admit to things you dispute <sup>[1]</sup>. \n3. **Draft a reply:** While you are not legally forced to reply to most notices, sending a short, factual reply keeping a record of your side is often wise <sup>[1]</sup>.\n\n**Get a lawyer if**\n* You want help drafting a factual reply denying unfair claims.\n* The sender actually files a court case or sends a formal court summons.\n* You need guidance on tenancy disputes. *(Note: If you qualify under Section 12 of the Legal Services Authorities Act, you may be eligible for free legal aid through the District Legal Services Authority (DLSA) or the NALSA helpline 15100 <sup>[2]</sup>).*",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "notice",
+  "deadlines": [
+   {
+    "label": "Deadline stated in the notice",
+    "date": "2026-11-25",
+    "days_left": 4,
+    "status": "urgent",
+    "kb": "notice-legal-what",
+    "kind": "response",
+    "basis": "as written in the notice"
+   }
+  ],
+  "escalations": [
+   {
+    "flag": "deadline_close",
+    "level": "lawyer_now",
+    "reason": "Deadline stated in the notice: 2026-11-25 (4 days left).",
+    "action": "Act now; get a lawyer's advice before the date."
+   }
+  ],
+  "forum": null,
+  "fee": null,
+  "evidence": {
+   "have": [],
+   "missing": [
+    "The full notice (all pages) and the envelope / proof of the date you received it",
+    "Any agreement, cheque, invoice or document the notice refers to",
+    "Your own record of payments or messages relating to the dispute"
+   ]
+  },
+  "ladder": [
+   "Do not panic and do not ignore it. Note the date you received it and any deadline.",
+   "Understand who sent it, what they demand and by when.",
+   "Collect your documents; if the claim is wrong, a calm written reply (often via a lawyer) helps.",
+   "If it is a court summons, police notice or cheque-bounce notice against you, contact a lawyer or legal aid (15100) now."
+  ],
+  "in_scope": true
+ },
+ "extract": {
+  "doc_type": "legal_demand_notice",
+  "sender": "Advocate K. Menon on behalf of Mr. Thomas Varghese",
+  "recipient": "Ms. Priya Nair",
+  "date_of_notice": "2026-11-16",
+  "what_they_claim": "You vacated the flat on 30/09/2026 leaving it damaged, and the repair costs of Rs. 25,000 exceed your security deposit of Rs. 20,000.",
+  "what_they_demand": "Pay the remaining amount of Rs. 5,000.",
+  "amount_demanded": 5000,
+  "deadline_text": "within 7 days",
+  "deadline_days": 7,
+  "consequences_threatened": [
+   "Initiate civil and criminal proceedings against you including under Section 406 IPC for criminal breach of trust."
+  ],
+  "laws_mentioned": [
+   "Section 406 IPC"
+  ],
+  "court_or_case_number": null,
+  "hearing_date": null
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 2,
+   "violations": []
+  },
+  "repaired": false,
+  "scrubbed": false,
+  "final_violations": 0
+ },
+ "kb_ids": [
+  "notice-legal-what",
+  "notice-self-send",
+  "court-summons",
+  "eviction-due-process",
+  "rera-note",
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send",
+  "ipc-bns"
+ ],
+ "case": {
+  "category": "notice"
+ },
+ "checks": {
+  "mentions:7": true,
+  "mentions:not a court order": true,
+  "guard_clean": true
+ },
+ "calls": [
+  {
+   "purpose": "notice_extract",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 4.84,
+   "input_tokens": 454,
+   "output_tokens": 270,
+   "error": null
+  },
+  {
+   "purpose": "notice_explain",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 2.52,
+   "input_tokens": 1600,
+   "output_tokens": 482,
+   "error": null
+  }
+ ],
+ "seconds": 7.4
+}

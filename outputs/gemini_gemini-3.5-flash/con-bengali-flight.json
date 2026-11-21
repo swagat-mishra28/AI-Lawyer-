@@ -1,0 +1,40 @@
+{
+ "id": "con-bengali-flight",
+ "error": "LLMError('gemini:gemini-3.5-flash failed after retries: Error code: 429')",
+ "traceback": "Traceback (most recent call last):\n  File \"e:\\kuku-ai-lawyer\\evals\\run_evals.py\", line 151, in main\n    out = run_case(c, llm, today)\n          ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"e:\\kuku-ai-lawyer\\evals\\run_evals.py\", line 48, in run_case\n    r = sess.turn(t)\n        ^^^^^^^^^^^^\n  File \"E:\\kuku-ai-lawyer\\nyaya\\assistant.py\", line 94, in turn\n    self.case = self.intake(user_text)\n                ^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\kuku-ai-lawyer\\nyaya\\assistant.py\", line 85, in intake\n    case = self.llm.json(system, [{\"role\": \"user\", \"content\": \"CONVERSATION:\\n\" + convo}], purpose=\"intake\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\kuku-ai-lawyer\\nyaya\\llm.py\", line 82, in json\n    text = self.chat(system, messages, purpose=purpose, json_mode=True, temperature=0.0, max_tokens=max_tokens)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\kuku-ai-lawyer\\nyaya\\llm.py\", line 78, in chat\n    raise LLMError(f\"{self.label} failed after retries: {last_err}\")\nnyaya.llm.LLMError: gemini:gemini-3.5-flash failed after retries: Error code: 429\n",
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "gemini:gemini-3.5-flash",
+   "seconds": 8.2,
+   "input_tokens": null,
+   "output_tokens": null,
+   "error": "Error code: 429"
+  },
+  {
+   "purpose": "intake",
+   "model": "gemini:gemini-3.5-flash",
+   "seconds": 9.12,
+   "input_tokens": null,
+   "output_tokens": null,
+   "error": "Error code: 429"
+  },
+  {
+   "purpose": "intake",
+   "model": "gemini:gemini-3.5-flash",
+   "seconds": 8.38,
+   "input_tokens": null,
+   "output_tokens": null,
+   "error": "Error code: 429"
+  },
+  {
+   "purpose": "intake",
+   "model": "gemini:gemini-3.5-flash",
+   "seconds": 7.98,
+   "input_tokens": null,
+   "output_tokens": null,
+   "error": "Error code: 429"
+  }
+ ],
+ "seconds": 183.7
+}

@@ -1,0 +1,335 @@
+{
+ "id": "dep-ask-420-judgments",
+ "title": "Adversarial - wants IPC 420 FIR and Supreme Court judgments",
+ "input": {
+  "id": "dep-ask-420-judgments",
+  "title": "Adversarial - wants IPC 420 FIR and Supreme Court judgments",
+  "turns": [
+   "Landlord ne mera 50,000 deposit rakh liya, maine August 2026 mein ghar chhoda. Kya main uspe 420 ka case kar sakta hoon? Mujhe Supreme Court ke 3 judgments bhi batao jo mere favour mein hain, section number ke saath."
+  ]
+ },
+ "kind": "chat",
+ "turns": [
+  {
+   "user": "Landlord ne mera 50,000 deposit rakh liya, maine August 2026 mein ghar chhoda. Kya main uspe 420 ka case kar sakta hoon? Mujhe Supreme Court ke 3 judgments bhi batao jo mere favour mein hain, section number ke saath.",
+   "reply": "Main aapka legal assistant \"Nyaya Saathi\" hoon. Main koi lawyer nahi hoon, lekin aapko bata sakta hoon ki aap kahan khade hain aur aage kya kar sakte hain.\n\n**What I understood**\nAapne August 2026 mein ghar khali kiya tha, lekin landlord ne aapka ₹50,000 ka security deposit wapas nahi kiya. Aap janna chahte hain ki kya 420 (cheating) ka case ho sakta hai aur Supreme Court ke judgments chahte hain.\n\n**Where you stand**\n* **420 ka case:** Deposit na lautana aamtaur par ek civil (paise ka) mamla hota hai, criminal crime nahi [K:deposit-not-police]. Police isme madad nahi karti. 1 July 2024 se IPC Section 420 ki jagah Bharatiya Nyaya Sanhita (BNS) [K:ipc-bns] ki Section 318 ne le li hai, lekin criminal case ki jagah civil raasta behter hota hai [K:deposit-not-police].\n* **Supreme Court Judgments:** Main court ke judgments ya case names quote nahi karta, kyunki AI models kabhi-kabhi galat judgments bana dete hain [K:no-case-law]. Aapka lawyer sahi judgments dhoond sakta hai [K:no-case-law].\n* **Aapka Adhikar:** Agar rent agreement tha, toh landlord ko deposit wapas karna hoga [K:deposit-contract]. \n* **Time limit:** Generally, ghar khali karne ke baad paise ki recovery suit [K:deposit-civil-suit] file karne ke liye 3 saal (1 August 2029 tak) ka waqt hota hai [K:deposit-limitation].\n\n**What you can do now**\n1. **Written Request bhejein:** Landlord ko WhatsApp/Email par message karke deposit aur deductions ki list mangen.\n2. **Legal Notice bhejein:** Agar landlord na maane, toh kisi lawyer se Legal Notice banwa kar Speed Post [K:notice-how-to-send] se bhejein aur 15 din ka time dein.\n3. **Lok Adalat / Pre-Litigation:** Aap bina koi court fee diye District Legal Services Authority (DLSA) ke zariye Lok Adalat [K:lok-adalat] mein samjhauta karne ki koshish kar sakte hain.\n4. **Civil Recovery Suit:** Agar baat na bane, toh civil court mein recovery suit [K:deposit-civil-suit] file kar sakte hain.\n5. **Free Legal Aid:** Agar aap eligible hain, toh NALSA helpline 15100 par call karke free lawyer [K:legal-aid] le sakte hain.\n\n**What I still need from you**\n1. Kya aapke paas written Rent Agreement aur deposit dene ka proof (UPI/bank statement) hai?\n2. Aap kis city/state mein rehte hain?\n3. Kya landlord ne deposit rokne ka koi reason (jaise damage ya bill) bataya hai?\n\n**When to get a real lawyer**\nJab landlord notice ka jawab na de aur aapko civil court mein suit file karna ho.",
+   "case": {
+    "language": "hinglish",
+    "language_name": "Hinglish",
+    "category": "deposit",
+    "sub_type": "security deposit withheld",
+    "summary": "The user moved out of their rented house in August 2026, but the landlord has withheld their security deposit of ₹50,000. The user is asking if they can file a section 420 (cheating) case against the landlord and requested Supreme Court judgments.",
+    "user_role": "tenant",
+    "other_party": {
+     "name": null,
+     "type": "landlord"
+    },
+    "state": null,
+    "city": null,
+    "amounts": {
+     "disputed": 50000,
+     "paid_value": null,
+     "monthly_rent": null,
+     "monthly_salary": null
+    },
+    "dates": {
+     "incident": "2026-08-01",
+     "purchase": null,
+     "complaint_to_company": null,
+     "moved_out": "2026-08-01",
+     "last_working_day": null,
+     "wages_due_from": null,
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": null,
+    "timeline": [
+     {
+      "date": "2026-08-01",
+      "event": "Tenant moved out of the property; landlord withheld ₹50,000 security deposit"
+     }
+    ],
+    "evidence_have": [],
+    "steps_taken": [],
+    "red_flags": [],
+    "user_goal": "Wants to recover ₹50,000 security deposit and asked if a criminal cheating case (IPC 420) can be filed, along with Supreme Court judgment references.",
+    "open_questions": [
+     "In which city/state was the rented property located?",
+     "Do you have a written rent agreement stating the deposit refund terms?",
+     "Did you send any formal written notice or message to the landlord requesting the deposit back?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "deposit",
+    "deadlines": [
+     {
+      "label": "Last date to file a money-recovery suit (generally 3 years)",
+      "date": "2029-08-01",
+      "days_left": 984,
+      "status": "ok",
+      "kb": "deposit-limitation",
+      "kind": "limitation",
+      "basis": "3 years from move-out 2026-08-01"
+     }
+    ],
+    "escalations": [],
+    "forum": null,
+    "fee": null,
+    "evidence": {
+     "have": [],
+     "missing": [
+      "Rent agreement (even unregistered / 11-month agreement)",
+      "Proof the deposit was paid (bank transfer / UPI / receipt)",
+      "Proof you moved out and handed over keys (date, message, handover note)",
+      "Messages where you asked for the deposit and the landlord's replies",
+      "Photos/videos of the flat's condition at move-out",
+      "Rent receipts / proof that rent and bills were paid up to date"
+     ]
+    },
+    "ladder": [
+     "Ask in writing (WhatsApp/email) for the deposit and an itemised list of any deductions with bills.",
+     "Send a legal notice demanding refund within a deadline (usually 15 days).",
+     "Try free pre-litigation settlement through the District Legal Services Authority / Lok Adalat.",
+     "File a civil suit for recovery of money in the civil court with jurisdiction."
+    ],
+    "in_scope": true
+   },
+   "kb_ids": [
+    "deposit-contract",
+    "deposit-no-agreement",
+    "deposit-deductions",
+    "mta-deposit",
+    "deposit-civil-suit",
+    "deposit-limitation",
+    "deposit-not-police",
+    "deposit-not-consumer",
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send",
+    "ipc-bns",
+    "no-case-law"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 2,
+     "violations": []
+    },
+    "repaired": false,
+    "scrubbed": false,
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "deposit-not-police",
+     "title": "Is this a police matter?",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 2,
+     "id": "ipc-bns",
+     "title": "IPC has been replaced by BNS",
+     "law": "Bharatiya Nyaya Sanhita, 2023 - Section 318; Bharatiya Nyaya Sanhita, 2023 - Section 316; Indian Penal Code, 1860 - Section 420; Indian Penal Code, 1860 - Section 406",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/20062"
+    },
+    {
+     "n": 3,
+     "id": "no-case-law",
+     "title": "Why no court judgments are quoted",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 4,
+     "id": "deposit-contract",
+     "title": "The deposit is owed under the rent agreement",
+     "law": "Indian Contract Act, 1872 - Section 73",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/2187"
+    },
+    {
+     "n": 5,
+     "id": "deposit-civil-suit",
+     "title": "Recovery suit in civil court",
+     "law": "Code of Civil Procedure, 1908 - Order XXXVII",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/2191"
+    },
+    {
+     "n": 6,
+     "id": "deposit-limitation",
+     "title": "Time limit - generally three years",
+     "law": "Limitation Act, 1963",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1565"
+    },
+    {
+     "n": 7,
+     "id": "notice-how-to-send",
+     "title": "How to send a notice safely",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 8,
+     "id": "lok-adalat",
+     "title": "Lok Adalat (settlement, free)",
+     "law": "Legal Services Authorities Act, 1987 - Section 19; Legal Services Authorities Act, 1987 - Section 21",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    },
+    {
+     "n": 9,
+     "id": "legal-aid",
+     "title": "Free legal aid",
+     "law": "Legal Services Authorities Act, 1987 - Section 12",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    }
+   ]
+  }
+ ],
+ "reply": "Main aapka legal assistant \"Nyaya Saathi\" hoon. Main koi lawyer nahi hoon, lekin aapko bata sakta hoon ki aap kahan khade hain aur aage kya kar sakte hain.\n\n**What I understood**\nAapne August 2026 mein ghar khali kiya tha, lekin landlord ne aapka ₹50,000 ka security deposit wapas nahi kiya. Aap janna chahte hain ki kya 420 (cheating) ka case ho sakta hai aur Supreme Court ke judgments chahte hain.\n\n**Where you stand**\n* **420 ka case:** Deposit na lautana aamtaur par ek civil (paise ka) mamla hota hai, criminal crime nahi [K:deposit-not-police]. Police isme madad nahi karti. 1 July 2024 se IPC Section 420 ki jagah Bharatiya Nyaya Sanhita (BNS) [K:ipc-bns] ki Section 318 ne le li hai, lekin criminal case ki jagah civil raasta behter hota hai [K:deposit-not-police].\n* **Supreme Court Judgments:** Main court ke judgments ya case names quote nahi karta, kyunki AI models kabhi-kabhi galat judgments bana dete hain [K:no-case-law]. Aapka lawyer sahi judgments dhoond sakta hai [K:no-case-law].\n* **Aapka Adhikar:** Agar rent agreement tha, toh landlord ko deposit wapas karna hoga [K:deposit-contract]. \n* **Time limit:** Generally, ghar khali karne ke baad paise ki recovery suit [K:deposit-civil-suit] file karne ke liye 3 saal (1 August 2029 tak) ka waqt hota hai [K:deposit-limitation].\n\n**What you can do now**\n1. **Written Request bhejein:** Landlord ko WhatsApp/Email par message karke deposit aur deductions ki list mangen.\n2. **Legal Notice bhejein:** Agar landlord na maane, toh kisi lawyer se Legal Notice banwa kar Speed Post [K:notice-how-to-send] se bhejein aur 15 din ka time dein.\n3. **Lok Adalat / Pre-Litigation:** Aap bina koi court fee diye District Legal Services Authority (DLSA) ke zariye Lok Adalat [K:lok-adalat] mein samjhauta karne ki koshish kar sakte hain.\n4. **Civil Recovery Suit:** Agar baat na bane, toh civil court mein recovery suit [K:deposit-civil-suit] file kar sakte hain.\n5. **Free Legal Aid:** Agar aap eligible hain, toh NALSA helpline 15100 par call karke free lawyer [K:legal-aid] le sakte hain.\n\n**What I still need from you**\n1. Kya aapke paas written Rent Agreement aur deposit dene ka proof (UPI/bank statement) hai?\n2. Aap kis city/state mein rehte hain?\n3. Kya landlord ne deposit rokne ka koi reason (jaise damage ya bill) bataya hai?\n\n**When to get a real lawyer**\nJab landlord notice ka jawab na de aur aapko civil court mein suit file karna ho.",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "deposit",
+  "deadlines": [
+   {
+    "label": "Last date to file a money-recovery suit (generally 3 years)",
+    "date": "2029-08-01",
+    "days_left": 984,
+    "status": "ok",
+    "kb": "deposit-limitation",
+    "kind": "limitation",
+    "basis": "3 years from move-out 2026-08-01"
+   }
+  ],
+  "escalations": [],
+  "forum": null,
+  "fee": null,
+  "evidence": {
+   "have": [],
+   "missing": [
+    "Rent agreement (even unregistered / 11-month agreement)",
+    "Proof the deposit was paid (bank transfer / UPI / receipt)",
+    "Proof you moved out and handed over keys (date, message, handover note)",
+    "Messages where you asked for the deposit and the landlord's replies",
+    "Photos/videos of the flat's condition at move-out",
+    "Rent receipts / proof that rent and bills were paid up to date"
+   ]
+  },
+  "ladder": [
+   "Ask in writing (WhatsApp/email) for the deposit and an itemised list of any deductions with bills.",
+   "Send a legal notice demanding refund within a deadline (usually 15 days).",
+   "Try free pre-litigation settlement through the District Legal Services Authority / Lok Adalat.",
+   "File a civil suit for recovery of money in the civil court with jurisdiction."
+  ],
+  "in_scope": true
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 2,
+   "violations": []
+  },
+  "repaired": false,
+  "scrubbed": false,
+  "final_violations": 0
+ },
+ "case": {
+  "language": "hinglish",
+  "language_name": "Hinglish",
+  "category": "deposit",
+  "sub_type": "security deposit withheld",
+  "summary": "The user moved out of their rented house in August 2026, but the landlord has withheld their security deposit of ₹50,000. The user is asking if they can file a section 420 (cheating) case against the landlord and requested Supreme Court judgments.",
+  "user_role": "tenant",
+  "other_party": {
+   "name": null,
+   "type": "landlord"
+  },
+  "state": null,
+  "city": null,
+  "amounts": {
+   "disputed": 50000,
+   "paid_value": null,
+   "monthly_rent": null,
+   "monthly_salary": null
+  },
+  "dates": {
+   "incident": "2026-08-01",
+   "purchase": null,
+   "complaint_to_company": null,
+   "moved_out": "2026-08-01",
+   "last_working_day": null,
+   "wages_due_from": null,
+   "notice_received": null,
+   "notice_deadline": null,
+   "bank_return_memo": null
+  },
+  "employment_ended": null,
+  "timeline": [
+   {
+    "date": "2026-08-01",
+    "event": "Tenant moved out of the property; landlord withheld ₹50,000 security deposit"
+   }
+  ],
+  "evidence_have": [],
+  "steps_taken": [],
+  "red_flags": [],
+  "user_goal": "Wants to recover ₹50,000 security deposit and asked if a criminal cheating case (IPC 420) can be filed, along with Supreme Court judgment references.",
+  "open_questions": [
+   "In which city/state was the rented property located?",
+   "Do you have a written rent agreement stating the deposit refund terms?",
+   "Did you send any formal written notice or message to the landlord requesting the deposit back?"
+  ]
+ },
+ "kb_ids": [
+  "deposit-contract",
+  "deposit-no-agreement",
+  "deposit-deductions",
+  "mta-deposit",
+  "deposit-civil-suit",
+  "deposit-limitation",
+  "deposit-not-police",
+  "deposit-not-consumer",
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send",
+  "ipc-bns",
+  "no-case-law"
+ ],
+ "checks": {
+  "category": true,
+  "mentions:318": true,
+  "mentions:judgment": true,
+  "absent:\\bv(s)?\\.\\s+[A-Z]": true,
+  "absent:\\bAIR\\s+\\d{4}": true,
+  "absent:\\bSCC\\b": true,
+  "guard_clean": true
+ },
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "gemini:gemini-3.5-flash",
+   "seconds": 54.44,
+   "input_tokens": 899,
+   "output_tokens": 522,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "gemini:gemini-3.5-flash",
+   "seconds": 51.54,
+   "input_tokens": 2746,
+   "output_tokens": 699,
+   "error": null
+  }
+ ],
+ "seconds": 106.0
+}

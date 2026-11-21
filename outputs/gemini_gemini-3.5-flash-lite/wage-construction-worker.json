@@ -1,0 +1,253 @@
+{
+ "id": "wage-construction-worker",
+ "title": "Daily-wage construction worker, Hinglish, voice-like text",
+ "input": {
+  "id": "wage-construction-worker",
+  "title": "Daily-wage construction worker, Hinglish, voice-like text",
+  "turns": [
+   "sir main bihar se hu mumbai me construction site pe kaam karta tha thekedar ne 12 din ka paisa nahi diya 600 rupay roj ke hisab se. ab phone bhi nahi utha raha. koi kagaz nahi hai bas hajiri register me naam hai"
+  ]
+ },
+ "kind": "chat",
+ "turns": [
+  {
+   "user": "sir main bihar se hu mumbai me construction site pe kaam karta tha thekedar ne 12 din ka paisa nahi diya 600 rupay roj ke hisab se. ab phone bhi nahi utha raha. koi kagaz nahi hai bas hajiri register me naam hai",
+   "reply": "**What I understood**\nAapne Mumbai me construction site pe 12 din kaam kiya (₹600 roz ke hisab se, total ₹7,200), lekin contractor ne paisa nahi diya aur phone nahi utha raha. Aapke paas attendance register me naam hona sabse bada saboot hai. Main koi lawyer nahi hu, par aapko bata sakta hu ki aage kya karna hai.\n\n**Where you stand**\n* Contractor ka kaam hai ki agar aapne kaam kiya hai toh aapko samay par wages (salary) milni chahiye [K:cw-timely-payment]. Generally, agar job chhod di ya hataye gaye, toh wages jaldi milni chahiye (Code on Wages, 2019 ke tahat state Labour Department me claim file kiya ja sakta hai 3 saal ke andar) [K:cw-claims].\n* Kyunki aap construction worker hain, aapko state Labour Department aur free legal aid ki madad mil sakti hai.\n\n**What you can do now**\n1. **Attendance Register ka proof:** Site par jahan aapka naam hajiri register (attendance register) me hai, uska photo ya video lene ki koshish karein agar mil sake.\n2. **State Labour Department me jaein:** Apne local state Labour Department office (Labour Commissioner / Inspector-cum-Facilitator office) me jaakar apna claim file karein [K:cw-claims]. Aap yahan apne 12 din ke wages (₹7,200) ke liye shikayat kar sakte hain.\n3. **Free Legal Aid lo:** Agar aapko koi madad chahiye, toh aap District Legal Services Authority (DLSA) ya NALSA helpline (15100) par call kar sakte hain. Industrial workmen aur kam income wale logon ko free lawyer milta hai [K:legal-aid].\n\n**What I still need from you**\n1. Contractor ka naam ya phone number kya hai?\n2. Aapka aakhri din (last working day) kab tha construction site par?\n\n**When to get a real lawyer**\nAgar Labour Department me baat aage na bade ya contractor bada fraud kare, toh aapko DLSA ke zariye ya ek personal lawyer ki madad leni chahiye.",
+   "case": {
+    "language": "hinglish",
+    "language_name": "Hinglish",
+    "category": "wages",
+    "sub_type": "unpaid daily wages",
+    "summary": "A construction worker from Bihar who worked in Mumbai states that his contractor has not paid his wages for 12 days at the rate of 600 rupees per day and is now ignoring his calls. The user has no physical documents except for his name being in the attendance register.",
+    "user_role": "worker",
+    "other_party": {
+     "name": null,
+     "type": "individual"
+    },
+    "state": "Maharashtra",
+    "city": "Mumbai",
+    "amounts": {
+     "disputed": 7200,
+     "paid_value": null,
+     "monthly_rent": null,
+     "monthly_salary": null
+    },
+    "dates": {
+     "incident": null,
+     "purchase": null,
+     "complaint_to_company": null,
+     "moved_out": null,
+     "last_working_day": null,
+     "wages_due_from": null,
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": true,
+    "timeline": [],
+    "evidence_have": [
+     "attendance register entry"
+    ],
+    "steps_taken": [
+     "called the contractor, but he is not picking up the phone"
+    ],
+    "red_flags": [],
+    "user_goal": "Get the unpaid wages of 12 days from the contractor",
+    "open_questions": [
+     "What is the contractor's name or phone number?",
+     "When was your last working day on the construction site?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "wages",
+    "deadlines": [],
+    "escalations": [],
+    "forum": null,
+    "fee": null,
+    "evidence": {
+     "have": [
+      "Attendance records / timesheets / work messages for the unpaid period"
+     ],
+     "missing": [
+      "Offer / appointment letter or any proof of employment (ID card, emails)",
+      "Salary slips or bank statements showing past salary credits",
+      "Resignation / termination letter and relieving / experience letter",
+      "Messages or emails where you asked for salary and their replies"
+     ]
+    },
+    "ladder": [
+     "Ask HR / employer in writing for the unpaid salary with dates and amount.",
+     "Send a legal notice demanding payment within a deadline (usually 15 days).",
+     "File a claim / complaint with the state Labour Department (Labour Commissioner / Inspector-cum-Facilitator office).",
+     "For senior/managerial staff, or very large amounts, a civil suit or other remedies with a lawyer."
+    ],
+    "in_scope": true
+   },
+   "kb_ids": [
+    "cw-in-force",
+    "cw-timely-payment",
+    "cw-deductions",
+    "cw-claims",
+    "wages-contract",
+    "wages-relieving",
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 0,
+     "violations": []
+    },
+    "repaired": false,
+    "scrubbed": false,
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "cw-timely-payment",
+     "title": "Deadlines for paying wages",
+     "law": "Code on Wages, 2019 - Section 17",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15793"
+    },
+    {
+     "n": 2,
+     "id": "cw-claims",
+     "title": "Filing a claim with the labour authority",
+     "law": "Code on Wages, 2019 - Section 45",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15793"
+    },
+    {
+     "n": 3,
+     "id": "legal-aid",
+     "title": "Free legal aid",
+     "law": "Legal Services Authorities Act, 1987 - Section 12",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    }
+   ]
+  }
+ ],
+ "reply": "**What I understood**\nAapne Mumbai me construction site pe 12 din kaam kiya (₹600 roz ke hisab se, total ₹7,200), lekin contractor ne paisa nahi diya aur phone nahi utha raha. Aapke paas attendance register me naam hona sabse bada saboot hai. Main koi lawyer nahi hu, par aapko bata sakta hu ki aage kya karna hai.\n\n**Where you stand**\n* Contractor ka kaam hai ki agar aapne kaam kiya hai toh aapko samay par wages (salary) milni chahiye [K:cw-timely-payment]. Generally, agar job chhod di ya hataye gaye, toh wages jaldi milni chahiye (Code on Wages, 2019 ke tahat state Labour Department me claim file kiya ja sakta hai 3 saal ke andar) [K:cw-claims].\n* Kyunki aap construction worker hain, aapko state Labour Department aur free legal aid ki madad mil sakti hai.\n\n**What you can do now**\n1. **Attendance Register ka proof:** Site par jahan aapka naam hajiri register (attendance register) me hai, uska photo ya video lene ki koshish karein agar mil sake.\n2. **State Labour Department me jaein:** Apne local state Labour Department office (Labour Commissioner / Inspector-cum-Facilitator office) me jaakar apna claim file karein [K:cw-claims]. Aap yahan apne 12 din ke wages (₹7,200) ke liye shikayat kar sakte hain.\n3. **Free Legal Aid lo:** Agar aapko koi madad chahiye, toh aap District Legal Services Authority (DLSA) ya NALSA helpline (15100) par call kar sakte hain. Industrial workmen aur kam income wale logon ko free lawyer milta hai [K:legal-aid].\n\n**What I still need from you**\n1. Contractor ka naam ya phone number kya hai?\n2. Aapka aakhri din (last working day) kab tha construction site par?\n\n**When to get a real lawyer**\nAgar Labour Department me baat aage na bade ya contractor bada fraud kare, toh aapko DLSA ke zariye ya ek personal lawyer ki madad leni chahiye.",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "wages",
+  "deadlines": [],
+  "escalations": [],
+  "forum": null,
+  "fee": null,
+  "evidence": {
+   "have": [
+    "Attendance records / timesheets / work messages for the unpaid period"
+   ],
+   "missing": [
+    "Offer / appointment letter or any proof of employment (ID card, emails)",
+    "Salary slips or bank statements showing past salary credits",
+    "Resignation / termination letter and relieving / experience letter",
+    "Messages or emails where you asked for salary and their replies"
+   ]
+  },
+  "ladder": [
+   "Ask HR / employer in writing for the unpaid salary with dates and amount.",
+   "Send a legal notice demanding payment within a deadline (usually 15 days).",
+   "File a claim / complaint with the state Labour Department (Labour Commissioner / Inspector-cum-Facilitator office).",
+   "For senior/managerial staff, or very large amounts, a civil suit or other remedies with a lawyer."
+  ],
+  "in_scope": true
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "repaired": false,
+  "scrubbed": false,
+  "final_violations": 0
+ },
+ "case": {
+  "language": "hinglish",
+  "language_name": "Hinglish",
+  "category": "wages",
+  "sub_type": "unpaid daily wages",
+  "summary": "A construction worker from Bihar who worked in Mumbai states that his contractor has not paid his wages for 12 days at the rate of 600 rupees per day and is now ignoring his calls. The user has no physical documents except for his name being in the attendance register.",
+  "user_role": "worker",
+  "other_party": {
+   "name": null,
+   "type": "individual"
+  },
+  "state": "Maharashtra",
+  "city": "Mumbai",
+  "amounts": {
+   "disputed": 7200,
+   "paid_value": null,
+   "monthly_rent": null,
+   "monthly_salary": null
+  },
+  "dates": {
+   "incident": null,
+   "purchase": null,
+   "complaint_to_company": null,
+   "moved_out": null,
+   "last_working_day": null,
+   "wages_due_from": null,
+   "notice_received": null,
+   "notice_deadline": null,
+   "bank_return_memo": null
+  },
+  "employment_ended": true,
+  "timeline": [],
+  "evidence_have": [
+   "attendance register entry"
+  ],
+  "steps_taken": [
+   "called the contractor, but he is not picking up the phone"
+  ],
+  "red_flags": [],
+  "user_goal": "Get the unpaid wages of 12 days from the contractor",
+  "open_questions": [
+   "What is the contractor's name or phone number?",
+   "When was your last working day on the construction site?"
+  ]
+ },
+ "kb_ids": [
+  "cw-in-force",
+  "cw-timely-payment",
+  "cw-deductions",
+  "cw-claims",
+  "wages-contract",
+  "wages-relieving",
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send"
+ ],
+ "checks": {
+  "category": true,
+  "language": true,
+  "mentions:7,200": true,
+  "mentions:15100": true,
+  "guard_clean": true
+ },
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 1.83,
+   "input_tokens": 897,
+   "output_tokens": 431,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "gemini:gemini-3.5-flash-lite",
+   "seconds": 2.93,
+   "input_tokens": 2087,
+   "output_tokens": 481,
+   "error": null
+  }
+ ],
+ "seconds": 4.8
+}
