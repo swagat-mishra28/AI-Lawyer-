@@ -82,3 +82,33 @@ def test_uncorroborated_forgery_flag_is_dropped():
     case = {"red_flags": ["forgery_request"]}
     corroborate_flags(case, "Make me backdated rent receipts with a landlord signature")
     assert case["red_flags"] == ["forgery_request"]
+
+
+def test_code_adds_missed_cyber_fraud_flag():
+    from nyaya.assistant import corroborate_flags
+    case = {"category": "consumer", "red_flags": []}
+    corroborate_flags(case, "Kal kisi ne bank KYC update ke naam pe link bheja, maine OTP daala aur 25,000 kat gaye")
+    assert case["red_flags"] == ["cyber_fraud"] and case["added_flags"] == ["cyber_fraud"]
+    case = {"category": "deposit", "red_flags": []}
+    corroborate_flags(case, "landlord ne fraud kiya, deposit nahi diya")      # plain 'fraud' is not cyber fraud
+    assert case["red_flags"] == []
+
+
+def test_llm_falls_back_on_daily_quota(monkeypatch):
+    from nyaya.config import LLMSettings
+    from nyaya.llm import LLM
+
+    a = LLMSettings("groq", "big", "k1", "http://x", {})
+    b = LLMSettings("gemini", "lite", "k2", "http://y", {})
+    llm = LLM(a, fallbacks=[b])
+    seen = []
+
+    def fake(self, system, messages, json_mode, temperature, max_tokens):
+        seen.append(self.settings.model)
+        if self.settings.model == "big":
+            raise RuntimeError("Error code: 429 - Rate limit reached on tokens per day (TPD)")
+        return "ok", (1, 1)
+
+    monkeypatch.setattr(LLM, "_openai_compat", fake)
+    assert llm.chat("s", [{"role": "user", "content": "hi"}]) == "ok"
+    assert seen == ["big", "lite"] and llm.label == "gemini:lite" and len(llm.switches) == 1

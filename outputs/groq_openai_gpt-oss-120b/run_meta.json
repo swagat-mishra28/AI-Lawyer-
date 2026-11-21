@@ -1,0 +1,13 @@
+{
+ "model": "groq:openai/gpt-oss-120b",
+ "today": "2026-11-21",
+ "usage": {
+  "model": "groq:openai/gpt-oss-120b",
+  "calls": 54,
+  "failed_attempts": 0,
+  "input_tokens": 80528,
+  "output_tokens": 45212,
+  "seconds": 781.7
+ },
+ "run_at": "2026-11-21T20:24:54"
+}

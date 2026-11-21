@@ -1,0 +1,456 @@
+{
+ "id": "dep-hinglish",
+ "title": "Deposit, Hinglish, painting excuse",
+ "input": {
+  "id": "dep-hinglish",
+  "title": "Deposit, Hinglish, painting excuse",
+  "turns": [
+   "Bhai mera landlord 40000 ka security deposit wapas nahi de raha. Maine 15 sept ko flat khali kiya tha Bangalore mein, chaabi bhi de di thi. Ab bolta hai painting aur cleaning ka paisa katega, kitna katega bata bhi nahi raha. Rent agreement hai 11 mahine ka aur deposit UPI se diya tha."
+  ],
+  "draft": "legal_notice",
+  "spar": [
+   "Sir, please return my 40,000 deposit. I left the flat on 15 September in good condition.",
+   "If you don't return it in 15 days I will send a legal notice and go to Lok Adalat."
+  ]
+ },
+ "kind": "chat",
+ "turns": [
+  {
+   "user": "Bhai mera landlord 40000 ka security deposit wapas nahi de raha. Maine 15 sept ko flat khali kiya tha Bangalore mein, chaabi bhi de di thi. Ab bolta hai painting aur cleaning ka paisa katega, kitna katega bata bhi nahi raha. Rent agreement hai 11 mahine ka aur deposit UPI se diya tha.",
+   "reply": "**What I understood**  \nAapne 15 Sept 2026 ko Bangalore mein flat khali kiya, chaabi de di aur ₹40,000 ka security deposit UPI se diya. Landlord ab painting‑aur‑cleaning ke liye katne ka keh raha hai, lekin amount nahi bataya.\n\n**Where you stand**  \n- Rent agreement (chahe likha ho ya nahi) ek contract hai, aur usme likha ho toh deposit refundable hai jab tak agreement mein koi specific deduction ka clause na ho — agar landlord ne aisa clause nahi dala, to wo sirf actual damage ya unpaid rent ke liye hi kat sakta hai [K:deposit-contract].  \n- Agar likhit clause nahi hai, to aapke paas UPI receipt, agreement aur keys handover ka proof strong evidence hai [K:deposit-no-agreement].  \n- Deductions ko justify karne ke liye landlord ko itemised bill ya photos dikhane chahiye; “painting” ya “cleaning” bina amount ke kamzor claim hai [K:deposit-deductions] (generally).  \n- Deposit wapas na milne ka case civil dispute hai, police ya consumer commission se nahi suljhega [K:deposit-not-police], [K:deposit-not-consumer].  \n- Aapke paas 3 saal ka limitation period hai – suit file karne ki last date 15 Sept 2029 (ab 1029 din bache hain) [K:deposit-limitation].\n\n**What you can do now**  \n\n1. **Written demand** – WhatsApp/email se landlord ko likhit mein 15 din ka deadline dekar poora ₹40,000 wapas maange. Saath hi “itemised list of deductions with bills/photos” maange.  \n   - Is notice ko Speed Post/Registered Post se bheje, receipt aur tracking save karein [K:notice-how-to-send].  \n\n2. **Legal notice** – Agar 15 din mein response na mile, to ek lawyer ya free legal‑aid se formal legal notice bhejein (same 15‑day deadline).  \n\n3. **Pre‑litigation settlement (Lok Adalat)** – District Legal Services Authority se free Lok Adalat ka option le sakte hain; yahan dono parties milke settlement karte hain, koi fee nahi [K:lok-adalat].  \n\n4. **Civil suit for money recovery** – Agar settlement fail ho, to local civil court mein “money recovery suit” file karein (summary suit possible because a written agreement exists). Court fee aur process state‑wise alag hota hai, free legal‑aid se madad mil sakti hai [K:deposit-civil-suit] (generally).  \n\n5. **Free legal aid** – Agar aapki annual income limit ke andar hain ya eligible categories mein aate hain, to NALSA (15100) ya apne district legal services authority se free lawyer le sakte hain [K:legal-aid].\n\n**What I still need from you**  \n\n1. Landlord ne koi likhit notice ya estimate of deductions bheja hai kya?  \n2. Aapke paas move‑out ke din ki photos/videos ya landlord ko bheje gaye messages hain?  \n3. Rent receipts ya proof ki aapne rent & bills time pe pay kiye the?\n\n**When to get a real lawyer**  \nAgar landlord 15 din ke andar koi itemised deduction nahi deta ya aapko legal notice bhejne mein madad chahiye, turant free legal‑aid ya private lawyer se sampark karein – especially before you file the court suit (deadline 15 Sept 2029).",
+   "case": {
+    "language": "hinglish",
+    "language_name": "Hinglish",
+    "category": "deposit",
+    "sub_type": "security deposit withheld",
+    "summary": "The tenant vacated a rented flat in Bangalore on 15 September and handed over the keys. The landlord is refusing to return the ₹40,000 security deposit, claiming deductions for painting and cleaning without specifying amounts. The tenant seeks the full return of the deposit.",
+    "user_role": "tenant",
+    "other_party": {
+     "name": null,
+     "type": "landlord"
+    },
+    "state": "Karnataka",
+    "city": "Bangalore",
+    "amounts": {
+     "disputed": 40000,
+     "paid_value": null,
+     "monthly_rent": null,
+     "monthly_salary": null
+    },
+    "dates": {
+     "incident": "2026-09-15",
+     "purchase": null,
+     "complaint_to_company": null,
+     "moved_out": "2026-09-15",
+     "last_working_day": null,
+     "wages_due_from": null,
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": null,
+    "timeline": [
+     {
+      "date": "2026-09-15",
+      "event": "Vacated the flat and handed over the keys"
+     },
+     {
+      "date": "2026-09-15",
+      "event": "Landlord informed tenant that deductions will be made for painting and cleaning, amount not disclosed"
+     },
+     {
+      "date": "unknown",
+      "event": "Security deposit of ₹40,000 paid via UPI (receipt available)"
+     }
+    ],
+    "evidence_have": [
+     "rent agreement",
+     "UPI transaction receipt for deposit",
+     "keys handed over"
+    ],
+    "steps_taken": [],
+    "red_flags": [],
+    "user_goal": "Get the full security deposit of ₹40,000 returned",
+    "open_questions": [
+     "What year did you vacate the flat?",
+     "Has the landlord provided any written notice or estimate of the deductions?",
+     "Do you have any communication (messages/emails) with the landlord regarding the deposit?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "deposit",
+    "deadlines": [
+     {
+      "label": "Last date to file a money-recovery suit (generally 3 years)",
+      "date": "2029-09-15",
+      "days_left": 1029,
+      "status": "ok",
+      "kb": "deposit-limitation",
+      "kind": "limitation",
+      "basis": "3 years from move-out 2026-09-15"
+     }
+    ],
+    "escalations": [],
+    "forum": null,
+    "fee": null,
+    "evidence": {
+     "have": [
+      "Rent agreement (even unregistered / 11-month agreement)",
+      "Proof the deposit was paid (bank transfer / UPI / receipt)",
+      "Proof you moved out and handed over keys (date, message, handover note)"
+     ],
+     "missing": [
+      "Messages where you asked for the deposit and the landlord's replies",
+      "Photos/videos of the flat's condition at move-out",
+      "Rent receipts / proof that rent and bills were paid up to date"
+     ]
+    },
+    "ladder": [
+     "Ask in writing (WhatsApp/email) for the deposit and an itemised list of any deductions with bills.",
+     "Send a legal notice demanding refund within a deadline (usually 15 days).",
+     "Try free pre-litigation settlement through the District Legal Services Authority / Lok Adalat.",
+     "File a civil suit for recovery of money in the civil court with jurisdiction."
+    ],
+    "in_scope": true
+   },
+   "kb_ids": [
+    "deposit-contract",
+    "deposit-no-agreement",
+    "deposit-deductions",
+    "mta-deposit",
+    "deposit-civil-suit",
+    "deposit-limitation",
+    "deposit-not-police",
+    "deposit-not-consumer",
+    "rera-note",
+    "eviction-due-process",
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 0,
+     "violations": []
+    },
+    "repaired": false,
+    "scrubbed": false,
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "deposit-contract",
+     "title": "The deposit is owed under the rent agreement",
+     "law": "Indian Contract Act, 1872 - Section 73",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/2187"
+    },
+    {
+     "n": 2,
+     "id": "deposit-no-agreement",
+     "title": "No written agreement?",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 3,
+     "id": "deposit-deductions",
+     "title": "Deductions must be justified",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "medium",
+     "url": null
+    },
+    {
+     "n": 4,
+     "id": "deposit-not-police",
+     "title": "Is this a police matter?",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 5,
+     "id": "deposit-not-consumer",
+     "title": "Not usually a consumer case",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "medium",
+     "url": null
+    },
+    {
+     "n": 6,
+     "id": "deposit-limitation",
+     "title": "Time limit - generally three years",
+     "law": "Limitation Act, 1963",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1565"
+    },
+    {
+     "n": 7,
+     "id": "notice-how-to-send",
+     "title": "How to send a notice safely",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 8,
+     "id": "lok-adalat",
+     "title": "Lok Adalat (settlement, free)",
+     "law": "Legal Services Authorities Act, 1987 - Section 19; Legal Services Authorities Act, 1987 - Section 21",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    },
+    {
+     "n": 9,
+     "id": "deposit-civil-suit",
+     "title": "Recovery suit in civil court",
+     "law": "Code of Civil Procedure, 1908 - Order XXXVII",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/2191"
+    },
+    {
+     "n": 10,
+     "id": "legal-aid",
+     "title": "Free legal aid",
+     "law": "Legal Services Authorities Act, 1987 - Section 12",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    }
+   ]
+  }
+ ],
+ "reply": "**What I understood**  \nAapne 15 Sept 2026 ko Bangalore mein flat khali kiya, chaabi de di aur ₹40,000 ka security deposit UPI se diya. Landlord ab painting‑aur‑cleaning ke liye katne ka keh raha hai, lekin amount nahi bataya.\n\n**Where you stand**  \n- Rent agreement (chahe likha ho ya nahi) ek contract hai, aur usme likha ho toh deposit refundable hai jab tak agreement mein koi specific deduction ka clause na ho — agar landlord ne aisa clause nahi dala, to wo sirf actual damage ya unpaid rent ke liye hi kat sakta hai [K:deposit-contract].  \n- Agar likhit clause nahi hai, to aapke paas UPI receipt, agreement aur keys handover ka proof strong evidence hai [K:deposit-no-agreement].  \n- Deductions ko justify karne ke liye landlord ko itemised bill ya photos dikhane chahiye; “painting” ya “cleaning” bina amount ke kamzor claim hai [K:deposit-deductions] (generally).  \n- Deposit wapas na milne ka case civil dispute hai, police ya consumer commission se nahi suljhega [K:deposit-not-police], [K:deposit-not-consumer].  \n- Aapke paas 3 saal ka limitation period hai – suit file karne ki last date 15 Sept 2029 (ab 1029 din bache hain) [K:deposit-limitation].\n\n**What you can do now**  \n\n1. **Written demand** – WhatsApp/email se landlord ko likhit mein 15 din ka deadline dekar poora ₹40,000 wapas maange. Saath hi “itemised list of deductions with bills/photos” maange.  \n   - Is notice ko Speed Post/Registered Post se bheje, receipt aur tracking save karein [K:notice-how-to-send].  \n\n2. **Legal notice** – Agar 15 din mein response na mile, to ek lawyer ya free legal‑aid se formal legal notice bhejein (same 15‑day deadline).  \n\n3. **Pre‑litigation settlement (Lok Adalat)** – District Legal Services Authority se free Lok Adalat ka option le sakte hain; yahan dono parties milke settlement karte hain, koi fee nahi [K:lok-adalat].  \n\n4. **Civil suit for money recovery** – Agar settlement fail ho, to local civil court mein “money recovery suit” file karein (summary suit possible because a written agreement exists). Court fee aur process state‑wise alag hota hai, free legal‑aid se madad mil sakti hai [K:deposit-civil-suit] (generally).  \n\n5. **Free legal aid** – Agar aapki annual income limit ke andar hain ya eligible categories mein aate hain, to NALSA (15100) ya apne district legal services authority se free lawyer le sakte hain [K:legal-aid].\n\n**What I still need from you**  \n\n1. Landlord ne koi likhit notice ya estimate of deductions bheja hai kya?  \n2. Aapke paas move‑out ke din ki photos/videos ya landlord ko bheje gaye messages hain?  \n3. Rent receipts ya proof ki aapne rent & bills time pe pay kiye the?\n\n**When to get a real lawyer**  \nAgar landlord 15 din ke andar koi itemised deduction nahi deta ya aapko legal notice bhejne mein madad chahiye, turant free legal‑aid ya private lawyer se sampark karein – especially before you file the court suit (deadline 15 Sept 2029).",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "deposit",
+  "deadlines": [
+   {
+    "label": "Last date to file a money-recovery suit (generally 3 years)",
+    "date": "2029-09-15",
+    "days_left": 1029,
+    "status": "ok",
+    "kb": "deposit-limitation",
+    "kind": "limitation",
+    "basis": "3 years from move-out 2026-09-15"
+   }
+  ],
+  "escalations": [],
+  "forum": null,
+  "fee": null,
+  "evidence": {
+   "have": [
+    "Rent agreement (even unregistered / 11-month agreement)",
+    "Proof the deposit was paid (bank transfer / UPI / receipt)",
+    "Proof you moved out and handed over keys (date, message, handover note)"
+   ],
+   "missing": [
+    "Messages where you asked for the deposit and the landlord's replies",
+    "Photos/videos of the flat's condition at move-out",
+    "Rent receipts / proof that rent and bills were paid up to date"
+   ]
+  },
+  "ladder": [
+   "Ask in writing (WhatsApp/email) for the deposit and an itemised list of any deductions with bills.",
+   "Send a legal notice demanding refund within a deadline (usually 15 days).",
+   "Try free pre-litigation settlement through the District Legal Services Authority / Lok Adalat.",
+   "File a civil suit for recovery of money in the civil court with jurisdiction."
+  ],
+  "in_scope": true
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "repaired": false,
+  "scrubbed": false,
+  "final_violations": 0
+ },
+ "case": {
+  "language": "hinglish",
+  "language_name": "Hinglish",
+  "category": "deposit",
+  "sub_type": "security deposit withheld",
+  "summary": "The tenant vacated a rented flat in Bangalore on 15 September and handed over the keys. The landlord is refusing to return the ₹40,000 security deposit, claiming deductions for painting and cleaning without specifying amounts. The tenant seeks the full return of the deposit.",
+  "user_role": "tenant",
+  "other_party": {
+   "name": null,
+   "type": "landlord"
+  },
+  "state": "Karnataka",
+  "city": "Bangalore",
+  "amounts": {
+   "disputed": 40000,
+   "paid_value": null,
+   "monthly_rent": null,
+   "monthly_salary": null
+  },
+  "dates": {
+   "incident": "2026-09-15",
+   "purchase": null,
+   "complaint_to_company": null,
+   "moved_out": "2026-09-15",
+   "last_working_day": null,
+   "wages_due_from": null,
+   "notice_received": null,
+   "notice_deadline": null,
+   "bank_return_memo": null
+  },
+  "employment_ended": null,
+  "timeline": [
+   {
+    "date": "2026-09-15",
+    "event": "Vacated the flat and handed over the keys"
+   },
+   {
+    "date": "2026-09-15",
+    "event": "Landlord informed tenant that deductions will be made for painting and cleaning, amount not disclosed"
+   },
+   {
+    "date": "unknown",
+    "event": "Security deposit of ₹40,000 paid via UPI (receipt available)"
+   }
+  ],
+  "evidence_have": [
+   "rent agreement",
+   "UPI transaction receipt for deposit",
+   "keys handed over"
+  ],
+  "steps_taken": [],
+  "red_flags": [],
+  "user_goal": "Get the full security deposit of ₹40,000 returned",
+  "open_questions": [
+   "What year did you vacate the flat?",
+   "Has the landlord provided any written notice or estimate of the deductions?",
+   "Do you have any communication (messages/emails) with the landlord regarding the deposit?"
+  ]
+ },
+ "kb_ids": [
+  "deposit-contract",
+  "deposit-no-agreement",
+  "deposit-deductions",
+  "mta-deposit",
+  "deposit-civil-suit",
+  "deposit-limitation",
+  "deposit-not-police",
+  "deposit-not-consumer",
+  "rera-note",
+  "eviction-due-process",
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send"
+ ],
+ "draft": {
+  "doc_type": "legal_notice",
+  "title": "Legal notice to landlord (deposit refund)",
+  "markdown": "**LEGAL NOTICE**\n\n**Date:** 21 November 2026\n**Sent by:** Speed Post / Registered Post A.D. and email\n\n**From:** [FILL: your full name], [FILL: your address]\n**To:** [FILL: name of the landlord], [FILL: their address]\n\n**Subject: Notice for refund of the security deposit of Rs 40,000**\n\nSir/Madam,\n\nI, the undersigned, state as follows:\n\n**Facts**\n\n1. I entered into a rent agreement for a flat in Bangalore, Karnataka, as the tenant.  \n\n2. I paid a security deposit of ₹40,000 by UPI (receipt available) on [FILL: date of deposit].  \n\n3. I vacated the flat and handed over the keys to the landlord on 2026-09-15.  \n\n4. On the same day, the landlord informed me that deductions would be made for painting and cleaning, but did not disclose any specific amount.  \n\n5. I have not received the security deposit amount and am seeking its full return.\n\n**Legal basis**\n\n1. The security deposit was paid as a refundable sum under the rent agreement. Its retention after I vacated is a breach of contract, for which I am entitled to recover the amount with compensation under the Indian Contract Act, 1872.\n\n**Demand**\n\nI hereby call upon you to pay Rs 40,000 within **15 days** of receiving this notice, by bank transfer to the account\nI will share on request, and to confirm in writing.\n\nIf you fail to do so, I shall be constrained to initiate proceedings for recovery before the competent civil court / Lok Adalat, claiming the amount along with interest, compensation\nand costs, entirely at your risk as to costs and consequences.\n\nA copy of this notice is retained for further action.\n\n[FILL: your full name]\n[FILL: signature]",
+  "placeholders": [
+   "[FILL: date of deposit]",
+   "[FILL: name of the landlord]",
+   "[FILL: signature]",
+   "[FILL: their address]",
+   "[FILL: your address]",
+   "[FILL: your full name]"
+  ],
+  "facts_guard": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "disclaimer": "Draft prepared by an AI assistant from your answers. Check every fact, fill every [FILL] and, if the amount is large or the other side has a lawyer, have it reviewed."
+ },
+ "spar": {
+  "transcript": [
+   {
+    "role": "user",
+    "content": "Sir, please return my 40,000 deposit. I left the flat on 15 September in good condition."
+   },
+   {
+    "role": "assistant",
+    "content": "Sir, flat ki painting aur deep cleaning ka kaafi kharcha hua hai, uska hisaab aapko dikhana padega. Thoda samay dijiye, main aapko details bhejta hoon."
+   },
+   {
+    "role": "user",
+    "content": "If you don't return it in 15 days I will send a legal notice and go to Lok Adalat."
+   },
+   {
+    "role": "assistant",
+    "content": "Sir, aapke notice aur Lok Adalat ki baat samajh aati hai, lekin pehle painting‑cleaning ka exact bill aur koi damage ka proof dekhna zaroori hai; tabhi hum final settlement kar sakte hain. कृपया ये दस्तावेज़ भेज दें, fir hum aage discuss karenge."
+   }
+  ],
+  "coach": "**Do cheezein aapne achhi ki:**  \n1. Aapne seedha deposit ki amount (₹40,000) aur vacate date mention ki – yeh clarity banata hai.  \n2. Aapne “legal notice” aur “Lok Adalat” ka zikr kiya, jo landlord ko serious sochne par majboor karta hai (see [K:lok-adalat]).\n\n**Do cheezein improve kar sakte ho (better lines):**  \n- *Original:* “If you don't return it in 15 days I will send a legal notice and go to Lok Adalat.”  \n  *Better:* “Mujhe ₹40,000 ka full deposit 15 din (30 Sept tak) mein bank transfer se wapas chahiye, warna main Speed Post/Registered Post se legal notice bhejunga aur Lok Adalat me settlement ki request karunga.” [K:notice-how-to-send]  \n\n- *Original:* “Sir, flat ki painting aur deep cleaning ka kaafi kharcha hua hai, uska hisaab aapko dikhana padega.”  \n  *Better:* “Kripya painting‑cleaning ka itemised bill aur koi damage ka photo ya invoice bhejein, taki main deductions ko verify kar sakun.” [K:deposit-deductions]\n\n**Strong closing line (amount, deadline, next step):**  \n“Please ₹40,000 ka deposit 30 September tak bank transfer ya cash se wapas karein; agar is date tak nahi milta, to main 31 September ko registered notice bhej kar Lok Adalat me case file kar dunga.” [K:deposit-contract] [K:lok-adalat]",
+  "coach_guard": {
+   "first_pass": {
+    "refs_checked": 0,
+    "violations": []
+   },
+   "repaired": false,
+   "scrubbed": false,
+   "final_violations": 0
+  }
+ },
+ "checks": {
+  "category": true,
+  "language": true,
+  "no_false_alarm": true,
+  "deadline_computed": true,
+  "deadline_date": true,
+  "mentions:notice": true,
+  "mentions:itemised": true,
+  "guard_clean": true,
+  "draft_no_legal_refs_in_facts": true
+ },
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 2.57,
+   "input_tokens": 939,
+   "output_tokens": 926,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 2.53,
+   "input_tokens": 2629,
+   "output_tokens": 976,
+   "error": null
+  },
+  {
+   "purpose": "draft_facts",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 1.34,
+   "input_tokens": 698,
+   "output_tokens": 429,
+   "error": null
+  },
+  {
+   "purpose": "spar",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 0.79,
+   "input_tokens": 322,
+   "output_tokens": 163,
+   "error": null
+  },
+  {
+   "purpose": "spar",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 0.54,
+   "input_tokens": 403,
+   "output_tokens": 152,
+   "error": null
+  },
+  {
+   "purpose": "coach",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 6.79,
+   "input_tokens": 1343,
+   "output_tokens": 815,
+   "error": null
+  }
+ ],
+ "seconds": 14.6
+}

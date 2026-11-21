@@ -11,7 +11,7 @@ import re
 import time
 from dataclasses import dataclass, field
 
-from .config import LLMSettings, llm_settings
+from .config import LLMSettings, fallback_settings, llm_settings
 
 
 class LLMError(RuntimeError):
@@ -32,8 +32,15 @@ class CallRecord:
 class LLM:
     settings: LLMSettings = field(default_factory=llm_settings)
     calls: list[CallRecord] = field(default_factory=list)
+    fallbacks: list[LLMSettings] | None = None      # None = every other provider whose key is set
+    switches: list[str] = field(default_factory=list)
 
     def __post_init__(self):
+        if self.fallbacks is None:
+            self.fallbacks = fallback_settings(self.settings)
+        self._connect()
+
+    def _connect(self):
         s = self.settings
         if not s.api_key:
             raise LLMError(
@@ -43,11 +50,11 @@ class LLM:
         if s.provider == "anthropic":
             import anthropic
 
-            self._client = anthropic.Anthropic(api_key=s.api_key, max_retries=4)
+            self._client = anthropic.Anthropic(api_key=s.api_key, max_retries=1)
         else:
             from openai import OpenAI
 
-            self._client = OpenAI(api_key=s.api_key, base_url=s.base_url, max_retries=4, timeout=120)
+            self._client = OpenAI(api_key=s.api_key, base_url=s.base_url, max_retries=1, timeout=120)
 
     @property
     def label(self) -> str:
@@ -71,11 +78,32 @@ class LLM:
                 last_err = e
                 self.calls.append(CallRecord(purpose, self.label, round(time.time() - t0, 2), error=str(e)[:300]))
                 msg = str(e).lower()
-                if "429" in msg or "rate" in msg or "quota" in msg or "resource_exhausted" in msg or "503" in msg or "overloaded" in msg:
-                    time.sleep(15 * (attempt + 1))
+                if is_daily_quota(msg) or (not is_transient(msg) and is_unavailable(msg)):
+                    # waiting will not help: move to the next provider, if any
+                    if self._fall_back(msg):
+                        return self.chat(system, messages, purpose=purpose, json_mode=json_mode,
+                                         temperature=temperature, max_tokens=max_tokens)
+                    raise LLMError(f"{self.label} failed: {e}") from e
+                if is_transient(msg):
+                    time.sleep(10 * (attempt + 1))
                     continue
                 raise LLMError(f"{self.label} failed: {e}") from e
+        if self._fall_back(str(last_err)):
+            return self.chat(system, messages, purpose=purpose, json_mode=json_mode, temperature=temperature,
+                             max_tokens=max_tokens)
         raise LLMError(f"{self.label} failed after retries: {last_err}")
+
+    def _fall_back(self, reason: str) -> bool:
+        """Switch to the next configured provider (free tiers run out mid-demo; this keeps the app alive)."""
+        while self.fallbacks:
+            nxt = self.fallbacks.pop(0)
+            if not nxt.api_key:
+                continue
+            self.switches.append(f"{self.label} -> {nxt.label} ({reason[:120]})")
+            self.settings = nxt
+            self._connect()
+            return True
+        return False
 
     def json(self, system: str, messages: list[dict], *, purpose: str = "json", max_tokens: int = 4096) -> dict:
         """Ask for a JSON object; tolerate code fences / chatter; one repair retry."""
@@ -130,12 +158,26 @@ class LLM:
         ok = [c for c in self.calls if not c.error]
         return {
             "model": self.label,
+            "provider_switches": self.switches,
             "calls": len(ok),
             "failed_attempts": len(self.calls) - len(ok),
             "input_tokens": sum(c.input_tokens or 0 for c in ok),
             "output_tokens": sum(c.output_tokens or 0 for c in ok),
             "seconds": round(sum(c.seconds for c in ok), 1),
         }
+
+
+def is_transient(msg: str) -> bool:
+    return any(k in msg for k in ("429", "rate", "503", "overloaded", "resource_exhausted", "timed out", "timeout"))
+
+
+def is_daily_quota(msg: str) -> bool:
+    return any(k in msg for k in ("per day", "perday", "tokens per day", "(tpd)", "(rpd)", "requests per day",
+                                  "insufficient_quota", "exceeded your current quota"))
+
+
+def is_unavailable(msg: str) -> bool:
+    return any(k in msg for k in ("404", "does not exist", "no longer available", "not found", "decommissioned"))
 
 
 _FENCE = re.compile(r"^```(?:json)?\s*|\s*```$", re.MULTILINE)

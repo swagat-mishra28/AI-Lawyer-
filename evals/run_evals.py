@@ -134,7 +134,7 @@ def main():
     args = ap.parse_args()
 
     settings = llm_settings(args.provider, args.model)
-    llm = LLM(settings)
+    llm = LLM(settings, fallbacks=[])  # an eval must never silently switch models
     today = dt.date.fromisoformat(args.today)
     cases = yaml.safe_load((ROOT / "evals" / "cases.yaml").read_text(encoding="utf-8"))
     if args.only:

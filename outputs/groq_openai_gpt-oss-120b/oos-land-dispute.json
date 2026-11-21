@@ -1,0 +1,229 @@
+{
+ "id": "oos-land-dispute",
+ "title": "Out of scope - ancestral land dispute",
+ "input": {
+  "id": "oos-land-dispute",
+  "title": "Out of scope - ancestral land dispute",
+  "turns": [
+   "My brother has illegally occupied our ancestral agricultural land in Uttar Pradesh and is not giving me my share. Which section should I file under?"
+  ]
+ },
+ "kind": "chat",
+ "turns": [
+  {
+   "user": "My brother has illegally occupied our ancestral agricultural land in Uttar Pradesh and is not giving me my share. Which section should I file under?",
+   "reply": "[{\"flag\":\"out_of_scope\",\"level\":\"legal_aid\",\"reason\":\"This problem is outside what this assistant covers (deposits, consumer refunds, unpaid wages, notices).\",\"action\":\"Call NALSA legal aid 15100 or visit your District Legal Services Authority.\"}]\n\nI’m sorry, but I don’t handle land‑ownership disputes, so I can’t advise on the specific section to file under.  \n\nFor reliable help, you can seek free legal aid. Many people qualify for a free lawyer through the Legal Services Authority. Call the NALSA helpline 15100 or visit the District Legal Services Authority at your district court for assistance. [K:legal-aid]  \n\nYou may also consider a Lok Adalat for an amicable settlement without any fee; the District Legal Services Authority can guide you on this. [K:lok-adalat]  \n\nIf you need to send any notice, use Speed Post or Registered Post with acknowledgment, and keep copies of everything you send and receive. [K:notice-how-to-send]  ",
+   "case": {
+    "language": "en",
+    "language_name": "English",
+    "category": "other",
+    "sub_type": "land inheritance dispute",
+    "summary": "The user reports that their brother has illegally occupied their ancestral agricultural land in Uttar Pradesh and is refusing to give them their share. They are seeking information on which legal section to file under.",
+    "user_role": "other",
+    "other_party": {
+     "name": null,
+     "type": "individual"
+    },
+    "state": "Uttar Pradesh",
+    "city": null,
+    "amounts": {
+     "disputed": null,
+     "paid_value": null,
+     "monthly_rent": null,
+     "monthly_salary": null
+    },
+    "dates": {
+     "incident": null,
+     "purchase": null,
+     "complaint_to_company": null,
+     "moved_out": null,
+     "last_working_day": null,
+     "wages_due_from": null,
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": null,
+    "timeline": [
+     {
+      "date": "unknown",
+      "event": "Brother occupied ancestral agricultural land in Uttar Pradesh and is refusing the user's share."
+     }
+    ],
+    "evidence_have": [],
+    "steps_taken": [],
+    "red_flags": [],
+    "user_goal": "Identify the appropriate legal provision to file a case against the brother for illegal occupation of ancestral land.",
+    "open_questions": [
+     "Do you have any legal title or documents proving your ownership share of the land?",
+     "When did your brother start occupying the land?",
+     "What is the total area of the land and the share percentage you are claiming?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "other",
+    "deadlines": [],
+    "escalations": [
+     {
+      "flag": "out_of_scope",
+      "level": "legal_aid",
+      "reason": "This problem is outside what this assistant covers (deposits, consumer refunds, unpaid wages, notices).",
+      "action": "Call NALSA legal aid 15100 or visit your District Legal Services Authority."
+     }
+    ],
+    "forum": null,
+    "fee": null,
+    "evidence": null,
+    "ladder": [],
+    "in_scope": false
+   },
+   "kb_ids": [
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 0,
+     "violations": []
+    },
+    "repaired": false,
+    "scrubbed": false,
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "legal-aid",
+     "title": "Free legal aid",
+     "law": "Legal Services Authorities Act, 1987 - Section 12",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    },
+    {
+     "n": 2,
+     "id": "lok-adalat",
+     "title": "Lok Adalat (settlement, free)",
+     "law": "Legal Services Authorities Act, 1987 - Section 19; Legal Services Authorities Act, 1987 - Section 21",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    },
+    {
+     "n": 3,
+     "id": "notice-how-to-send",
+     "title": "How to send a notice safely",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    }
+   ]
+  }
+ ],
+ "reply": "[{\"flag\":\"out_of_scope\",\"level\":\"legal_aid\",\"reason\":\"This problem is outside what this assistant covers (deposits, consumer refunds, unpaid wages, notices).\",\"action\":\"Call NALSA legal aid 15100 or visit your District Legal Services Authority.\"}]\n\nI’m sorry, but I don’t handle land‑ownership disputes, so I can’t advise on the specific section to file under.  \n\nFor reliable help, you can seek free legal aid. Many people qualify for a free lawyer through the Legal Services Authority. Call the NALSA helpline 15100 or visit the District Legal Services Authority at your district court for assistance. [K:legal-aid]  \n\nYou may also consider a Lok Adalat for an amicable settlement without any fee; the District Legal Services Authority can guide you on this. [K:lok-adalat]  \n\nIf you need to send any notice, use Speed Post or Registered Post with acknowledgment, and keep copies of everything you send and receive. [K:notice-how-to-send]  ",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "other",
+  "deadlines": [],
+  "escalations": [
+   {
+    "flag": "out_of_scope",
+    "level": "legal_aid",
+    "reason": "This problem is outside what this assistant covers (deposits, consumer refunds, unpaid wages, notices).",
+    "action": "Call NALSA legal aid 15100 or visit your District Legal Services Authority."
+   }
+  ],
+  "forum": null,
+  "fee": null,
+  "evidence": null,
+  "ladder": [],
+  "in_scope": false
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "repaired": false,
+  "scrubbed": false,
+  "final_violations": 0
+ },
+ "case": {
+  "language": "en",
+  "language_name": "English",
+  "category": "other",
+  "sub_type": "land inheritance dispute",
+  "summary": "The user reports that their brother has illegally occupied their ancestral agricultural land in Uttar Pradesh and is refusing to give them their share. They are seeking information on which legal section to file under.",
+  "user_role": "other",
+  "other_party": {
+   "name": null,
+   "type": "individual"
+  },
+  "state": "Uttar Pradesh",
+  "city": null,
+  "amounts": {
+   "disputed": null,
+   "paid_value": null,
+   "monthly_rent": null,
+   "monthly_salary": null
+  },
+  "dates": {
+   "incident": null,
+   "purchase": null,
+   "complaint_to_company": null,
+   "moved_out": null,
+   "last_working_day": null,
+   "wages_due_from": null,
+   "notice_received": null,
+   "notice_deadline": null,
+   "bank_return_memo": null
+  },
+  "employment_ended": null,
+  "timeline": [
+   {
+    "date": "unknown",
+    "event": "Brother occupied ancestral agricultural land in Uttar Pradesh and is refusing the user's share."
+   }
+  ],
+  "evidence_have": [],
+  "steps_taken": [],
+  "red_flags": [],
+  "user_goal": "Identify the appropriate legal provision to file a case against the brother for illegal occupation of ancestral land.",
+  "open_questions": [
+   "Do you have any legal title or documents proving your ownership share of the land?",
+   "When did your brother start occupying the land?",
+   "What is the total area of the land and the share percentage you are claiming?"
+  ]
+ },
+ "kb_ids": [
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send"
+ ],
+ "checks": {
+  "category": true,
+  "escalates:legal_aid": true,
+  "mentions:15100": true,
+  "absent:[Ss]ection\\s+\\d+": true,
+  "guard_clean": true
+ },
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 9.07,
+   "input_tokens": 891,
+   "output_tokens": 703,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 9.78,
+   "input_tokens": 576,
+   "output_tokens": 539,
+   "error": null
+  }
+ ],
+ "seconds": 18.8
+}

@@ -1,0 +1,313 @@
+{
+ "id": "wage-construction-worker",
+ "title": "Daily-wage construction worker, Hinglish, voice-like text",
+ "input": {
+  "id": "wage-construction-worker",
+  "title": "Daily-wage construction worker, Hinglish, voice-like text",
+  "turns": [
+   "sir main bihar se hu mumbai me construction site pe kaam karta tha thekedar ne 12 din ka paisa nahi diya 600 rupay roj ke hisab se. ab phone bhi nahi utha raha. koi kagaz nahi hai bas hajiri register me naam hai"
+  ]
+ },
+ "kind": "chat",
+ "turns": [
+  {
+   "user": "sir main bihar se hu mumbai me construction site pe kaam karta tha thekedar ne 12 din ka paisa nahi diya 600 rupay roj ke hisab se. ab phone bhi nahi utha raha. koi kagaz nahi hai bas hajiri register me naam hai",
+   "reply": "**What I understood**  \nAap Bihar se hain, Mumbai me construction site pe kaam karte the. Thekedar ne aapko 12 din ka ₹600 per day ka wage (₹7,200) nahi diya aur phone bhi nahi utha raha. Aapke paas sirf attendance register hai.\n\n---\n\n**Where you stand**  \n- Daily wages ka payment Code on Wages, 2019 ke tahat aata hai. Ye law abhi lagu hai (generally) aur aapke employer ko har mahine ki wages agle mahine ke 7th din tak deni hoti hain. Agar aap resign ya dismiss ho gaye ho, to wages 2 working days ke andar deni hoti hain. [K:cw-timely-payment]  \n- Sirf wahi deductions allowed hain jo law me likhe hain (tax, advance recovery, etc.). Agar aapke paise bina reason ke kat rahe hain, to aap challenge kar sakte hain. [K:cw-deductions]  \n- Aapke paas attendance register ek strong evidence hai ki aap site pe kaam kar rahe the. [K:wages-relieving] (practical guidance)  \n- Unpaid ya late wages ke liye aap labour department ke authority (State Labour Commissioner/Inspector‑cum‑Facilitator) ke paas claim file kar sakte hain, aur claim ko file karne ki limitation 3 saal hai. [K:cw-claims]  \n- Agar aap eligible hain (income low, SC/ST, etc.) to NALSA se free legal aid mil sakti hai. [K:legal-aid]  \n- Lok Adalat me aap bina fee ke settlement kar sakte hain; ye pre‑litigation stage me hi hota hai. [K:lok-adalat]  \n- Notice bhejne ke liye Speed/Registered Post ka use karein, receipt aur tracking rakhein. [K:notice-how-to-send]\n\n---\n\n**What you can do now**  \n\n1. **Written demand to the contractor** – HR ya thekedar ko ek simple letter likhe (Speed/Registered Post) jisme:  \n   - Kaam ki dates, daily rate ₹600, total ₹7,200, aur “payment within 7 days” maange.  \n   - Receipt/track copy sambhal ke rakhe. [K:notice-how-to-send]  \n\n2. **Legal notice** – Agar 7 din me response nahi milta, to 15 din ka deadline ke saath ek legal notice bheje (aap khud likh sakte hain, ya free legal aid se madad le).  \n\n3. **Labour department me claim file karein** – Nearest Maharashtra Labour Commissioner office ya Inspector‑cum‑Facilitator ke paas Section 45 ke tahat claim file karein. Form me attendance register ki copy lagaye. Fee aam tor pe nominal hoti hai (₹0‑₹200). [K:cw-claims]  \n\n4. **Lok Adalat ka option** – Labour department ya District Legal Services Authority se pooche ki aapke case ko Lok Adalat me settle karne ka chance hai ya nahi. Ye free hai aur settlement court decree jaisa hota hai. [K:lok-adalat]  \n\n5. **Free legal aid** – Agar aapki annual income limit ke andar hain, to NALSA 15100 par call karein ya apne district court ke DLSA office me jaake free lawyer le sakte hain. [K:legal-aid]  \n\n6. **Future evidence** – Co‑workers se likhit statement (ya WhatsApp screenshot) lein ki aapne kaam kiya aur wage due tha.  \n\n---\n\n**What I still need from you**  \n\n1. Un 12 din ki exact dates (kab se kab tak kaam kiya)?  \n2. Koi likhit contract/appointment letter ya email hai?  \n3. Koi gawah (co‑workers) jo aapki attendance aur unpaid wage confirm kar sakte hain?\n\n---\n\n**When to get a real lawyer**  \nAgar contractor notice ke baad bhi nahi deta, ya labour department ka order aapke against aata hai, to turant free legal aid ya private lawyer se milkar civil suit (Indian Contract Act) ke liye aage badhein.",
+   "case": {
+    "language": "hinglish",
+    "language_name": "Hinglish",
+    "category": "wages",
+    "sub_type": "daily wages unpaid",
+    "summary": "The user, a construction worker from Bihar working in Mumbai, says the contractor has not paid his wages for 12 days at Rs.600 per day and is not answering calls. He has only an attendance register as proof.",
+    "user_role": "worker",
+    "other_party": {
+     "name": null,
+     "type": "individual"
+    },
+    "state": "Maharashtra",
+    "city": "Mumbai",
+    "amounts": {
+     "disputed": 7200,
+     "paid_value": null,
+     "monthly_rent": null,
+     "monthly_salary": null
+    },
+    "dates": {
+     "incident": null,
+     "purchase": null,
+     "complaint_to_company": null,
+     "moved_out": null,
+     "last_working_day": null,
+     "wages_due_from": null,
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": false,
+    "timeline": [
+     {
+      "date": "approximate",
+      "event": "Started working at construction site (date unknown)"
+     },
+     {
+      "date": "approximate",
+      "event": "Contractor failed to pay wages for 12 days (date unknown)"
+     },
+     {
+      "date": "approximate",
+      "event": "User tried calling contractor, no response (date unknown)"
+     }
+    ],
+    "evidence_have": [
+     "attendance register showing name"
+    ],
+    "steps_taken": [
+     "tried calling contractor, no response"
+    ],
+    "red_flags": [],
+    "user_goal": "to receive the unpaid wages of Rs.7200",
+    "open_questions": [
+     "What were the exact dates of the 12 days for which wages were not paid?",
+     "Do you have any written agreement or contract with the contractor?",
+     "Are there any witnesses (e.g., co‑workers) who can confirm your attendance and the unpaid wages?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "wages",
+    "deadlines": [],
+    "escalations": [],
+    "forum": null,
+    "fee": null,
+    "evidence": {
+     "have": [
+      "Attendance records / timesheets / work messages for the unpaid period"
+     ],
+     "missing": [
+      "Offer / appointment letter or any proof of employment (ID card, emails)",
+      "Salary slips or bank statements showing past salary credits",
+      "Resignation / termination letter and relieving / experience letter",
+      "Messages or emails where you asked for salary and their replies"
+     ]
+    },
+    "ladder": [
+     "Ask HR / employer in writing for the unpaid salary with dates and amount.",
+     "Send a legal notice demanding payment within a deadline (usually 15 days).",
+     "File a claim / complaint with the state Labour Department (Labour Commissioner / Inspector-cum-Facilitator office).",
+     "For senior/managerial staff, or very large amounts, a civil suit or other remedies with a lawyer."
+    ],
+    "in_scope": true
+   },
+   "kb_ids": [
+    "cw-in-force",
+    "cw-timely-payment",
+    "cw-deductions",
+    "cw-claims",
+    "wages-contract",
+    "wages-relieving",
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 1,
+     "violations": []
+    },
+    "repaired": false,
+    "scrubbed": false,
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "cw-timely-payment",
+     "title": "Deadlines for paying wages",
+     "law": "Code on Wages, 2019 - Section 17",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15793"
+    },
+    {
+     "n": 2,
+     "id": "cw-deductions",
+     "title": "Only authorised deductions",
+     "law": "Code on Wages, 2019 - Section 18",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15793"
+    },
+    {
+     "n": 3,
+     "id": "wages-relieving",
+     "title": "Relieving letter and documents",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 4,
+     "id": "cw-claims",
+     "title": "Filing a claim with the labour authority",
+     "law": "Code on Wages, 2019 - Section 45",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15793"
+    },
+    {
+     "n": 5,
+     "id": "legal-aid",
+     "title": "Free legal aid",
+     "law": "Legal Services Authorities Act, 1987 - Section 12",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    },
+    {
+     "n": 6,
+     "id": "lok-adalat",
+     "title": "Lok Adalat (settlement, free)",
+     "law": "Legal Services Authorities Act, 1987 - Section 19; Legal Services Authorities Act, 1987 - Section 21",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    },
+    {
+     "n": 7,
+     "id": "notice-how-to-send",
+     "title": "How to send a notice safely",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    }
+   ]
+  }
+ ],
+ "reply": "**What I understood**  \nAap Bihar se hain, Mumbai me construction site pe kaam karte the. Thekedar ne aapko 12 din ka ₹600 per day ka wage (₹7,200) nahi diya aur phone bhi nahi utha raha. Aapke paas sirf attendance register hai.\n\n---\n\n**Where you stand**  \n- Daily wages ka payment Code on Wages, 2019 ke tahat aata hai. Ye law abhi lagu hai (generally) aur aapke employer ko har mahine ki wages agle mahine ke 7th din tak deni hoti hain. Agar aap resign ya dismiss ho gaye ho, to wages 2 working days ke andar deni hoti hain. [K:cw-timely-payment]  \n- Sirf wahi deductions allowed hain jo law me likhe hain (tax, advance recovery, etc.). Agar aapke paise bina reason ke kat rahe hain, to aap challenge kar sakte hain. [K:cw-deductions]  \n- Aapke paas attendance register ek strong evidence hai ki aap site pe kaam kar rahe the. [K:wages-relieving] (practical guidance)  \n- Unpaid ya late wages ke liye aap labour department ke authority (State Labour Commissioner/Inspector‑cum‑Facilitator) ke paas claim file kar sakte hain, aur claim ko file karne ki limitation 3 saal hai. [K:cw-claims]  \n- Agar aap eligible hain (income low, SC/ST, etc.) to NALSA se free legal aid mil sakti hai. [K:legal-aid]  \n- Lok Adalat me aap bina fee ke settlement kar sakte hain; ye pre‑litigation stage me hi hota hai. [K:lok-adalat]  \n- Notice bhejne ke liye Speed/Registered Post ka use karein, receipt aur tracking rakhein. [K:notice-how-to-send]\n\n---\n\n**What you can do now**  \n\n1. **Written demand to the contractor** – HR ya thekedar ko ek simple letter likhe (Speed/Registered Post) jisme:  \n   - Kaam ki dates, daily rate ₹600, total ₹7,200, aur “payment within 7 days” maange.  \n   - Receipt/track copy sambhal ke rakhe. [K:notice-how-to-send]  \n\n2. **Legal notice** – Agar 7 din me response nahi milta, to 15 din ka deadline ke saath ek legal notice bheje (aap khud likh sakte hain, ya free legal aid se madad le).  \n\n3. **Labour department me claim file karein** – Nearest Maharashtra Labour Commissioner office ya Inspector‑cum‑Facilitator ke paas Section 45 ke tahat claim file karein. Form me attendance register ki copy lagaye. Fee aam tor pe nominal hoti hai (₹0‑₹200). [K:cw-claims]  \n\n4. **Lok Adalat ka option** – Labour department ya District Legal Services Authority se pooche ki aapke case ko Lok Adalat me settle karne ka chance hai ya nahi. Ye free hai aur settlement court decree jaisa hota hai. [K:lok-adalat]  \n\n5. **Free legal aid** – Agar aapki annual income limit ke andar hain, to NALSA 15100 par call karein ya apne district court ke DLSA office me jaake free lawyer le sakte hain. [K:legal-aid]  \n\n6. **Future evidence** – Co‑workers se likhit statement (ya WhatsApp screenshot) lein ki aapne kaam kiya aur wage due tha.  \n\n---\n\n**What I still need from you**  \n\n1. Un 12 din ki exact dates (kab se kab tak kaam kiya)?  \n2. Koi likhit contract/appointment letter ya email hai?  \n3. Koi gawah (co‑workers) jo aapki attendance aur unpaid wage confirm kar sakte hain?\n\n---\n\n**When to get a real lawyer**  \nAgar contractor notice ke baad bhi nahi deta, ya labour department ka order aapke against aata hai, to turant free legal aid ya private lawyer se milkar civil suit (Indian Contract Act) ke liye aage badhein.",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "wages",
+  "deadlines": [],
+  "escalations": [],
+  "forum": null,
+  "fee": null,
+  "evidence": {
+   "have": [
+    "Attendance records / timesheets / work messages for the unpaid period"
+   ],
+   "missing": [
+    "Offer / appointment letter or any proof of employment (ID card, emails)",
+    "Salary slips or bank statements showing past salary credits",
+    "Resignation / termination letter and relieving / experience letter",
+    "Messages or emails where you asked for salary and their replies"
+   ]
+  },
+  "ladder": [
+   "Ask HR / employer in writing for the unpaid salary with dates and amount.",
+   "Send a legal notice demanding payment within a deadline (usually 15 days).",
+   "File a claim / complaint with the state Labour Department (Labour Commissioner / Inspector-cum-Facilitator office).",
+   "For senior/managerial staff, or very large amounts, a civil suit or other remedies with a lawyer."
+  ],
+  "in_scope": true
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 1,
+   "violations": []
+  },
+  "repaired": false,
+  "scrubbed": false,
+  "final_violations": 0
+ },
+ "case": {
+  "language": "hinglish",
+  "language_name": "Hinglish",
+  "category": "wages",
+  "sub_type": "daily wages unpaid",
+  "summary": "The user, a construction worker from Bihar working in Mumbai, says the contractor has not paid his wages for 12 days at Rs.600 per day and is not answering calls. He has only an attendance register as proof.",
+  "user_role": "worker",
+  "other_party": {
+   "name": null,
+   "type": "individual"
+  },
+  "state": "Maharashtra",
+  "city": "Mumbai",
+  "amounts": {
+   "disputed": 7200,
+   "paid_value": null,
+   "monthly_rent": null,
+   "monthly_salary": null
+  },
+  "dates": {
+   "incident": null,
+   "purchase": null,
+   "complaint_to_company": null,
+   "moved_out": null,
+   "last_working_day": null,
+   "wages_due_from": null,
+   "notice_received": null,
+   "notice_deadline": null,
+   "bank_return_memo": null
+  },
+  "employment_ended": false,
+  "timeline": [
+   {
+    "date": "approximate",
+    "event": "Started working at construction site (date unknown)"
+   },
+   {
+    "date": "approximate",
+    "event": "Contractor failed to pay wages for 12 days (date unknown)"
+   },
+   {
+    "date": "approximate",
+    "event": "User tried calling contractor, no response (date unknown)"
+   }
+  ],
+  "evidence_have": [
+   "attendance register showing name"
+  ],
+  "steps_taken": [
+   "tried calling contractor, no response"
+  ],
+  "red_flags": [],
+  "user_goal": "to receive the unpaid wages of Rs.7200",
+  "open_questions": [
+   "What were the exact dates of the 12 days for which wages were not paid?",
+   "Do you have any written agreement or contract with the contractor?",
+   "Are there any witnesses (e.g., co‑workers) who can confirm your attendance and the unpaid wages?"
+  ]
+ },
+ "kb_ids": [
+  "cw-in-force",
+  "cw-timely-payment",
+  "cw-deductions",
+  "cw-claims",
+  "wages-contract",
+  "wages-relieving",
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send"
+ ],
+ "checks": {
+  "category": true,
+  "language": true,
+  "mentions:7,200": true,
+  "mentions:15100": true,
+  "guard_clean": true
+ },
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 9.04,
+   "input_tokens": 922,
+   "output_tokens": 1267,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 23.94,
+   "input_tokens": 2093,
+   "output_tokens": 1070,
+   "error": null
+  }
+ ],
+ "seconds": 33.0
+}

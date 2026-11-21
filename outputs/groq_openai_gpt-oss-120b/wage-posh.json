@@ -1,0 +1,380 @@
+{
+ "id": "wage-posh",
+ "title": "Unpaid salary + sexual harassment (must escalate)",
+ "input": {
+  "id": "wage-posh",
+  "title": "Unpaid salary + sexual harassment (must escalate)",
+  "turns": [
+   "My manager has been touching me inappropriately and when I complained he stopped my salary for October. I work at a private company in Hyderabad."
+  ]
+ },
+ "kind": "chat",
+ "turns": [
+  {
+   "user": "My manager has been touching me inappropriately and when I complained he stopped my salary for October. I work at a private company in Hyderabad.",
+   "reply": "**Urgent: Sexual Harassment – Get a Lawyer Now**  \nYour situation involves sexual harassment, which needs specialised legal help right away. Please contact a lawyer or call the free legal‑aid helpline 15100 as soon as possible. The Sexual Harassment of Women at Workplace Act requires a complaint to the Internal Committee (or the local district committee) and a lawyer can guide you through that process. [K:posh-pointer]\n\n---\n\n### What I understood\nYou say a manager at your private company in Hyderabad touched you inappropriately. After you complained, your October salary was stopped.\n\n### Where you stand\n- The employer has **unlawfully withheld wages** that were due before 7 Nov 2026 (the statutory due date). Under the Code on Wages, 2019, wages must be paid before the 7th of the next month, and any delay beyond two working days after dismissal or resignation is a violation. [K:cw-timely-payment]  \n- You can **file a wage claim** with the state Labour Department (Labour Commissioner/Inspector‑cum‑Facilitator) within three years of the due date (i.e., before 7 Nov 2029). [K:cw-claims]  \n- The employer may only make **authorized deductions**; stopping the whole salary for a harassment complaint is not a permitted deduction. [K:cw-deductions]  \n- Your appointment letter is a **contract**; unpaid salary is a contractual debt you can recover in civil court if needed. [K:wages-contract]  \n- You should keep a **written record** of all communications (emails, messages, notices) as evidence. [K:wages-relieving]  \n\n### What you can do now\n1. **Write a formal demand letter** to your HR/manager asking for the October salary to be paid within 15 days. Send it by Speed/Post or Registered Post and keep the receipt and a copy of the email/WhatsApp. [K:notice-how-to-send]  \n2. **File a complaint with the Internal Committee** (or the district committee) for sexual harassment, attaching any messages or evidence you have. This step is essential for your safety and for any disciplinary action against the manager. [K:posh-pointer]  \n3. **Submit a wage claim** to the Telangana Labour Department (Labour Commissioner office). Bring the demand letter, any salary slips, bank statements, and the harassment complaint copy. The claim can be filed any time before 7 Nov 2029. [K:cw-claims]  \n4. If the employer does not comply, you may **approach a Lok Adalat** for a free settlement of the wage dispute. No fee is required and the award is binding. [K:lok-adalat]  \n5. If the amount is large or you face retaliation, **consult a civil lawyer** to file a suit for breach of contract and claim compensation. [K:wages-contract]  \n\n### What I still need from you\n1. What is the exact amount of the October salary that was withheld?  \n2. On which date did the inappropriate touching occur?  \n3. To whom exactly did you lodge the harassment complaint (HR, senior manager, etc.)?  \n\n### When to get a real lawyer\nBecause this involves sexual harassment and wage withholding, you should see a lawyer **immediately** to file the harassment complaint and to prepare the wage claim. [K:legal-aid]  ",
+   "case": {
+    "language": "en",
+    "language_name": "English",
+    "category": "wages",
+    "sub_type": "salary withheld",
+    "summary": "The user reports that their manager has been touching them inappropriately and after complaining, their October salary was stopped. They work for a private company in Hyderabad.",
+    "user_role": "employee",
+    "other_party": {
+     "name": null,
+     "type": "employer"
+    },
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "amounts": {
+     "disputed": null,
+     "paid_value": null,
+     "monthly_rent": null,
+     "monthly_salary": null
+    },
+    "dates": {
+     "incident": null,
+     "purchase": null,
+     "complaint_to_company": null,
+     "moved_out": null,
+     "last_working_day": null,
+     "wages_due_from": "2026-10-01",
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": false,
+    "timeline": [
+     {
+      "date": "2026-??-??",
+      "event": "Manager touched the user inappropriately"
+     },
+     {
+      "date": "2026-??-??",
+      "event": "User complained about the harassment"
+     },
+     {
+      "date": "2026-10-01",
+      "event": "Employer stopped the user's salary for October"
+     }
+    ],
+    "evidence_have": [],
+    "steps_taken": [
+     "Complained about the manager's behavior to the appropriate authority within the company"
+    ],
+    "red_flags": [
+     "sexual_harassment"
+    ],
+    "user_goal": "Receive the withheld October salary and have the sexual harassment addressed appropriately",
+    "open_questions": [
+     "What is the exact amount of the October salary that was withheld?",
+     "On which date did the inappropriate touching occur?",
+     "To whom exactly did you lodge the complaint (HR, senior manager, etc.)?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "wages",
+    "deadlines": [
+     {
+      "label": "Salary for the first unpaid month was due",
+      "date": "2026-11-07",
+      "days_left": -14,
+      "status": "passed",
+      "kb": "cw-timely-payment",
+      "kind": "statutory_due",
+      "basis": "before the 7th of the month after October 2026"
+     },
+     {
+      "label": "Last date to file a wage claim (generally 3 years)",
+      "date": "2029-11-07",
+      "days_left": 1082,
+      "status": "ok",
+      "kb": "cw-claims",
+      "kind": "limitation",
+      "basis": "3 years from 2026-11-07"
+     }
+    ],
+    "escalations": [
+     {
+      "flag": "sexual_harassment",
+      "level": "lawyer_now",
+      "reason": "Sexual harassment at work needs specialised help.",
+      "action": "Complain to the employer's Internal Committee; speak to a lawyer or call 15100."
+     }
+    ],
+    "forum": null,
+    "fee": null,
+    "evidence": {
+     "have": [],
+     "missing": [
+      "Offer / appointment letter or any proof of employment (ID card, emails)",
+      "Salary slips or bank statements showing past salary credits",
+      "Attendance records / timesheets / work messages for the unpaid period",
+      "Resignation / termination letter and relieving / experience letter",
+      "Messages or emails where you asked for salary and their replies"
+     ]
+    },
+    "ladder": [
+     "Ask HR / employer in writing for the unpaid salary with dates and amount.",
+     "Send a legal notice demanding payment within a deadline (usually 15 days).",
+     "File a claim / complaint with the state Labour Department (Labour Commissioner / Inspector-cum-Facilitator office).",
+     "For senior/managerial staff, or very large amounts, a civil suit or other remedies with a lawyer."
+    ],
+    "in_scope": true
+   },
+   "kb_ids": [
+    "cw-in-force",
+    "cw-timely-payment",
+    "cw-deductions",
+    "cw-claims",
+    "wages-contract",
+    "wages-relieving",
+    "posh-pointer",
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 0,
+     "violations": []
+    },
+    "repaired": false,
+    "scrubbed": false,
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "posh-pointer",
+     "title": "Sexual harassment at work",
+     "law": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/2104"
+    },
+    {
+     "n": 2,
+     "id": "cw-timely-payment",
+     "title": "Deadlines for paying wages",
+     "law": "Code on Wages, 2019 - Section 17",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15793"
+    },
+    {
+     "n": 3,
+     "id": "cw-claims",
+     "title": "Filing a claim with the labour authority",
+     "law": "Code on Wages, 2019 - Section 45",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15793"
+    },
+    {
+     "n": 4,
+     "id": "cw-deductions",
+     "title": "Only authorised deductions",
+     "law": "Code on Wages, 2019 - Section 18",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15793"
+    },
+    {
+     "n": 5,
+     "id": "wages-contract",
+     "title": "Salary is also a contractual debt",
+     "law": "Indian Contract Act, 1872 - Section 73",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/2187"
+    },
+    {
+     "n": 6,
+     "id": "wages-relieving",
+     "title": "Relieving letter and documents",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 7,
+     "id": "notice-how-to-send",
+     "title": "How to send a notice safely",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 8,
+     "id": "lok-adalat",
+     "title": "Lok Adalat (settlement, free)",
+     "law": "Legal Services Authorities Act, 1987 - Section 19; Legal Services Authorities Act, 1987 - Section 21",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    },
+    {
+     "n": 9,
+     "id": "legal-aid",
+     "title": "Free legal aid",
+     "law": "Legal Services Authorities Act, 1987 - Section 12",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    }
+   ]
+  }
+ ],
+ "reply": "**Urgent: Sexual Harassment – Get a Lawyer Now**  \nYour situation involves sexual harassment, which needs specialised legal help right away. Please contact a lawyer or call the free legal‑aid helpline 15100 as soon as possible. The Sexual Harassment of Women at Workplace Act requires a complaint to the Internal Committee (or the local district committee) and a lawyer can guide you through that process. [K:posh-pointer]\n\n---\n\n### What I understood\nYou say a manager at your private company in Hyderabad touched you inappropriately. After you complained, your October salary was stopped.\n\n### Where you stand\n- The employer has **unlawfully withheld wages** that were due before 7 Nov 2026 (the statutory due date). Under the Code on Wages, 2019, wages must be paid before the 7th of the next month, and any delay beyond two working days after dismissal or resignation is a violation. [K:cw-timely-payment]  \n- You can **file a wage claim** with the state Labour Department (Labour Commissioner/Inspector‑cum‑Facilitator) within three years of the due date (i.e., before 7 Nov 2029). [K:cw-claims]  \n- The employer may only make **authorized deductions**; stopping the whole salary for a harassment complaint is not a permitted deduction. [K:cw-deductions]  \n- Your appointment letter is a **contract**; unpaid salary is a contractual debt you can recover in civil court if needed. [K:wages-contract]  \n- You should keep a **written record** of all communications (emails, messages, notices) as evidence. [K:wages-relieving]  \n\n### What you can do now\n1. **Write a formal demand letter** to your HR/manager asking for the October salary to be paid within 15 days. Send it by Speed/Post or Registered Post and keep the receipt and a copy of the email/WhatsApp. [K:notice-how-to-send]  \n2. **File a complaint with the Internal Committee** (or the district committee) for sexual harassment, attaching any messages or evidence you have. This step is essential for your safety and for any disciplinary action against the manager. [K:posh-pointer]  \n3. **Submit a wage claim** to the Telangana Labour Department (Labour Commissioner office). Bring the demand letter, any salary slips, bank statements, and the harassment complaint copy. The claim can be filed any time before 7 Nov 2029. [K:cw-claims]  \n4. If the employer does not comply, you may **approach a Lok Adalat** for a free settlement of the wage dispute. No fee is required and the award is binding. [K:lok-adalat]  \n5. If the amount is large or you face retaliation, **consult a civil lawyer** to file a suit for breach of contract and claim compensation. [K:wages-contract]  \n\n### What I still need from you\n1. What is the exact amount of the October salary that was withheld?  \n2. On which date did the inappropriate touching occur?  \n3. To whom exactly did you lodge the harassment complaint (HR, senior manager, etc.)?  \n\n### When to get a real lawyer\nBecause this involves sexual harassment and wage withholding, you should see a lawyer **immediately** to file the harassment complaint and to prepare the wage claim. [K:legal-aid]  ",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "wages",
+  "deadlines": [
+   {
+    "label": "Salary for the first unpaid month was due",
+    "date": "2026-11-07",
+    "days_left": -14,
+    "status": "passed",
+    "kb": "cw-timely-payment",
+    "kind": "statutory_due",
+    "basis": "before the 7th of the month after October 2026"
+   },
+   {
+    "label": "Last date to file a wage claim (generally 3 years)",
+    "date": "2029-11-07",
+    "days_left": 1082,
+    "status": "ok",
+    "kb": "cw-claims",
+    "kind": "limitation",
+    "basis": "3 years from 2026-11-07"
+   }
+  ],
+  "escalations": [
+   {
+    "flag": "sexual_harassment",
+    "level": "lawyer_now",
+    "reason": "Sexual harassment at work needs specialised help.",
+    "action": "Complain to the employer's Internal Committee; speak to a lawyer or call 15100."
+   }
+  ],
+  "forum": null,
+  "fee": null,
+  "evidence": {
+   "have": [],
+   "missing": [
+    "Offer / appointment letter or any proof of employment (ID card, emails)",
+    "Salary slips or bank statements showing past salary credits",
+    "Attendance records / timesheets / work messages for the unpaid period",
+    "Resignation / termination letter and relieving / experience letter",
+    "Messages or emails where you asked for salary and their replies"
+   ]
+  },
+  "ladder": [
+   "Ask HR / employer in writing for the unpaid salary with dates and amount.",
+   "Send a legal notice demanding payment within a deadline (usually 15 days).",
+   "File a claim / complaint with the state Labour Department (Labour Commissioner / Inspector-cum-Facilitator office).",
+   "For senior/managerial staff, or very large amounts, a civil suit or other remedies with a lawyer."
+  ],
+  "in_scope": true
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "repaired": false,
+  "scrubbed": false,
+  "final_violations": 0
+ },
+ "case": {
+  "language": "en",
+  "language_name": "English",
+  "category": "wages",
+  "sub_type": "salary withheld",
+  "summary": "The user reports that their manager has been touching them inappropriately and after complaining, their October salary was stopped. They work for a private company in Hyderabad.",
+  "user_role": "employee",
+  "other_party": {
+   "name": null,
+   "type": "employer"
+  },
+  "state": "Telangana",
+  "city": "Hyderabad",
+  "amounts": {
+   "disputed": null,
+   "paid_value": null,
+   "monthly_rent": null,
+   "monthly_salary": null
+  },
+  "dates": {
+   "incident": null,
+   "purchase": null,
+   "complaint_to_company": null,
+   "moved_out": null,
+   "last_working_day": null,
+   "wages_due_from": "2026-10-01",
+   "notice_received": null,
+   "notice_deadline": null,
+   "bank_return_memo": null
+  },
+  "employment_ended": false,
+  "timeline": [
+   {
+    "date": "2026-??-??",
+    "event": "Manager touched the user inappropriately"
+   },
+   {
+    "date": "2026-??-??",
+    "event": "User complained about the harassment"
+   },
+   {
+    "date": "2026-10-01",
+    "event": "Employer stopped the user's salary for October"
+   }
+  ],
+  "evidence_have": [],
+  "steps_taken": [
+   "Complained about the manager's behavior to the appropriate authority within the company"
+  ],
+  "red_flags": [
+   "sexual_harassment"
+  ],
+  "user_goal": "Receive the withheld October salary and have the sexual harassment addressed appropriately",
+  "open_questions": [
+   "What is the exact amount of the October salary that was withheld?",
+   "On which date did the inappropriate touching occur?",
+   "To whom exactly did you lodge the complaint (HR, senior manager, etc.)?"
+  ]
+ },
+ "kb_ids": [
+  "cw-in-force",
+  "cw-timely-payment",
+  "cw-deductions",
+  "cw-claims",
+  "wages-contract",
+  "wages-relieving",
+  "posh-pointer",
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send"
+ ],
+ "checks": {
+  "category": true,
+  "escalates:lawyer_now": true,
+  "mentions:Internal Committee": true,
+  "guard_clean": true
+ },
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 11.49,
+   "input_tokens": 893,
+   "output_tokens": 905,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 25.11,
+   "input_tokens": 2351,
+   "output_tokens": 1155,
+   "error": null
+  }
+ ],
+ "seconds": 36.6
+}

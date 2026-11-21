@@ -131,11 +131,27 @@ FORGERY_HINTS = ("fake", "forg", "backdat", "back date", "back-date", "fabricat"
                  "nakli", "jaali", "jali ", "farzi", "farji", "फर्जी", "नकली", "जाली", "बैकडेट", "झूठी रसीद")
 
 
+# The opposite direction: for time-critical safety flags a missed flag costs far more than a false banner,
+# so code ADDS them on clear keywords even if the model missed them. Eval finding: Groq gpt-oss-120b treated an
+# OTP/KYC-link fraud as an ordinary consumer case and said "you have 2 years" instead of "call 1930 now".
+SAFETY_HINTS = {
+    "cyber_fraud": ("otp", "kyc", "phishing", "upi pin", "anydesk", "teamviewer", "screen share", "screen-share",
+                    "fake link", "link pe click", "link par click", "clicked a link", "unauthorised transaction",
+                    "unauthorized transaction", "account se paise kat", "account se kat", "ओटीपी", "केवाईसी"),
+    "self_harm": ("suicide", "kill myself", "end my life", "jaan de dunga", "jaan de dungi", "khudkushi",
+                  "aatmahatya", "आत्महत्या", "जान दे"),
+}
+
+
 def corroborate_flags(case: dict, convo_text: str) -> None:
     t = convo_text.lower()
     if "forgery_request" in case["red_flags"] and not any(h in t for h in FORGERY_HINTS):
         case["red_flags"].remove("forgery_request")
         case.setdefault("dropped_flags", []).append("forgery_request")
+    for flag, hints in SAFETY_HINTS.items():
+        if flag not in case["red_flags"] and any(h in t for h in hints):
+            case["red_flags"].append(flag)
+            case.setdefault("added_flags", []).append(flag)
 
 
 def normalise_case(case: dict[str, Any]) -> dict:

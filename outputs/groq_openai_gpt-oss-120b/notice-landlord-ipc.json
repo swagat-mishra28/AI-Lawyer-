@@ -1,0 +1,138 @@
+{
+ "id": "notice-landlord-ipc",
+ "title": "Notice from landlord's lawyer citing IPC 406 (quoted law)",
+ "input": {
+  "id": "notice-landlord-ipc",
+  "title": "Notice from landlord's lawyer citing IPC 406 (quoted law)",
+  "notice_received": "2026-11-18",
+  "notice_language": "English",
+  "notice_text": "LEGAL NOTICE\nDate: 16/11/2026\nTo: Ms. Priya Nair, Flat 3B, Green Apartments, Kochi\nOn behalf of my client Mr. Thomas Varghese, owner of the above flat, I state that you vacated the flat on\n30/09/2026 leaving it damaged. Repairs cost Rs. 25,000 which exceeds your deposit of Rs. 20,000. You are called\nupon to pay Rs. 5,000 within 7 days, failing which my client will initiate civil and criminal proceedings\nagainst you including under Section 406 IPC for criminal breach of trust.\nAdvocate K. Menon\n"
+ },
+ "kind": "notice",
+ "reply": "**What this is**  \nThe document is a **legal demand notice** sent by Advocate K. Menon on behalf of Mr. Thomas Varghese. A legal notice is a formal letter (usually from a lawyer) stating a claim and demanding payment by a deadline. It is **not a court order** and does not by itself make you liable — it is a step before any court case may start. [ K:notice-legal-what ]\n\n**What they want**  \n- They say you left the flat on 30 Sept 2026, caused damage costing **₹ 25,000**.  \n- Your security deposit was **₹ 20,000**, so they claim a shortfall of **₹ 5,000**.  \n- **Demand:** Pay **₹ 5,000** **within 7 days** of the notice date (16 Nov 2026).  \n- **Deadline:** 25 Nov 2026 – you have **4 days left**. [ computed ]\n\n**How serious is it**  \n- The notice is only a **demand**; it does **not** yet mean a court case is filed.  \n- The sender threatens to start **civil and criminal proceedings**, and the notice mentions **Section 406 IPC** (criminal breach of trust). [ K:ipc-bns ]  \n- Ignoring the notice may lead to a lawsuit, which could increase costs and affect credit.\n\n**What to do now** (numbered steps)\n\n1. **Check the facts** – Look at the move‑out inspection report, photographs, repair bills, and your deposit receipt.  \n2. **Gather evidence** – Save any emails, WhatsApp chats, or receipts that show the flat’s condition when you left.  \n3. **Prepare a short reply** – State whether you agree or dispute the claim; do **not** admit anything you dispute.  \n4. **Send your reply** by Speed Post/Registered Post with acknowledgement, and also email/WhatsApp a copy. Keep the receipt and tracking number. [ K:notice-how-to-send ]  \n5. **Consider settlement** – If the amount is genuine, you may pay the ₹ 5,000 now to avoid escalation.  \n6. **Record everything** – Keep copies of the notice, your reply, and all correspondence.\n\n**Get a lawyer if**  \n\n- You **disagree** with the damage amount or believe the claim is false.  \n- The notice threatens **criminal proceedings** (Section 406 IPC).  \n- You are unsure how to draft a proper reply or need advice on possible court action.  \n- You need help negotiating a settlement or want to explore **free legal aid** (call 15100) or a **Lok Adalat** for an out‑of‑court settlement. [ K:legal-aid ][ K:lok-adalat ]\n\nAct quickly—four days remain before the deadline. If you cannot resolve it yourself, consult a lawyer **before 25 Nov 2026**.",
+ "reply_rendered": "**What this is**  \nThe document is a **legal demand notice** sent by Advocate K. Menon on behalf of Mr. Thomas Varghese. A legal notice is a formal letter (usually from a lawyer) stating a claim and demanding payment by a deadline. It is **not a court order** and does not by itself make you liable — it is a step before any court case may start. [ K:notice-legal-what ]\n\n**What they want**  \n- They say you left the flat on 30 Sept 2026, caused damage costing **₹ 25,000**.  \n- Your security deposit was **₹ 20,000**, so they claim a shortfall of **₹ 5,000**.  \n- **Demand:** Pay **₹ 5,000** **within 7 days** of the notice date (16 Nov 2026).  \n- **Deadline:** 25 Nov 2026 – you have **4 days left**. [ computed ]\n\n**How serious is it**  \n- The notice is only a **demand**; it does **not** yet mean a court case is filed.  \n- The sender threatens to start **civil and criminal proceedings**, and the notice mentions **Section 406 IPC** (criminal breach of trust). [ K:ipc-bns ]  \n- Ignoring the notice may lead to a lawsuit, which could increase costs and affect credit.\n\n**What to do now** (numbered steps)\n\n1. **Check the facts** – Look at the move‑out inspection report, photographs, repair bills, and your deposit receipt.  \n2. **Gather evidence** – Save any emails, WhatsApp chats, or receipts that show the flat’s condition when you left.  \n3. **Prepare a short reply** – State whether you agree or dispute the claim; do **not** admit anything you dispute.  \n4. **Send your reply** by Speed Post/Registered Post with acknowledgement, and also email/WhatsApp a copy. Keep the receipt and tracking number. [ K:notice-how-to-send ]  \n5. **Consider settlement** – If the amount is genuine, you may pay the ₹ 5,000 now to avoid escalation.  \n6. **Record everything** – Keep copies of the notice, your reply, and all correspondence.\n\n**Get a lawyer if**  \n\n- You **disagree** with the damage amount or believe the claim is false.  \n- The notice threatens **criminal proceedings** (Section 406 IPC).  \n- You are unsure how to draft a proper reply or need advice on possible court action.  \n- You need help negotiating a settlement or want to explore **free legal aid** (call 15100) or a **Lok Adalat** for an out‑of‑court settlement. [ K:legal-aid ][ K:lok-adalat ]\n\nAct quickly—four days remain before the deadline. If you cannot resolve it yourself, consult a lawyer **before 25 Nov 2026**.",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "notice",
+  "deadlines": [
+   {
+    "label": "Deadline stated in the notice",
+    "date": "2026-11-25",
+    "days_left": 4,
+    "status": "urgent",
+    "kb": "notice-legal-what",
+    "kind": "response",
+    "basis": "as written in the notice"
+   }
+  ],
+  "escalations": [
+   {
+    "flag": "deadline_close",
+    "level": "lawyer_now",
+    "reason": "Deadline stated in the notice: 2026-11-25 (4 days left).",
+    "action": "Act now; get a lawyer's advice before the date."
+   }
+  ],
+  "forum": null,
+  "fee": null,
+  "evidence": {
+   "have": [],
+   "missing": [
+    "The full notice (all pages) and the envelope / proof of the date you received it",
+    "Any agreement, cheque, invoice or document the notice refers to",
+    "Your own record of payments or messages relating to the dispute"
+   ]
+  },
+  "ladder": [
+   "Do not panic and do not ignore it. Note the date you received it and any deadline.",
+   "Understand who sent it, what they demand and by when.",
+   "Collect your documents; if the claim is wrong, a calm written reply (often via a lawyer) helps.",
+   "If it is a court summons, police notice or cheque-bounce notice against you, contact a lawyer or legal aid (15100) now."
+  ],
+  "in_scope": true
+ },
+ "extract": {
+  "doc_type": "legal_demand_notice",
+  "sender": "Advocate K. Menon (on behalf of Mr. Thomas Varghese)",
+  "recipient": "Ms. Priya Nair, Flat 3B, Green Apartments, Kochi",
+  "date_of_notice": "2026-11-16",
+  "what_they_claim": "You vacated the flat on 30/09/2026 leaving it damaged, and repairs cost Rs. 25,000 which exceeds your deposit of Rs. 20,000.",
+  "what_they_demand": "Pay Rs. 5,000 within 7 days",
+  "amount_demanded": 5000,
+  "deadline_text": "within 7 days",
+  "deadline_days": 7,
+  "consequences_threatened": [
+   "initiate civil and criminal proceedings against you including under Section 406 IPC for criminal breach of trust"
+  ],
+  "laws_mentioned": [
+   "Section 406 IPC"
+  ],
+  "court_or_case_number": null,
+  "hearing_date": null
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 3,
+   "violations": [
+    {
+     "kind": "unbacked_section",
+     "text": "Section 406",
+     "detail": "Bharatiya Nyaya Sanhita, 2023 406 is not backed by a retrieved knowledge entry"
+    }
+   ]
+  },
+  "repaired": true,
+  "scrubbed": false,
+  "second_pass": {
+   "refs_checked": 2,
+   "violations": []
+  },
+  "final_violations": 0
+ },
+ "kb_ids": [
+  "notice-legal-what",
+  "notice-self-send",
+  "court-summons",
+  "eviction-due-process",
+  "rera-note",
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send",
+  "ipc-bns"
+ ],
+ "case": {
+  "category": "notice"
+ },
+ "checks": {
+  "mentions:7": true,
+  "mentions:not a court order": true,
+  "guard_clean": true
+ },
+ "calls": [
+  {
+   "purpose": "notice_extract",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 7.47,
+   "input_tokens": 497,
+   "output_tokens": 521,
+   "error": null
+  },
+  {
+   "purpose": "notice_explain",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 15.7,
+   "input_tokens": 1530,
+   "output_tokens": 937,
+   "error": null
+  },
+  {
+   "purpose": "notice_explain:repair",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 24.63,
+   "input_tokens": 2312,
+   "output_tokens": 932,
+   "error": null
+  }
+ ],
+ "seconds": 47.8
+}

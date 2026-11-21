@@ -1,0 +1,373 @@
+{
+ "id": "wage-hindi-resigned",
+ "title": "Salary unpaid after resignation, Hindi",
+ "input": {
+  "id": "wage-hindi-resigned",
+  "title": "Salary unpaid after resignation, Hindi",
+  "turns": [
+   "मैंने 31 अक्टूबर 2026 को नौकरी से इस्तीफा दिया। कंपनी ने सितंबर और अक्टूबर की सैलरी नहीं दी, कुल 60,000 रुपये। HR बोलता है फुल एंड फाइनल में 90 दिन लगेंगे। मेरे पास ऑफर लेटर और सैलरी स्लिप हैं। मैं जयपुर में काम करता था।"
+  ],
+  "draft": "labour_complaint"
+ },
+ "kind": "chat",
+ "turns": [
+  {
+   "user": "मैंने 31 अक्टूबर 2026 को नौकरी से इस्तीफा दिया। कंपनी ने सितंबर और अक्टूबर की सैलरी नहीं दी, कुल 60,000 रुपये। HR बोलता है फुल एंड फाइनल में 90 दिन लगेंगे। मेरे पास ऑफर लेटर और सैलरी स्लिप हैं। मैं जयपुर में काम करता था।",
+   "reply": "**मैंने क्या समझा**  \nआपने 31 ऑक्टूबर 2026 को इस्तीफा दिया, लेकिन सितंबर‑अक्टूबर की कुल ₹60,000 सैलरी नहीं मिली। HR कह रहा है कि फुल एंड फ़ाइनल सेटलमेंट में 90 दिन लगेंगे। आपके पास ऑफ़र लेटर और सैलरी स्लिप हैं।\n\n---\n\n### आपका वर्तमान स्थिति  \n- नियमानुसार, इस्तीफ़ा या निकालने के बाद वेतन **2 कामकाजी दिन** के भीतर देना चाहिए था (2026‑11‑03) — यह डेट पहले ही गुज़र चुका है — आपका अधिकार अभी भी है [K:cw-timely-payment]।  \n- इस प्रकार का दावा **आम तौर पर 3 साल** के भीतर दाखिल करना चाहिए; आपके मामले में आखिरी तारीख 2029‑11‑03 है [K:cw-claims]।  \n- आपका वेतन एक **कॉन्ट्रैक्ट (सालरी) का ऋण** है; इसे सिविल मुकदमे से भी वसूला जा सकता है [K:wages-contract]।  \n- आप **रिलिविंग लेटर** और फुल एंड फ़ाइनल सेटलमेंट की लिखित पुष्टि भी माँग सकते हैं [K:wages-relieving]।  \n\n---\n\n### अब आप क्या कर सकते हैं  \n\n1. **HR को लिखित नोटिस भेजें**  \n   - पत्र में स्पष्ट रूप से बतायें: “सेप्टेम्बर‑अक्टूबर की सैलरी ₹60,000 अभी तक नहीं मिली, कृपया 15 दिन के भीतर भुगतान करें।”  \n   - इसे **स्पीड पोस्ट/रजिस्टर्ड पोस्ट** से भेजें, रसीद और ट्रैकिंग रखें [K:notice-how-to-send]।  \n   - साथ में ई‑मेल/व्हाट्सएप पर भी कॉपी भेजें, सबकी स्क्रीनशॉट रखें।  \n\n2. **यदि 15 दिन में जवाब नहीं मिले**  \n   - **लेबर विभाग (राजस्थान लेबर कमिश्नर/इंस्पेक्टर‑क्यूम‑फ़ैसिलिटेटर)** के पास दावा दाखिल करें। फॉर्म में अपना रोजगार प्रमाण, सैलरी स्लिप, ऑफ़र लेटर और HR को भेजा गया नोटिस की कॉपी लगाएँ [K:cw-claims]।  \n   - यह प्रक्रिया आम तौर पर मुफ्त है; फीस नहीं है [K:lok-adalat] (यदि आप पहले से समझौता करना चाहते हैं)।  \n\n3. **यदि राशि बड़ी है या आप मैनेजेरियल पद पर थे**  \n   - सिविल कोर्ट में **सिविल सूट** (कॉन्ट्रैक्ट उल्लंघन) दायर कर सकते हैं [K:wages-contract]। यह कदम तब उठाएँ जब लेबर विभाग से समाधान न मिले।  \n\n4. **फ्री लीगल एड**  \n   - यदि आपका वार्षिक आय सीमा के भीतर है, तो **NALSA (15100)** या अपने ज़िला की लीगल सर्विसेज अथॉरिटी से मुफ्त वकील ले सकते हैं [K:legal-aid]।  \n\n5. **वैकल्पिक: लोक अदालत (लोक अदलत)**  \n   - यदि दोनों पक्ष सहमत हों, तो लोक अदलत में केस लाकर बिना फीस के निपटारा कर सकते हैं [K:lok-adalat]।  \n\n---\n\n### अभी मुझसे और क्या चाहिए?  \n\n1. कंपनी/नियोक्ता का **पूरा नाम** और पता।  \n2. क्या आपने **ई‑मेल या लिखित** रूप में HR को वेतन न मिलने की शिकायत भेजी है? यदि हाँ, तो उसकी कॉपी या स्क्रीनशॉट।  \n3. क्या आपने **नोटिस पीरियड** (जैसे 30 दिन) अपने कॉन्ट्रैक्ट के अनुसार पूरा किया था?  \n\n---\n\n### कब वकील से मिलें?  \nयदि HR से 15 दिन में जवाब नहीं मिलता या लेबर विभाग में भी समाधान नहीं होता, तो तुरंत एक वकील से मिलें — वह सिविल सूट या आगे की कार्रवाई में मदद करेगा।  ",
+   "case": {
+    "language": "hi",
+    "language_name": "Hindi",
+    "category": "wages",
+    "sub_type": "final settlement withheld",
+    "summary": "The user resigned from their job on 31 October 2026 in Jaipur. The employer has not paid the September and October salaries, amounting to ₹60,000, and HR says the full and final settlement will take 90 days. The user possesses the offer letter and salary slips as evidence.",
+    "user_role": "employee",
+    "other_party": {
+     "name": null,
+     "type": "employer"
+    },
+    "state": "Rajasthan",
+    "city": "Jaipur",
+    "amounts": {
+     "disputed": 60000,
+     "paid_value": null,
+     "monthly_rent": null,
+     "monthly_salary": null
+    },
+    "dates": {
+     "incident": "2026-09-01",
+     "purchase": null,
+     "complaint_to_company": null,
+     "moved_out": null,
+     "last_working_day": "2026-10-31",
+     "wages_due_from": "2026-09-01",
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": true,
+    "timeline": [
+     {
+      "date": "2026-10-31",
+      "event": "Submitted resignation from the job"
+     },
+     {
+      "date": "2026-11-01",
+      "event": "HR informed that full and final settlement will take 90 days"
+     }
+    ],
+    "evidence_have": [
+     "offer letter",
+     "salary slips"
+    ],
+    "steps_taken": [
+     "Discussed pending salary with HR who mentioned a 90‑day settlement period"
+    ],
+    "red_flags": [],
+    "user_goal": "Receive the pending September and October salary of ₹60,000 as soon as possible",
+    "open_questions": [
+     "What is the name of the company/employer?",
+     "Do you have any written communication (email or letter) from the employer regarding the pending salary or the 90‑day settlement period?",
+     "Did you serve the required notice period as per your employment contract?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "wages",
+    "deadlines": [
+     {
+      "label": "Final wages were due (2 working days after leaving)",
+      "date": "2026-11-03",
+      "days_left": -18,
+      "status": "passed",
+      "kb": "cw-timely-payment",
+      "kind": "statutory_due",
+      "basis": "2 working days after 2026-10-31"
+     },
+     {
+      "label": "Last date to file a wage claim (generally 3 years)",
+      "date": "2029-11-03",
+      "days_left": 1078,
+      "status": "ok",
+      "kb": "cw-claims",
+      "kind": "limitation",
+      "basis": "3 years from 2026-11-03"
+     }
+    ],
+    "escalations": [],
+    "forum": null,
+    "fee": null,
+    "evidence": {
+     "have": [
+      "Offer / appointment letter or any proof of employment (ID card, emails)",
+      "Salary slips or bank statements showing past salary credits"
+     ],
+     "missing": [
+      "Attendance records / timesheets / work messages for the unpaid period",
+      "Resignation / termination letter and relieving / experience letter",
+      "Messages or emails where you asked for salary and their replies"
+     ]
+    },
+    "ladder": [
+     "Ask HR / employer in writing for the unpaid salary with dates and amount.",
+     "Send a legal notice demanding payment within a deadline (usually 15 days).",
+     "File a claim / complaint with the state Labour Department (Labour Commissioner / Inspector-cum-Facilitator office).",
+     "For senior/managerial staff, or very large amounts, a civil suit or other remedies with a lawyer."
+    ],
+    "in_scope": true
+   },
+   "kb_ids": [
+    "cw-in-force",
+    "cw-timely-payment",
+    "cw-deductions",
+    "cw-claims",
+    "wages-contract",
+    "wages-relieving",
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 0,
+     "violations": []
+    },
+    "repaired": false,
+    "scrubbed": false,
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "cw-timely-payment",
+     "title": "Deadlines for paying wages",
+     "law": "Code on Wages, 2019 - Section 17",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15793"
+    },
+    {
+     "n": 2,
+     "id": "cw-claims",
+     "title": "Filing a claim with the labour authority",
+     "law": "Code on Wages, 2019 - Section 45",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15793"
+    },
+    {
+     "n": 3,
+     "id": "wages-contract",
+     "title": "Salary is also a contractual debt",
+     "law": "Indian Contract Act, 1872 - Section 73",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/2187"
+    },
+    {
+     "n": 4,
+     "id": "wages-relieving",
+     "title": "Relieving letter and documents",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 5,
+     "id": "notice-how-to-send",
+     "title": "How to send a notice safely",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 6,
+     "id": "lok-adalat",
+     "title": "Lok Adalat (settlement, free)",
+     "law": "Legal Services Authorities Act, 1987 - Section 19; Legal Services Authorities Act, 1987 - Section 21",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    },
+    {
+     "n": 7,
+     "id": "legal-aid",
+     "title": "Free legal aid",
+     "law": "Legal Services Authorities Act, 1987 - Section 12",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/1925"
+    }
+   ]
+  }
+ ],
+ "reply": "**मैंने क्या समझा**  \nआपने 31 ऑक्टूबर 2026 को इस्तीफा दिया, लेकिन सितंबर‑अक्टूबर की कुल ₹60,000 सैलरी नहीं मिली। HR कह रहा है कि फुल एंड फ़ाइनल सेटलमेंट में 90 दिन लगेंगे। आपके पास ऑफ़र लेटर और सैलरी स्लिप हैं।\n\n---\n\n### आपका वर्तमान स्थिति  \n- नियमानुसार, इस्तीफ़ा या निकालने के बाद वेतन **2 कामकाजी दिन** के भीतर देना चाहिए था (2026‑11‑03) — यह डेट पहले ही गुज़र चुका है — आपका अधिकार अभी भी है [K:cw-timely-payment]।  \n- इस प्रकार का दावा **आम तौर पर 3 साल** के भीतर दाखिल करना चाहिए; आपके मामले में आखिरी तारीख 2029‑11‑03 है [K:cw-claims]।  \n- आपका वेतन एक **कॉन्ट्रैक्ट (सालरी) का ऋण** है; इसे सिविल मुकदमे से भी वसूला जा सकता है [K:wages-contract]।  \n- आप **रिलिविंग लेटर** और फुल एंड फ़ाइनल सेटलमेंट की लिखित पुष्टि भी माँग सकते हैं [K:wages-relieving]।  \n\n---\n\n### अब आप क्या कर सकते हैं  \n\n1. **HR को लिखित नोटिस भेजें**  \n   - पत्र में स्पष्ट रूप से बतायें: “सेप्टेम्बर‑अक्टूबर की सैलरी ₹60,000 अभी तक नहीं मिली, कृपया 15 दिन के भीतर भुगतान करें।”  \n   - इसे **स्पीड पोस्ट/रजिस्टर्ड पोस्ट** से भेजें, रसीद और ट्रैकिंग रखें [K:notice-how-to-send]।  \n   - साथ में ई‑मेल/व्हाट्सएप पर भी कॉपी भेजें, सबकी स्क्रीनशॉट रखें।  \n\n2. **यदि 15 दिन में जवाब नहीं मिले**  \n   - **लेबर विभाग (राजस्थान लेबर कमिश्नर/इंस्पेक्टर‑क्यूम‑फ़ैसिलिटेटर)** के पास दावा दाखिल करें। फॉर्म में अपना रोजगार प्रमाण, सैलरी स्लिप, ऑफ़र लेटर और HR को भेजा गया नोटिस की कॉपी लगाएँ [K:cw-claims]।  \n   - यह प्रक्रिया आम तौर पर मुफ्त है; फीस नहीं है [K:lok-adalat] (यदि आप पहले से समझौता करना चाहते हैं)।  \n\n3. **यदि राशि बड़ी है या आप मैनेजेरियल पद पर थे**  \n   - सिविल कोर्ट में **सिविल सूट** (कॉन्ट्रैक्ट उल्लंघन) दायर कर सकते हैं [K:wages-contract]। यह कदम तब उठाएँ जब लेबर विभाग से समाधान न मिले।  \n\n4. **फ्री लीगल एड**  \n   - यदि आपका वार्षिक आय सीमा के भीतर है, तो **NALSA (15100)** या अपने ज़िला की लीगल सर्विसेज अथॉरिटी से मुफ्त वकील ले सकते हैं [K:legal-aid]।  \n\n5. **वैकल्पिक: लोक अदालत (लोक अदलत)**  \n   - यदि दोनों पक्ष सहमत हों, तो लोक अदलत में केस लाकर बिना फीस के निपटारा कर सकते हैं [K:lok-adalat]।  \n\n---\n\n### अभी मुझसे और क्या चाहिए?  \n\n1. कंपनी/नियोक्ता का **पूरा नाम** और पता।  \n2. क्या आपने **ई‑मेल या लिखित** रूप में HR को वेतन न मिलने की शिकायत भेजी है? यदि हाँ, तो उसकी कॉपी या स्क्रीनशॉट।  \n3. क्या आपने **नोटिस पीरियड** (जैसे 30 दिन) अपने कॉन्ट्रैक्ट के अनुसार पूरा किया था?  \n\n---\n\n### कब वकील से मिलें?  \nयदि HR से 15 दिन में जवाब नहीं मिलता या लेबर विभाग में भी समाधान नहीं होता, तो तुरंत एक वकील से मिलें — वह सिविल सूट या आगे की कार्रवाई में मदद करेगा।  ",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "wages",
+  "deadlines": [
+   {
+    "label": "Final wages were due (2 working days after leaving)",
+    "date": "2026-11-03",
+    "days_left": -18,
+    "status": "passed",
+    "kb": "cw-timely-payment",
+    "kind": "statutory_due",
+    "basis": "2 working days after 2026-10-31"
+   },
+   {
+    "label": "Last date to file a wage claim (generally 3 years)",
+    "date": "2029-11-03",
+    "days_left": 1078,
+    "status": "ok",
+    "kb": "cw-claims",
+    "kind": "limitation",
+    "basis": "3 years from 2026-11-03"
+   }
+  ],
+  "escalations": [],
+  "forum": null,
+  "fee": null,
+  "evidence": {
+   "have": [
+    "Offer / appointment letter or any proof of employment (ID card, emails)",
+    "Salary slips or bank statements showing past salary credits"
+   ],
+   "missing": [
+    "Attendance records / timesheets / work messages for the unpaid period",
+    "Resignation / termination letter and relieving / experience letter",
+    "Messages or emails where you asked for salary and their replies"
+   ]
+  },
+  "ladder": [
+   "Ask HR / employer in writing for the unpaid salary with dates and amount.",
+   "Send a legal notice demanding payment within a deadline (usually 15 days).",
+   "File a claim / complaint with the state Labour Department (Labour Commissioner / Inspector-cum-Facilitator office).",
+   "For senior/managerial staff, or very large amounts, a civil suit or other remedies with a lawyer."
+  ],
+  "in_scope": true
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "repaired": false,
+  "scrubbed": false,
+  "final_violations": 0
+ },
+ "case": {
+  "language": "hi",
+  "language_name": "Hindi",
+  "category": "wages",
+  "sub_type": "final settlement withheld",
+  "summary": "The user resigned from their job on 31 October 2026 in Jaipur. The employer has not paid the September and October salaries, amounting to ₹60,000, and HR says the full and final settlement will take 90 days. The user possesses the offer letter and salary slips as evidence.",
+  "user_role": "employee",
+  "other_party": {
+   "name": null,
+   "type": "employer"
+  },
+  "state": "Rajasthan",
+  "city": "Jaipur",
+  "amounts": {
+   "disputed": 60000,
+   "paid_value": null,
+   "monthly_rent": null,
+   "monthly_salary": null
+  },
+  "dates": {
+   "incident": "2026-09-01",
+   "purchase": null,
+   "complaint_to_company": null,
+   "moved_out": null,
+   "last_working_day": "2026-10-31",
+   "wages_due_from": "2026-09-01",
+   "notice_received": null,
+   "notice_deadline": null,
+   "bank_return_memo": null
+  },
+  "employment_ended": true,
+  "timeline": [
+   {
+    "date": "2026-10-31",
+    "event": "Submitted resignation from the job"
+   },
+   {
+    "date": "2026-11-01",
+    "event": "HR informed that full and final settlement will take 90 days"
+   }
+  ],
+  "evidence_have": [
+   "offer letter",
+   "salary slips"
+  ],
+  "steps_taken": [
+   "Discussed pending salary with HR who mentioned a 90‑day settlement period"
+  ],
+  "red_flags": [],
+  "user_goal": "Receive the pending September and October salary of ₹60,000 as soon as possible",
+  "open_questions": [
+   "What is the name of the company/employer?",
+   "Do you have any written communication (email or letter) from the employer regarding the pending salary or the 90‑day settlement period?",
+   "Did you serve the required notice period as per your employment contract?"
+  ]
+ },
+ "kb_ids": [
+  "cw-in-force",
+  "cw-timely-payment",
+  "cw-deductions",
+  "cw-claims",
+  "wages-contract",
+  "wages-relieving",
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send"
+ ],
+ "draft": {
+  "doc_type": "labour_complaint",
+  "title": "Complaint to Labour Department",
+  "markdown": "**To,**\nThe Labour Commissioner / Inspector-cum-Facilitator,\n[FILL: district and state] Labour Department\n\n**Subject: Complaint for non-payment of wages of Rs 60,000 by [FILL: name of the employer]**\n\nRespected Sir/Madam,\n\n1. I was employed in Jaipur, Rajasthan, and my last working day was 31 October 2026.  \n2. I submitted my resignation on 31 October 2026.  \n3. My employer has not paid my salaries for September and October 2026, amounting to ₹60,000.  \n4. On 1 November 2026, the HR department informed me that the full and final settlement would take 90 days.  \n5. I have the offer letter and salary slips as evidence of my employment and the unpaid wages.\n\nWages due to an employee who has resigned or been removed are payable within two working days, and monthly wages before the seventh day of the following month, under the Code on Wages, 2019. These deadlines have long passed.\n\nI request you to direct the employer to pay my pending wages of Rs 60,000 along with compensation as per law, and to\ntake any other action you consider appropriate. Copies of my documents are attached.\n\n**Documents attached:**\n1. offer letter\n2. salary slips\n\nYours faithfully,\n[FILL: your full name]\n[FILL: address, phone]\nDate: 21 November 2026",
+  "placeholders": [
+   "[FILL: address, phone]",
+   "[FILL: district and state]",
+   "[FILL: name of the employer]",
+   "[FILL: your full name]"
+  ],
+  "facts_guard": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "disclaimer": "Draft prepared by an AI assistant from your answers. Check every fact, fill every [FILL] and, if the amount is large or the other side has a lawyer, have it reviewed."
+ },
+ "checks": {
+  "category": true,
+  "language": true,
+  "deadline_computed": true,
+  "deadline_date": true,
+  "mentions:2": true,
+  "mentions:श्रम": true,
+  "guard_clean": true,
+  "draft_no_legal_refs_in_facts": true
+ },
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 10.33,
+   "input_tokens": 936,
+   "output_tokens": 1319,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 26.8,
+   "input_tokens": 2285,
+   "output_tokens": 1136,
+   "error": null
+  },
+  {
+   "purpose": "draft_facts",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 12.48,
+   "input_tokens": 690,
+   "output_tokens": 378,
+   "error": null
+  }
+ ],
+ "seconds": 49.6
+}

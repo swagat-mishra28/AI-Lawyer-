@@ -70,7 +70,9 @@ with st.sidebar:
                "need a real lawyer. Free legal aid: **15100**. Emergency: **112**.")
     st.caption("🔒 Don't share Aadhaar, bank passwords or OTPs. Conversations are not stored after you close this tab.")
     if llm:
-        st.caption(f"Model: `{llm.label}`")
+        st.caption(f"Model: `{llm.label}`" + (f" · backup ready: {len(llm.fallbacks)}" if llm.fallbacks else ""))
+        if llm.switches:
+            st.caption("↪️ Switched model after a quota limit: " + "; ".join(s.split(" (")[0] for s in llm.switches))
 
 
 

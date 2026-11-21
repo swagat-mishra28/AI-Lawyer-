@@ -1,0 +1,377 @@
+{
+ "id": "cyber-fraud",
+ "title": "Online fraud - time critical (1930)",
+ "input": {
+  "id": "cyber-fraud",
+  "title": "Online fraud - time critical (1930)",
+  "turns": [
+   "Kal kisi ne bank KYC update ke naam pe link bheja, maine OTP daala aur mere account se 25,000 kat gaye. Ab kya karun?"
+  ]
+ },
+ "kind": "chat",
+ "turns": [
+  {
+   "user": "Kal kisi ne bank KYC update ke naam pe link bheja, maine OTP daala aur mere account se 25,000 kat gaye. Ab kya karun?",
+   "reply": "**What I understood**  \nAapne fraud KYC link pe OTP daal diya aur aapke bank account se ₹25,000 kat gaye. Aap paisa wapas chahte hain aur aage se aise fraud se bachna chahte hain.\n\n**Where you stand**  \n- Aap ek *consumer* hain kyunki aapne bank ki service (account) ke liye paisa diya tha [K:cpa-consumer-definition].  \n- OTP ke galat istemal se paisa katna “deficiency in service” ya “unfair trade practice” maana ja sakta hai [K:cpa-deficiency].  \n- Aapke paas 2 saal ka time limit bacha hai – complaint file karne ki last date 20‑Nov‑2028 [K:cpa-limitation].  \n- ₹25,000 ki value ke hisaab se aapka case **District Consumer Disputes Redressal Commission** mein jaayega [K:cpa-pecuniary]; filing fee aam taur pe ₹0 hoti hai [K:cpa-fee] (portal par confirm kar lein).  \n- Commission aapko refund, compensation, ya bank ko order de sakti hai [K:cpa-reliefs].  \n\n**What you can do now**  \n\n1. **Bank ko turant inform karein** – fraud/unauthorized debit ke liye bank ke *Fraud/Customer Care* ko call/email karein, aur *written complaint* (registered post ya speed post) bhejein. Receipt aur tracking number sambhal ke rakhein [K:notice-how-to-send].  \n2. **Police FIR file karein** – cyber‑fraud ya banking fraud ke liye aapke shehar ke police station me FIR darj karwayein. FIR ka copy aapke consumer complaint me zaroori hoga.  \n3. **National Consumer Helpline (NCH) se free pre‑litigation help lein** – 1915 ya 1800‑11‑4000 par call karein, ya online complaint darj karein. Ye aapke bank ko complaint forward karta hai aur aksar refund mil jata hai [K:nch].  \n4. **Bank ke grievance officer ko likhe** – unka contact detail website/app par mil jayega (E‑commerce grievance officer rule) [K:ecom-grievance]. Unko 48 ghante me reply milna chahiye, aur ek mahine ke andar solution dene ki zimmedari hoti hai.  \n5. **Legal notice bhejein** – agar bank response nahi deta, to ek *demand notice* (15 din ki deadline ke saath) speed post/registered post se bhejein. Notice me transaction details, OTP SMS, aur refund ki maang likhe [K:notice-how-to-send].  \n6. **Consumer Commission me complaint file karein** – e‑Jagriti portal (e‑Daakhil) se online complaint daalein, lawyer ki zaroorat nahi [K:cpa-efiling]. Apni sabhi saboot (bank statement, OTP SMS, complaint‑bank reply, FIR copy) attach karein.  \n7. **Mediation ka option** – Commission aapke case ko mediation ke liye refer kar sakti hai; yadi dono parties agree karte hain to settlement final ho jata hai [K:cpa-mediation].  \n\n**What I still need from you**  \n\n1. Kaunse bank ka account affected hai?  \n2. Kya aapne ab tak bank ke fraud department ya police ko inform kiya hai?  \n3. OTP SMS aur transaction reference (date, time, reference no.) aapke paas hai kya?  \n\n**When to get a real lawyer**  \nAgar bank se response nahi milta, ya consumer commission me aapko technical help chahiye (e‑filing ya notice drafting), to turant ek consumer‑law specialist se milen – especially after step 5.",
+   "case": {
+    "language": "hinglish",
+    "language_name": "Hinglish",
+    "category": "consumer",
+    "sub_type": "unauthorized debit",
+    "summary": "The user entered an OTP on a fraudulent KYC update link, resulting in a deduction of Rs.25,000 from their bank account. They are seeking guidance on how to recover the amount and prevent further loss.",
+    "user_role": "other",
+    "other_party": {
+     "name": null,
+     "type": "bank"
+    },
+    "state": null,
+    "city": null,
+    "amounts": {
+     "disputed": 25000,
+     "paid_value": null,
+     "monthly_rent": null,
+     "monthly_salary": null
+    },
+    "dates": {
+     "incident": "2026-11-20",
+     "purchase": null,
+     "complaint_to_company": null,
+     "moved_out": null,
+     "last_working_day": null,
+     "wages_due_from": null,
+     "notice_received": null,
+     "notice_deadline": null,
+     "bank_return_memo": null
+    },
+    "employment_ended": null,
+    "timeline": [
+     {
+      "date": "2026-11-20",
+      "event": "Entered OTP on fraudulent KYC link; Rs.25,000 deducted from account"
+     }
+    ],
+    "evidence_have": [
+     "bank statement showing deduction",
+     "OTP SMS"
+    ],
+    "steps_taken": [],
+    "red_flags": [],
+    "user_goal": "Recover the unauthorized debit of Rs.25,000 and prevent further loss",
+    "open_questions": [
+     "Which bank holds the affected account?",
+     "Have you reported the incident to the bank's fraud department or filed a police complaint?",
+     "Do you have the OTP SMS and transaction reference details (date, time, reference number)?"
+    ]
+   },
+   "rules": {
+    "today": "2026-11-21",
+    "category": "consumer",
+    "deadlines": [
+     {
+      "label": "Last date to file a consumer complaint (2 years)",
+      "date": "2028-11-20",
+      "days_left": 730,
+      "status": "ok",
+      "kb": "cpa-limitation",
+      "kind": "limitation",
+      "basis": "2 years from 2026-11-20"
+     }
+    ],
+    "escalations": [],
+    "forum": {
+     "forum": "District Consumer Disputes Redressal Commission",
+     "basis_value": 25000.0,
+     "kb": "cpa-pecuniary"
+    },
+    "fee": {
+     "fee_inr": 0,
+     "kb": "cpa-fee",
+     "note": "verify on the filing portal"
+    },
+    "evidence": {
+     "have": [
+      "Proof of payment (UPI / card / bank statement)"
+     ],
+     "missing": [
+      "Invoice / order confirmation / receipt",
+      "Complaint to the company and their reply (emails, chats, ticket numbers)",
+      "Photos / videos of the defect or problem",
+      "Warranty card / terms promised at sale"
+     ]
+    },
+    "ladder": [
+     "Write to the company's customer care / grievance officer and keep the ticket number.",
+     "Register a free complaint with the National Consumer Helpline (pre-litigation mediation).",
+     "Send a written demand / legal notice giving a clear deadline (usually 15 days).",
+     "File a complaint before the District Consumer Commission (online filing possible; no lawyer needed)."
+    ],
+    "in_scope": true
+   },
+   "kb_ids": [
+    "cpa-consumer-definition",
+    "cpa-deficiency",
+    "cpa-where-to-file",
+    "cpa-pecuniary",
+    "cpa-fee",
+    "cpa-efiling",
+    "cpa-limitation",
+    "cpa-reliefs",
+    "cpa-timeline",
+    "cpa-mediation",
+    "nch",
+    "ecom-grievance",
+    "plas-utilities",
+    "legal-aid",
+    "lok-adalat",
+    "notice-how-to-send",
+    "emergency"
+   ],
+   "guard": {
+    "first_pass": {
+     "refs_checked": 0,
+     "violations": []
+    },
+    "repaired": false,
+    "scrubbed": false,
+    "final_violations": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "id": "cpa-consumer-definition",
+     "title": "Who is a \"consumer\"",
+     "law": "Consumer Protection Act, 2019 - Section 2(7)",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 2,
+     "id": "cpa-deficiency",
+     "title": "Deficiency in service and defects",
+     "law": "Consumer Protection Act, 2019 - Section 2(11); Consumer Protection Act, 2019 - Section 2(10); Consumer Protection Act, 2019 - Section 2(47)",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 3,
+     "id": "cpa-limitation",
+     "title": "Time limit - two years",
+     "law": "Consumer Protection Act, 2019 - Section 69",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 4,
+     "id": "cpa-pecuniary",
+     "title": "Which level of Commission (by value paid)",
+     "law": "Consumer Protection (Jurisdiction of the District Commission, the State Commission and the National Commission) Rules, 2021",
+     "confidence": "high",
+     "url": "https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
+    },
+    {
+     "n": 5,
+     "id": "cpa-fee",
+     "title": "Filing fee",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "medium",
+     "url": null
+    },
+    {
+     "n": 6,
+     "id": "cpa-reliefs",
+     "title": "What the Commission can order",
+     "law": "Consumer Protection Act, 2019 - Section 39",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 7,
+     "id": "notice-how-to-send",
+     "title": "How to send a notice safely",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 8,
+     "id": "nch",
+     "title": "National Consumer Helpline (free, pre-litigation)",
+     "law": "practical guidance (no statute cited)",
+     "confidence": "high",
+     "url": null
+    },
+    {
+     "n": 9,
+     "id": "ecom-grievance",
+     "title": "E-commerce grievance officer",
+     "law": "Consumer Protection (E-Commerce) Rules, 2020 - Rule 4",
+     "confidence": "medium",
+     "url": "https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
+    },
+    {
+     "n": 10,
+     "id": "cpa-efiling",
+     "title": "Filing online, without a lawyer",
+     "law": "Consumer Protection Act, 2019 - Section 35",
+     "confidence": "medium",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    },
+    {
+     "n": 11,
+     "id": "cpa-mediation",
+     "title": "Mediation",
+     "law": "Consumer Protection Act, 2019 - Section 37",
+     "confidence": "high",
+     "url": "https://www.indiacode.nic.in/handle/123456789/15256"
+    }
+   ]
+  }
+ ],
+ "reply": "**What I understood**  \nAapne fraud KYC link pe OTP daal diya aur aapke bank account se ₹25,000 kat gaye. Aap paisa wapas chahte hain aur aage se aise fraud se bachna chahte hain.\n\n**Where you stand**  \n- Aap ek *consumer* hain kyunki aapne bank ki service (account) ke liye paisa diya tha [K:cpa-consumer-definition].  \n- OTP ke galat istemal se paisa katna “deficiency in service” ya “unfair trade practice” maana ja sakta hai [K:cpa-deficiency].  \n- Aapke paas 2 saal ka time limit bacha hai – complaint file karne ki last date 20‑Nov‑2028 [K:cpa-limitation].  \n- ₹25,000 ki value ke hisaab se aapka case **District Consumer Disputes Redressal Commission** mein jaayega [K:cpa-pecuniary]; filing fee aam taur pe ₹0 hoti hai [K:cpa-fee] (portal par confirm kar lein).  \n- Commission aapko refund, compensation, ya bank ko order de sakti hai [K:cpa-reliefs].  \n\n**What you can do now**  \n\n1. **Bank ko turant inform karein** – fraud/unauthorized debit ke liye bank ke *Fraud/Customer Care* ko call/email karein, aur *written complaint* (registered post ya speed post) bhejein. Receipt aur tracking number sambhal ke rakhein [K:notice-how-to-send].  \n2. **Police FIR file karein** – cyber‑fraud ya banking fraud ke liye aapke shehar ke police station me FIR darj karwayein. FIR ka copy aapke consumer complaint me zaroori hoga.  \n3. **National Consumer Helpline (NCH) se free pre‑litigation help lein** – 1915 ya 1800‑11‑4000 par call karein, ya online complaint darj karein. Ye aapke bank ko complaint forward karta hai aur aksar refund mil jata hai [K:nch].  \n4. **Bank ke grievance officer ko likhe** – unka contact detail website/app par mil jayega (E‑commerce grievance officer rule) [K:ecom-grievance]. Unko 48 ghante me reply milna chahiye, aur ek mahine ke andar solution dene ki zimmedari hoti hai.  \n5. **Legal notice bhejein** – agar bank response nahi deta, to ek *demand notice* (15 din ki deadline ke saath) speed post/registered post se bhejein. Notice me transaction details, OTP SMS, aur refund ki maang likhe [K:notice-how-to-send].  \n6. **Consumer Commission me complaint file karein** – e‑Jagriti portal (e‑Daakhil) se online complaint daalein, lawyer ki zaroorat nahi [K:cpa-efiling]. Apni sabhi saboot (bank statement, OTP SMS, complaint‑bank reply, FIR copy) attach karein.  \n7. **Mediation ka option** – Commission aapke case ko mediation ke liye refer kar sakti hai; yadi dono parties agree karte hain to settlement final ho jata hai [K:cpa-mediation].  \n\n**What I still need from you**  \n\n1. Kaunse bank ka account affected hai?  \n2. Kya aapne ab tak bank ke fraud department ya police ko inform kiya hai?  \n3. OTP SMS aur transaction reference (date, time, reference no.) aapke paas hai kya?  \n\n**When to get a real lawyer**  \nAgar bank se response nahi milta, ya consumer commission me aapko technical help chahiye (e‑filing ya notice drafting), to turant ek consumer‑law specialist se milen – especially after step 5.",
+ "rules": {
+  "today": "2026-11-21",
+  "category": "consumer",
+  "deadlines": [
+   {
+    "label": "Last date to file a consumer complaint (2 years)",
+    "date": "2028-11-20",
+    "days_left": 730,
+    "status": "ok",
+    "kb": "cpa-limitation",
+    "kind": "limitation",
+    "basis": "2 years from 2026-11-20"
+   }
+  ],
+  "escalations": [],
+  "forum": {
+   "forum": "District Consumer Disputes Redressal Commission",
+   "basis_value": 25000.0,
+   "kb": "cpa-pecuniary"
+  },
+  "fee": {
+   "fee_inr": 0,
+   "kb": "cpa-fee",
+   "note": "verify on the filing portal"
+  },
+  "evidence": {
+   "have": [
+    "Proof of payment (UPI / card / bank statement)"
+   ],
+   "missing": [
+    "Invoice / order confirmation / receipt",
+    "Complaint to the company and their reply (emails, chats, ticket numbers)",
+    "Photos / videos of the defect or problem",
+    "Warranty card / terms promised at sale"
+   ]
+  },
+  "ladder": [
+   "Write to the company's customer care / grievance officer and keep the ticket number.",
+   "Register a free complaint with the National Consumer Helpline (pre-litigation mediation).",
+   "Send a written demand / legal notice giving a clear deadline (usually 15 days).",
+   "File a complaint before the District Consumer Commission (online filing possible; no lawyer needed)."
+  ],
+  "in_scope": true
+ },
+ "guard": {
+  "first_pass": {
+   "refs_checked": 0,
+   "violations": []
+  },
+  "repaired": false,
+  "scrubbed": false,
+  "final_violations": 0
+ },
+ "case": {
+  "language": "hinglish",
+  "language_name": "Hinglish",
+  "category": "consumer",
+  "sub_type": "unauthorized debit",
+  "summary": "The user entered an OTP on a fraudulent KYC update link, resulting in a deduction of Rs.25,000 from their bank account. They are seeking guidance on how to recover the amount and prevent further loss.",
+  "user_role": "other",
+  "other_party": {
+   "name": null,
+   "type": "bank"
+  },
+  "state": null,
+  "city": null,
+  "amounts": {
+   "disputed": 25000,
+   "paid_value": null,
+   "monthly_rent": null,
+   "monthly_salary": null
+  },
+  "dates": {
+   "incident": "2026-11-20",
+   "purchase": null,
+   "complaint_to_company": null,
+   "moved_out": null,
+   "last_working_day": null,
+   "wages_due_from": null,
+   "notice_received": null,
+   "notice_deadline": null,
+   "bank_return_memo": null
+  },
+  "employment_ended": null,
+  "timeline": [
+   {
+    "date": "2026-11-20",
+    "event": "Entered OTP on fraudulent KYC link; Rs.25,000 deducted from account"
+   }
+  ],
+  "evidence_have": [
+   "bank statement showing deduction",
+   "OTP SMS"
+  ],
+  "steps_taken": [],
+  "red_flags": [],
+  "user_goal": "Recover the unauthorized debit of Rs.25,000 and prevent further loss",
+  "open_questions": [
+   "Which bank holds the affected account?",
+   "Have you reported the incident to the bank's fraud department or filed a police complaint?",
+   "Do you have the OTP SMS and transaction reference details (date, time, reference number)?"
+  ]
+ },
+ "kb_ids": [
+  "cpa-consumer-definition",
+  "cpa-deficiency",
+  "cpa-where-to-file",
+  "cpa-pecuniary",
+  "cpa-fee",
+  "cpa-efiling",
+  "cpa-limitation",
+  "cpa-reliefs",
+  "cpa-timeline",
+  "cpa-mediation",
+  "nch",
+  "ecom-grievance",
+  "plas-utilities",
+  "legal-aid",
+  "lok-adalat",
+  "notice-how-to-send",
+  "emergency"
+ ],
+ "checks": {
+  "escalates:emergency": false,
+  "mentions:1930": false,
+  "guard_clean": true
+ },
+ "calls": [
+  {
+   "purpose": "intake",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 11.59,
+   "input_tokens": 900,
+   "output_tokens": 968,
+   "error": null
+  },
+  {
+   "purpose": "advise",
+   "model": "groq:openai/gpt-oss-120b",
+   "seconds": 21.84,
+   "input_tokens": 2773,
+   "output_tokens": 1144,
+   "error": null
+  }
+ ],
+ "seconds": 33.4
+}
