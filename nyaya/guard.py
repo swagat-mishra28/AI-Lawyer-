@@ -123,8 +123,18 @@ def allowed_refs(entries: list[Entry]) -> dict[str, set[str]]:
 _MULTI_TAG_RE = re.compile(r"\[K:\s*([a-z0-9\-]+(?:\s*[,;]\s*(?:K:)?\s*[a-z0-9\-]+)+)\s*\]")
 
 
+_INVISIBLE = dict.fromkeys(map(ord, "​‌‍⁠﻿"))
+_LOOSE_TAG_RE = re.compile(r"\[\s*K\s*:\s*([^\]\n]{1,200}?)\s*\]")
+
+
 def normalize_tags(text: str) -> str:
-    """Models sometimes merge sources as [K:a, K:b]; split them so they are checked and rendered."""
+    """Make every source tag canonical so the guard can check it and the UI can render it.
+
+    Eval findings: models write [K:a, K:b] (merged), [ K:a ] (spaces) and [\\u200bK:a] (zero-width space).
+    A malformed tag would otherwise skip validation AND leak to the user as raw text.
+    """
+    text = text.translate(_INVISIBLE)
+    text = _LOOSE_TAG_RE.sub(lambda m: "[K:" + re.sub(r"\s*([,;])\s*", r"\1 ", m.group(1)).strip() + "]", text)
     return _MULTI_TAG_RE.sub(
         lambda m: "".join(f"[K:{t}]" for t in re.split(r"\s*[,;]\s*(?:K:)?\s*", m.group(1).strip())), text)
 

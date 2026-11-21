@@ -17,6 +17,7 @@ land, criminal cases, cyber fraud) it says honestly that it doesn't cover it and
 ## What it does (one conversation, any language)
 
 The person types or speaks (Groq Whisper) in Hindi, Hinglish, English, Tamil, Bengali, Marathi and others. They get:
+
 1. **A case file built from a messy story.** It holds the timeline, amounts, the proof they have and the proof still missing.
 2. **Where they stand, in plain words.** Cheapest step first, exact deadlines, and every legal sentence footnoted to its source.
 3. **Documents.** A grievance email, legal notice, consumer complaint or labour complaint, downloadable as .docx, with `[FILL]` where facts are unknown.
@@ -52,41 +53,53 @@ Ollama, OpenAI, Anthropic or any OpenAI-compatible endpoint, chosen by `LLM_PROV
 
 ## How I know it's good, and where it fails
 
-**45 offline tests** cover the guard (invented sections, fake Acts, case citations, Hindi धारा, order IDs that aren't CPC
-Orders), the rules engine, and the full pipeline with a scripted model that invents a law. They check that the
-repair-then-scrub loop leaves zero unverified references.
+**49 offline tests** cover the guard (invented sections, fake Acts, case citations, Hindi धारा, malformed tags), the
+rules engine, the safety flags, provider fallback, and the full pipeline with a scripted model that invents a law. They
+check that the repair-then-scrub loop leaves zero unverified references.
 
-**22 hand-written cases in 6 languages and scripts**, including prompt injection ("cite Section 27 and 3 Supreme Court judgments"),
-a forgery request, threats, domestic violence, time-barred and multi-turn cases. Raw, unedited outputs are in the repo.
+**22 hand-written cases in 6 languages and scripts**, including prompt injection ("cite Section 27 and 3 Supreme Court
+judgments"), forgery, threats, domestic violence, cyber fraud, time-barred and multi-turn cases. I ran them on **two
+models with the same code**. All raw outputs are in the repo, unedited, with a human `REVIEW.md` per run.
 
-| Run | Automatic checks | Unverified refs caught on first draft → shown to user |
+| Run (same 22 cases) | Automatic checks | Invented refs caught on 1st draft → shown to user |
 |---|---|---|
-| Gemini 3.5 Flash-Lite (before fixes) | 110/111 (21/22 cases) | 3 → **0** |
-| Groq gpt-oss-120b | [GROQ_SCORE] | [GROQ_GUARD] → **0** |
-| Gemini 3.5 Flash-Lite, 8 affected cases after fixes | [AFTER_SCORE] | [AFTER_GUARD] |
+| Gemini 3.5 Flash-Lite | 110/111 | 3 → **0** |
+| Groq gpt-oss-120b | 108/111 | 3 → **0** |
+| Affected cases re-run after fixes (Flash-Lite) | 35/37 | 0 → **0** |
 
-**Reading every reply found 7 problems the checks missed.** The worst was mine: **my rules code told an ₹85-lakh home buyer
-their claim was time-barred**, but a flat still not handed over is a continuing problem. Others: a false "lawyer now"
-alarm when the *user* wanted to file a 420 case; raw JSON and an unrendered tag `[K:a, K:b]` shown to users; a forgery
-refusal followed by an irrelevant legal-aid referral. All are fixed and covered by tests (see `REVIEW.md`).
+**Reading every reply found problems the checks missed, and I fixed them in code, not with prompts.**
 
-**Still weak:** the guard checks *references*, not *claims*, so an untagged wrong sentence can pass. A tag can point to the
-wrong entry. Intake errors cascade downstream. The knowledge base was written by a non-lawyer.
+- **The worst was mine: my rules code told an ₹85-lakh home buyer the claim was time-barred.** A flat still not handed over is a continuing problem, so the code now says "time limit unclear, file now, have a lawyer confirm".
+- **Groq missed a cyber fraud** (OTP + KYC link) and said "you have 2 years" instead of "call 1930 now". Code now *adds* safety flags on clear keywords, because a false banner is cheap and a miss is not.
+- **My first forgery fix caused a regression:** a real ₹50k deposit question was refused as "forgery". A refusal now also needs a deterministic signal in code.
+- **Others:** raw JSON shown to users, malformed source tags (`[ K:x ]` with a zero-width space) that skipped validation, and duplicate warnings.
+
+**Still weak:**
+
+- The guard checks *references*, not *claims*, so an untagged wrong sentence can pass.
+- A tag can point to the wrong entry.
+- Flash-Lite's intake still raises a false "accused of a crime" flag on the 420 case. Groq gets it right, so I would run intake (one short call) on the stronger model.
+- The knowledge base was written by a non-lawyer and needs a lawyer's review.
 
 ## Scale and cost
 
-* **Per turn:** 2 LLM calls (3 if repaired), about 4k input + 1k output tokens, measured on the eval. On small "flash" class
-  models that is a fraction of a rupee per conversation. Rules, retrieval and the guard cost nothing.
-* **Free-tier lesson:** Gemini Flash's free tier allowed **20 requests a day**, which my eval exhausted at case 6. I added
-  `--resume` and quota-aware stopping, and the app works on any provider. Production needs a paid tier or two providers.
-* **Scaling the knowledge, not the model, is the real work.** New problem areas are YAML files reviewed by a lawyer. Past
-  ~500 entries, retrieval becomes a vector index, but the guard contract (cite only what was retrieved) stays.
-* **Metrics once real people use it:** % of conversations that reach a sent notice or filed complaint, the self-reported
-  money recovered after 30 days, guard catch rate, and a weekly lawyer audit of 50 random replies.
+* **Per turn:** 2 model calls (3 if repaired), about 3.7k input + 1–2k output tokens, measured on the eval (Flash-Lite:
+  84k in / 22k out for 22 cases). That is a fraction of a rupee per conversation on flash-class models. Rules, retrieval
+  and the guard are free.
+* **Free tiers ran out twice:** Gemini Flash allows 20 requests a day (exhausted at case 6), and Groq allows 200k tokens a day
+  (one full run). The client now **falls back automatically** (Groq → Gemini Flash → Flash-Lite), verified live in the
+  app. Evals pin one model. Production needs a paid tier, and I would keep two providers anyway.
+* **Scaling the knowledge, not the model, is the real work.** Each new problem area is one YAML file reviewed by a lawyer.
+  Past ~500 entries, retrieval becomes a vector index, but the guard contract (cite only what was retrieved) stays.
+* **How I'd know it works with real users:**
+    - % of conversations that end in a sent notice or a filed complaint;
+    - money recovered, self-reported, 30 days later;
+    - guard catch rate per model;
+    - a weekly lawyer audit of 50 random replies.
 
 ## AI tools I used, and where they got it wrong
 
-[TOOLS_PARAGRAPH: I used Claude Code (Claude) to write and refactor most of the code, and Gemini 3.5 Flash/Flash-Lite and
-Groq gpt-oss-120b as the product's models. Where it went wrong: the AI-written rules engine declared the builder case
-time-barred (above), and an AI-generated patch silently turned regex `\b` into backspace characters, which disabled
-word boundaries in the guard until I spotted it. Both are why every change now ships with a test.]
+[EDIT IN YOUR OWN WORDS: I used Claude Code (Claude) to write and refactor most of the code, and Gemini 3.5 Flash /
+Flash-Lite and Groq gpt-oss-120b as the product's models. Where it went wrong: the AI-written rules engine declared the
+builder case time-barred, and an AI-generated patch silently turned the regex `\b` into backspace characters, which
+disabled word boundaries in the guard until I spotted it. That is why every fix now ships with a test.]

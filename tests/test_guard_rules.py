@@ -242,3 +242,11 @@ def test_court_summons_warns_once():
             "dates": {"notice_deadline": "2026-12-05"}}
     r = rules.compute(case, TODAY)
     assert [e["flag"] for e in r["escalations"]] == ["court_summons"]
+
+
+def test_loose_and_invisible_tags_normalised():
+    t = guard.normalize_tags("A [ K:notice-legal-what ]. B [​K:cpa-deficiency]. C [K: nch ,K:cpa-fee].")
+    assert t == "A [K:notice-legal-what]. B [K:cpa-deficiency]. C [K:nch][K:cpa-fee]."
+    # a malformed tag to a non-existent entry is now caught instead of silently skipping validation
+    rep = guard.check(guard.normalize_tags("Made up [ K:not-a-real-entry ]."), KB, [])
+    assert [v.kind for v in rep.violations] == ["bad_tag"]
