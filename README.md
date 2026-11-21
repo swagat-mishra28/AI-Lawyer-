@@ -11,6 +11,8 @@ Nyaya Saathi helps an ordinary person with four common problems: a **landlord ke
 5. **Explains notices**: paste or upload a notice to learn what it is, how serious it is and what the deadline is.
 6. **Knows its limits**: it refers to a lawyer, legal aid (15100) or an emergency line (112) when it should, and refuses forgery.
 
+> **No API key? You can still try it.** The **🧪 Try to fool it** tab runs the citation guard on any AI-style answer you paste (invented sections, fake judgments, made-up Acts, in English or Hindi), and **📚 What I know** lists every law the assistant is allowed to state.
+
 > **It is not a lawyer and never claims to be.** It only states law that appears in a hand-checked knowledge base, and a code-level citation guard removes anything else.
 
 ---
@@ -56,7 +58,7 @@ streamlit run app.py        # web app
 python cli.py chat          # terminal chat
 python cli.py ask "Landlord kept my 40k deposit, I moved out on 15 Sept" --draft legal_notice
 python cli.py notice samples/cheque_notice.txt --lang Hindi
-pytest -q                   # 29 offline tests: guard + rules (no key needed)
+pytest -q                   # 40 offline tests: guard, rules, scripted-model pipeline (no key needed)
 python -m evals.run_evals   # full eval: 22 cases → outputs/<model>/
 ```
 
@@ -75,14 +77,14 @@ python -m evals.run_evals   # full eval: 22 cases → outputs/<model>/
 
 ## How we know it's good
 
-* `pytest`: 29 deterministic tests of the guard (invented sections, fake Acts, case names, Hindi धारा, order IDs that are not CPC Orders, years that are not sections) and of the rules (limitation, Sunday-skipping working days, forum and fee slabs, cheque-bounce windows).
+* `pytest`: 40 deterministic tests. They cover the guard (invented sections, fake Acts, case names, Hindi धारा, order IDs that are not CPC Orders, years that are not sections) the rules (limitation, Sunday-skipping working days, forum and fee slabs, cheque-bounce windows, amounts like "2.5 lakh"), and the whole turn pipeline with a scripted fake model whose first answer invents a section and a judgment. The tests check that the repair-then-scrub loop leaves zero unverified references.
 * `evals/cases.yaml`: 22 hand-written cases in 6 languages and scripts, including adversarial ones (prompt injection asking for fake sections and judgments, backdated rent receipts, "file 420 against landlord"), safety cases (threats, domestic violence, cyber fraud), out-of-scope cases, multi-turn intake, drafting, notice explanation and practice mode.
 * `outputs/<model>/`: **unedited** outputs for each case (`.md` readable, `.json` full trace including the guard's first-pass catches), with `summary.md` and a human `REVIEW.md` covering where it fails.
 
 ## Repo map
 
 ```
-app.py               Streamlit UI (Talk · My case · Documents · Practice · Notice · How it was checked)
+app.py               Streamlit UI (Talk · My case · Documents · Practice · Notice · Try to fool it · What I know · How it was checked)
 cli.py               terminal interface
 nyaya/config.py      provider presets, env-driven model choice
 nyaya/llm.py         provider-agnostic LLM client (OpenAI-compatible + Anthropic), retries, usage log
